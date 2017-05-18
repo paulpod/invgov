@@ -52,7 +52,7 @@ $path: "/public/images/";
 
 // overide styles on the header nav
 #global-header-bar {
-  height: 1px;
+  height: 0;
   background-color: #666;
 }
 
@@ -249,15 +249,27 @@ $path: "/public/images/";
 .js-enabled #global-header .header-proposition #proposition-link.js-visible, .js-enabled
 #global-header .header-proposition #proposition-links.js-visible {
   display: block; }
+  @media (max-width: 769px) {
+    .js-enabled #global-header .header-proposition #proposition-link.js-visible, .js-enabled
+#global-header .header-proposition #proposition-links.js-visible {
+  display: block;
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  left:-120px;
+  padding-left:5em;
+  padding-bottom: 1.25em; }
+  }
 
 #global-header .header-proposition #proposition-link li,
 #global-header .header-proposition #proposition-links li {
 
   /* This bit styles the mobile menu */
   float: left;
+  border:none;
   list-style: none;
   width: 70%;
-  padding: 3px 0; }
+  padding: 3px 0 10px 0; }
   @media (min-width: 769px) {
     #global-header .header-proposition #proposition-link li,
     #global-header .header-proposition #proposition-links li {
@@ -278,30 +290,37 @@ $path: "/public/images/";
   font-weight: 400;
   text-transform: none;
   font-size: 19px;
-  line-height: 1.65; }
-  @media (min-width: 641px) {
-    #global-header .header-proposition #proposition-link a,
-    #global-header .header-proposition #proposition-links a {
-      font-size: 14px;
-      line-height: 1.42857; } }
+  line-height: 1.75; }
+@media (min-width: 641px) {
+  #global-header .header-proposition #proposition-link a,
+  #global-header .header-proposition #proposition-links a {
+    font-size: 14px;
+    line-height: 1.42857; } }
 
 
-  @media (min-width: 769px) {
-    #global-header .header-proposition #proposition-link a,
-    #global-header .header-proposition #proposition-links a {
-      font-family: "nta", Arial, sans-serif;
-      font-weight: 400;
-      text-transform: none;
-      font-size: 14px;
-      line-height: 1.14286;
-      line-height: 23px; } }
+@media (min-width: 769px) {
+#global-header .header-proposition #proposition-link a,
+#global-header .header-proposition #proposition-links a {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  line-height: 23px; } }
 
 
-    @media (min-width: 769px) and (min-width: 641px) {
-      #global-header .header-proposition #proposition-link a,
-      #global-header .header-proposition #proposition-links a {
-        font-size: 16px;
-        line-height: 1.25; } }
+@media (min-width: 769px) and (min-width: 641px) {
+#global-header .header-proposition #proposition-link a,
+#global-header .header-proposition #proposition-links a {
+  font-size: 16px;
+  line-height: 1.25; } }
+
+@media (max-width: 769px) {
+#global-header .header-proposition #proposition-link a,
+#global-header .header-proposition #proposition-links a {
+  padding-left: 1.2em;
+  }
+}
 
 
 #global-header .header-proposition #proposition-link a:hover,
@@ -325,27 +344,53 @@ $path: "/public/images/";
     #global-header .header-proposition #proposition-link {
       float: none; } }
 
-#global-header .header-proposition #proposition-link a.active, #global-header .header-proposition #proposition-links a.active {
+#global-header .header-proposition #proposition-link a.active, 
+#global-header .header-proposition #proposition-links a.active {
     color: black;
+    overflow: visible;
+    background: url('/public/images/triangle-right-red.svg') left 1px top 5px no-repeat;
+
+}
+@media (min-width: 769px) {
+#global-header .header-proposition #proposition-link a.active, 
+#global-header .header-proposition #proposition-links a.active {
+    color: black;
+    background-image: none;
     padding-bottom: 4px;
     border-bottom: 3px solid #ae1228;
+  }
 }
+
+
 #global-header .header-proposition #proposition-links li,
 #global-header .header-proposition #proposition-link li {
   border-right: solid 1px #999;
   margin-left:1em;
 }
+@media (max-width: 769px) {
+#global-header .header-proposition #proposition-links li,
+#global-header .header-proposition #proposition-link li {
+  border-right: none;
+  }
+}
+
 #global-header .header-proposition #proposition-links li:last-child {
-  background-color: #0a569d;
+}
+@media (min-width: 769px) {
+  #global-header .header-proposition #proposition-links li:last-child {
+background-color: #0a569d;
   border-right: none;
   border-radius: 0.25em;
   color: white;
   padding: 2px 0.9em;
   position: relative;
   top: -2px;
+  }
 }
+@media (min-width: 769px) {
 #global-header .header-proposition #proposition-links li:last-child a {
   color: white;
+  }
 }
 #global-header .header-proposition #proposition-links li:nth-last-child(2) {
   border-right: none;

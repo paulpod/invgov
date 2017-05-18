@@ -5,7 +5,7 @@
   overflow: hidden;
   //background: #1E1348 top right no-repeat;
   padding: 0;
-  margin: 40px 0 0 0;
+  margin: 0;
   height: 540px;
   border-bottom: 5px solid #B00D23;
   background-size: cover;
@@ -16,8 +16,12 @@
 }
 @media (max-width: 767px) {
 .jumbotron {
-  background-image: url('/public/images/hero-img-mobile/iigb-hero.jpg') ;
-}
+  background-image: url('/public/images/hero-img-mobile/iigb-hero.jpg');
+  overflow: visible;
+  height: 400px;
+  position: relative;
+top:-20px;
+  }
 }
 
 .jumbotron:before {
@@ -108,8 +112,11 @@ width: 66%;
 
 
 .jumbotron-content .heading-xlarge {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2.5em;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 @media (max-width: 767px) {
   .jumbotron-content .heading-xlarge {
@@ -120,7 +127,9 @@ width: 66%;
 
 .jumbotron-content .heading-medium {
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  margin: 0.4em 0 1em 0;
+  padding: 0;
 }
 
 
