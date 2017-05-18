@@ -1,0 +1,777 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+
+	  <div class="column-quarter">
+
+	    <p style="margin-bottom: 0"><strong>Industry</strong></p>
+	      
+	    <div id="industry-picker-box" class="picker-box">
+
+	      <label class="form-label" for="industry-picker">
+	        
+	        <span class="picker-form-hint">
+	          Find a specific industry
+	        </span>
+
+	      </label>
+
+	      <select id="industry-picker">
+	      <option value="" selected="default"></option>
+	        <option value="000">Manufacturing technology &amp; equipment</option>
+	        <option value="000">Sustainable manufacturing</option>
+	        <option value="000">Mechanical, Electrical & Process engineering</option>
+	        <option value="000">Advanced Materials/Composites</option>
+	        <option value="000">Air traffic management</option>
+	        <option value="000">Airframe & fixed wings</option>
+	        <option value="000">Autonomous systems & rotary wings</option>
+	        <option value="000">Engine systems</option>
+	        <option value="000">Equipment</option>
+	        <option value="000">Space systems & equipment</option>
+	        <option value="000">MRO</option>
+	        <option value="000">Food & drink processing</option>
+	        <option value="000">Food & drink production & manufacturing</option>
+	        <option value="000">Health, wellbeing and safety</option>
+	        <option value="000">Animal and crop husbandry</option>
+	        <option value="000">Intensive farming</option>
+	        <option value="000">Sustainability</option>
+	        <option value="000">Sustainable farming</option>
+	        <option value="000">Non-commercial vehicles</option>
+	        <option value="000">Electric vehicles</option>
+	        <option value="000">Specialist vehicles inc. motorsport & construction</option>
+	        <option value="000">Components</option>
+	        <option value="000">Services</option>
+	        <option value="000">Business & professional services</option>
+	        <option value="000">Consultancy</option>
+	        <option value="000">Accountancy</option>
+	        <option value="000">BPO - Business Process Outsourcing</option>
+	        <option value="000">Coatings</option>
+	        <option value="000">Fine & speciality chemicals</option>
+	        <option value="000">Paints</option>
+	        <option value="000">Petrochemicals</option>
+	        <option value="000">Plastics</option>
+	        <option value="000">Soaps & detergents</option>
+	        <option value="000">Commercial & industrial</option>
+	        <option value="000">Construction products</option>
+	        <option value="000">Contracting services</option>
+	        <option value="000">Low carbon & green buildings</option>
+	        <option value="000">Material</option>
+	        <option value="000">Regeneration</option>
+	        <option value="000">Residential</option>
+	        <option value="000">Roads & Bridges</option>
+	        <option value="000">Built environment</option>
+	        <option value="000">Infrastructure including ports & airports</option>
+	        <option value="000">Leisure equipment</option>
+	        <option value="000">Sports equipment</option>
+	        <option value="000">Jewellery</option>
+	        <option value="000">Tableware</option>
+	        <option value="000">Cosmetics</option>
+	        <option value="000">Stationery</option>
+	        <option value="000">Home decorations</option>
+	        <option value="000">Gift products</option>
+	        <option value="000">Travel accessories</option>
+	        <option value="000">Garden & pet products</option>
+	        <option value="000">Advertising</option>
+	        <option value="000">Architecture</option>
+	        <option value="000">Art</option>
+	        <option value="000">Computer gaming</option>
+	        <option value="000">Crafts</option>
+	        <option value="000">Design</option>
+	        <option value="000">Fashion</option>
+	        <option value="000">Digital content</option>
+	        <option value="000">Furniture design</option>
+	        <option value="000">Museums/galleries</option>
+	        <option value="000">Music</option>
+	        <option value="000">Performing arts</option>
+	        <option value="000">Publishing</option>
+	        <option value="000">Screen (film, TV, radio, animation)</option>
+	        <option value="000">Textiles & ceramics</option>
+	        <option value="000">Private-sector training providers</option>
+	        <option value="000">Biomass</option>
+	        <option value="000">Fuel cells</option>
+	        <option value="000">Geothermal</option>
+	        <option value="000">Fossil fuels - Oil & Gas</option>
+	        <option value="000">Carbon capture and abatement</option>
+	        <option value="000">Hydro-electric</option>
+	        <option value="000">Nuclear</option>
+	        <option value="000">Solar</option>
+	        <option value="000">Tide</option>
+	        <option value="000">Transmission</option>
+	        <option value="000">Distribution and storage</option>
+	        <option value="000">Microgeneration</option>
+	        <option value="000">Wave</option>
+	        <option value="000">Wind</option>
+	        <option value="000">Decontamination</option>
+	        <option value="000">Waste & pollution management</option>
+	        <option value="000">Water supply & sanitation</option>
+	        <option value="000">Banking</option>
+	        <option value="000">Insurance</option>
+	        <option value="000">Pensions</option>
+	        <option value="000">Fund management</option>
+	        <option value="000">Private equity and venture capital</option>
+	        <option value="000">Trading</option>
+	        <option value="000">PPP</option>
+	        <option value="000">Communications</option>
+	        <option value="000">Electronic products</option>
+	        <option value="000">Software</option>
+	        <option value="000">IT Services</option>
+	        <option value="000">Cloud computing</option>
+	        <option value="000">Data mining</option>
+	        <option value="000">Genetic engineering</option>
+	        <option value="000">Fermentation technology</option>
+	        <option value="000">Biotransformation</option>
+	        <option value="000">Enzyme technology</option>
+	        <option value="000">In-silico modelling</option>
+	        <option value="000">Structural biology</option>
+	        <option value="000">Bioinformatics</option>
+	        <option value="000">Biosensors</option>
+	        <option value="000">Environmental services</option>
+	        <option value="000">Low carbon technology & finance</option>
+	        <option value="000">Drugs & delivery technology</option>
+	        <option value="000">Regenerative medicine</option>
+	        <option value="000">Medical devices</option>
+	        <option value="000">Research services</option>
+	        <option value="000">Healthcare systems & services</option>
+	        <option value="000">Clothing</option>
+	        <option value="000">Footwear</option>
+	        <option value="000">Retail outlets</option>
+	        <option value="000">Supply chain / Logistics</option>
+	        <option value="000">Access control systems</option>
+	        <option value="000">Biometrics</option>
+	        <option value="000">Surveillance & sensors</option>
+	        <option value="000">Fire</option>
+	        <option value="000">Information & data security</option>
+	        <option value="000">Manned security systems</option>
+	        <option value="000">Communications</option>
+	        <option value="000">Forensics</option>
+	        <option value="000">Counter terrorism</option>
+	        <option value="000">Consultancy</option>
+	        <option value="000">Training</option>
+	        <option value="000">Safety</option>
+	        <option value="000">Cyber security</option>
+	        <option value="000">Information assurance</option>
+	        <option value="000">Airports</option>
+	        <option value="000">Ports</option>
+	        <option value="000">Rail</option>
+	        <option value="000">Road</option>
+	        <option value="000">Marine</option>
+
+	        <option value="000">Advanced Manufacturing/Engineering</option>
+	        <option value="000">Aerospace</option>
+	        <option value="000">AgriFood</option>
+	        <option value="000">Automotive</option>
+	        <option value="000">Business Services</option>
+	        <option value="000">Chemicals</option>
+	        <option value="000">Construction inc. built environment</option>
+	        <option value="000">Consumer & Leisure</option>
+	        <option value="000">Creative Industries</option>
+	        <option value="000">Education</option>
+	        <option value="000">Energy</option>
+	        <option value="000">Environment & Water</option>
+	        <option value="000">Financial Services</option>
+	        <option value="000">ICT</option>
+	        <option value="000">Industrial Biotechnology</option>
+	        <option value="000">Low Carbon Industry</option>
+	        <option value="000">Pharmaceuticals & Healthcare</option>
+	        <option value="000">Retail and Logistics</option>
+	        <option value="000">Security</option>
+	        <option value="000">Transport</option>
+
+	      </select>
+
+	      <script>
+	      accessibleAutocomplete.enhanceSelectElement({
+	      selectElement: document.querySelector('#industry-picker')
+	      })
+	      </script>
+
+	      </div><!-- picker box -->
+
+
+	      <ul class="mixpanel-list">
+	        <li><a href="#">Aerospace</a></li>
+	        <li><a href="#">Advanced manufacturing</a></li>
+	        <li><a href="#">Automotive</a></li>
+	        <li><a href="#">Creative</a></li>
+	        <li><a href="#">Energy generation</a></li>
+	        <li><a href="#">Financial services</a></li>
+	        <li><a href="#">Food and drink<br>manufacturing</a></li>
+	        <li><a href="#">Health and life sciences</a></li>
+	        <li><a href="#">Retail</a></li>
+	        <li><a href="#">Technology</a></li>
+        </ul>
+
+    </div><!-- column -->
+
+    <div class="column-quarter">
+
+	    <p style="margin-bottom: 0"><strong>Where?</strong></p>
+
+	    <div id="location-picker-box" class="picker-box">
+
+		    <label class="form-label" for="location-picker">
+		        
+		        <span class="picker-form-hint">
+		        Find a specific location
+		          
+		        </span>
+	        </label>
+
+	      <select id="location-picker">
+	      <option value="" selected="default"></option>
+	        <option value="000">Belfast</option>
+	        <option value="000">Castlereagh</option>
+	        <option value="000">Newtownabbey</option>
+	        <option value="000">Down</option>
+	        <option value="000">Banbridge</option>
+	        <option value="000">Newry and Mourne</option>
+	        <option value="000">Craigavon</option>
+	        <option value="000">Dungannon and South Tyrone</option>
+	        <option value="000">Cookstown</option>
+	        <option value="000">Magherafelt</option>
+	        <option value="000">Ballymena</option>
+	        <option value="000">Larne</option>
+	        <option value="000">Derry</option>
+	        <option value="000">Cardiff</option>
+	        <option value="000">Newport</option>
+	        <option value="000">Monmouthshire</option>
+	        <option value="000">Torfaen</option>
+	        <option value="000">Caerphilly</option>
+	        <option value="000">Merthyr Tydfil</option>
+	        <option value="000">Rhondda Cynon Taf</option>
+	        <option value="000">Vale of Glamorgan</option>
+	        <option value="000">Bridgend</option>
+	        <option value="000">Neath Port Talbot</option>
+	        <option value="000">Swansea</option>
+	        <option value="000">Carmarthenshire</option>
+	        <option value="000">Pembrokeshire</option>
+	        <option value="000">Ceredigion</option>
+	        <option value="000">Powys</option>
+	        <option value="000">Wrexham</option>
+	        <option value="000">Flintshire</option>
+	        <option value="000">Denbighshire</option>
+	        <option value="000">Conwy</option>
+	        <option value="000">Gwynedd</option>
+	        <option value="000">Ynys MÃƒÂ´n</option>
+	        <option value="000">Glasgow City</option>
+	        <option value="000">East Dunbartonshire</option>
+	        <option value="000">North Lanarkshire</option>
+	        <option value="000">Dundee City</option>
+	        <option value="000">Renfrewshire</option>
+	        <option value="000">City of Edinburgh</option>
+	        <option value="000">Aberdeenshire</option>
+	        <option value="000">Aberdeen City</option>
+	        <option value="000">Perth and Kinross</option>
+	        <option value="000">Orkney Islands</option>
+	        <option value="000">Highland</option>
+	        <option value="000">Fife</option>
+	        <option value="000">Falkirk</option>
+	        <option value="000">Dumfries and Galloway</option>
+	        <option value="000">Westminster</option>
+	        <option value="000">Wandsworth</option>
+	        <option value="000">Tower Hamlets</option>
+	        <option value="000">Richmond upon Thames</option>
+	        <option value="000">Newham</option>
+	        <option value="000">Merton</option>
+	        <option value="000">Lewisham</option>
+	        <option value="000">Kingston upon Thames</option>
+	        <option value="000">Kensington and Chelsea</option>
+	        <option value="000">Islington</option>
+	        <option value="000">Hounslow</option>
+	        <option value="000">Hillingdon</option>
+	        <option value="000">Havering</option>
+	        <option value="000">Hammersmith and Fulham</option>
+	        <option value="000">Hackney</option>
+	        <option value="000">Greenwich</option>
+	        <option value="000">Ealing</option>
+	        <option value="000">Croydon</option>
+	        <option value="000">Camden</option>
+	        <option value="000">Barking and Dagenham</option>
+	        <option value="000">City of London</option>
+	        <option value="000">Wakefield</option>
+	        <option value="000">Leeds</option>
+	        <option value="000">Wolverhampton</option>
+	        <option value="000">Walsall</option>
+	        <option value="000">Solihull</option>
+	        <option value="000">Sandwell</option>
+	        <option value="000">Dudley</option>
+	        <option value="000">Coventry</option>
+	        <option value="000">Birmingham</option>
+	        <option value="000">Sunderland</option>
+	        <option value="000">South Tyneside</option>
+	        <option value="000">North Tyneside</option>
+	        <option value="000">Newcastle upon Tyne</option>
+	        <option value="000">Gateshead</option>
+	        <option value="000">Sheffield</option>
+	        <option value="000">Rotherham</option>
+	        <option value="000">Doncaster</option>
+	        <option value="000">Wirral</option>
+	        <option value="000">Sefton</option>
+	        <option value="000">St. Helens</option>
+	        <option value="000">Liverpool</option>
+	        <option value="000">Knowsley</option>
+	        <option value="000">Wigan</option>
+	        <option value="000">Trafford</option>
+	        <option value="000">Stockport</option>
+	        <option value="000">Salford</option>
+	        <option value="000">Manchester</option>
+	        <option value="000">Bury</option>
+	        <option value="000">Bolton</option>
+	        <option value="000">Wyre Forest</option>
+	        <option value="000">Wychavon</option>
+	        <option value="000">Sutton</option>
+	        <option value="000">Worcester</option>
+	        <option value="000">Malvern Hills</option>
+	        <option value="000">Bromsgrove</option>
+	        <option value="000">Mid Sussex</option>
+	        <option value="000">Horsham</option>
+	        <option value="000">Crawley</option>
+	        <option value="000">Warwick</option>
+	        <option value="000">Stratford-on-Avon</option>
+	        <option value="000">Rugby</option>
+	        <option value="000">Nuneaton and Bedworth</option>
+	        <option value="000">Woking</option>
+	        <option value="000">Tandridge</option>
+	        <option value="000">Surrey Heath</option>
+	        <option value="000">Spelthorne</option>
+	        <option value="000">Runnymede</option>
+	        <option value="000">Reigate and Banstead</option>
+	        <option value="000">Mole Valley</option>
+	        <option value="000">Guildford</option>
+	        <option value="000">Elmbridge</option>
+	        <option value="000">Waveney</option>
+	        <option value="000">Suffolk Coastal</option>
+	        <option value="000">Mid Suffolk</option>
+	        <option value="000">Ipswich</option>
+	        <option value="000">Babergh</option>
+	        <option value="000">Staffordshire Moorlands</option>
+	        <option value="000">Stafford</option>
+	        <option value="000">South Staffordshire</option>
+	        <option value="000">Newcastle-under-Lyme</option>
+	        <option value="000">Lichfield</option>
+	        <option value="000">East Staffordshire</option>
+	        <option value="000">Cannock Chase</option>
+	        <option value="000">West Somerset</option>
+	        <option value="000">Taunton Deane</option>
+	        <option value="000">Sedgemoor</option>
+	        <option value="000">West Oxfordshire</option>
+	        <option value="000">Vale of White Horse</option>
+	        <option value="000">South Oxfordshire</option>
+	        <option value="000">Oxford</option>
+	        <option value="000">Cherwell</option>
+	        <option value="000">Rushcliffe</option>
+	        <option value="000">Gedling</option>
+	        <option value="000">Broxtowe</option>
+	        <option value="000">Ashfield</option>
+	        <option value="000">Selby</option>
+	        <option value="000">Scarborough</option>
+	        <option value="000">Ryedale</option>
+	        <option value="000">Hambleton</option>
+	        <option value="000">Craven</option>
+	        <option value="000">South Norfolk</option>
+	        <option value="000">Norwich</option>
+	        <option value="000">North Norfolk</option>
+	        <option value="000">King's Lynn and West Norfolk</option>
+	        <option value="000">Great Yarmouth</option>
+	        <option value="000">Broadland</option>
+	        <option value="000">West Lindsey</option>
+	        <option value="000">Oadby and Wigston</option>
+	        <option value="000">North West Leicestershire</option>
+	        <option value="000">Melton</option>
+	        <option value="000">Hinckley and Bosworth</option>
+	        <option value="000">Harborough</option>
+	        <option value="000">Charnwood</option>
+	        <option value="000">Blaby</option>
+	        <option value="000">Antrim</option>
+	        <option value="000">Wyre</option>
+	        <option value="000">West Lancashire</option>
+	        <option value="000">South Ribble</option>
+	        <option value="000">Ribble Valley</option>
+	        <option value="000">Preston</option>
+	        <option value="000">Pendle</option>
+	        <option value="000">Lancaster</option>
+	        <option value="000">Fylde</option>
+	        <option value="000">Chorley</option>
+	        <option value="000">Thanet</option>
+	        <option value="000">Swale</option>
+	        <option value="000">Shepway</option>
+	        <option value="000">Maidstone</option>
+	        <option value="000">Gravesham</option>
+	        <option value="000">Dartford</option>
+	        <option value="000">Canterbury</option>
+	        <option value="000">Ashford</option>
+	        <option value="000">Watford</option>
+	        <option value="000">Three Rivers</option>
+	        <option value="000">Dacorum</option>
+	        <option value="000">Winchester</option>
+	        <option value="000">Test Valley</option>
+	        <option value="000">New Forest</option>
+	        <option value="000">Fareham</option>
+	        <option value="000">Basingstoke and Deane</option>
+	        <option value="000">Tewkesbury</option>
+	        <option value="000">Stroud</option>
+	        <option value="000">Gloucester</option>
+	        <option value="000">Forest of Dean</option>
+	        <option value="000">Cotswold</option>
+	        <option value="000">Cheltenham</option>
+	        <option value="000">Uttlesford</option>
+	        <option value="000">Tendring</option>
+	        <option value="000">Colchester</option>
+	        <option value="000">Chelmsford</option>
+	        <option value="000">Basildon</option>
+	        <option value="000">Lewes</option>
+	        <option value="000">Purbeck</option>
+	        <option value="000">North Dorset</option>
+	        <option value="000">West Devon</option>
+	        <option value="000">Torridge</option>
+	        <option value="000">Teignbridge</option>
+	        <option value="000">South Hams</option>
+	        <option value="000">Exeter</option>
+	        <option value="000">East Devon</option>
+	        <option value="000">South Derbyshire</option>
+	        <option value="000">North East Derbyshire</option>
+	        <option value="000">Erewash</option>
+	        <option value="000">Derbyshire Dales</option>
+	        <option value="000">Amber Valley</option>
+	        <option value="000">South Lakeland</option>
+	        <option value="000">Eden</option>
+	        <option value="000">Copeland</option>
+	        <option value="000">Barrow-in-Furness</option>
+	        <option value="000">Allerdale</option>
+	        <option value="000">South Cambridgeshire</option>
+	        <option value="000">Cambridge</option>
+	        <option value="000">Wycombe</option>
+	        <option value="000">South Bucks</option>
+	        <option value="000">Aylesbury Vale</option>
+	        <option value="000">Central Bedfordshire</option>
+	        <option value="000">Bedford</option>
+	        <option value="000">Wiltshire</option>
+	        <option value="000">Cornwall</option>
+	        <option value="000">Shropshire</option>
+	        <option value="000">Cheshire West and Chester</option>
+	        <option value="000">Cheshire East</option>
+	        <option value="000">Northumberland</option>
+	        <option value="000">County Durham</option>
+	        <option value="000">Isle of Wight</option>
+	        <option value="000">Southampton</option>
+	        <option value="000">Brighton and Hove</option>
+	        <option value="000">Milton Keynes</option>
+	        <option value="000">Wokingham</option>
+	        <option value="000">Windsor and Maidenhead</option>
+	        <option value="000">Slough</option>
+	        <option value="000">Reading</option>
+	        <option value="000">Medway</option>
+	        <option value="000">Thurrock</option>
+	        <option value="000">Torbay</option>
+	        <option value="000">South Gloucestershire</option>
+	        <option value="000">North Somerset</option>
+	        <option value="000">Bristol</option>
+	        <option value="000">Bath and North East Somerset</option>
+	        <option value="000">Stoke-on-Trent</option>
+	        <option value="000">Herefordshire</option>
+	        <option value="000">Nottingham</option>
+	        <option value="000">Leicester</option>
+	        <option value="000">Derby</option>
+	        <option value="000">North Lincolnshire</option>
+	        <option value="000">North East Lincolnshire</option>
+	        <option value="000">East Riding of Yorkshire</option>
+	        <option value="000">Kingston upon Hull</option>
+	        <option value="000">Blackpool</option>
+	        <option value="000">Blackburn with Darwen</option>
+	        <option value="000">Warrington</option>
+	        <option value="000">Halton</option>
+	        <option value="000">Darlington</option>
+	        <option value="000">Stockton-on-Tees</option>
+	        <option value="000">Redcar and Cleveland</option>
+	        <option value="000">Middlesbrough</option>
+	        <option value="000">Hartlepool</option>
+	        <option value="000">Mendip</option>
+	        <option value="000">West Dorset</option>
+	        <option value="000">Ards</option>
+	        <option value="000">North Down</option>
+	        <option value="000">Stirling</option>
+	        <option value="000">South Ayrshire</option>
+	        <option value="000">Midlothian</option>
+	        <option value="000">Clackmannanshire</option>
+	        <option value="000">Waltham Forest</option>
+	        <option value="000">Southwark</option>
+	        <option value="000">Lambeth</option>
+	        <option value="000">Barnet</option>
+	        <option value="000">Kirklees</option>
+	        <option value="000">Calderdale</option>
+	        <option value="000">Bradford</option>
+	        <option value="000">Oldham</option>
+	        <option value="000">St Albans</option>
+	        <option value="000">Chichester</option>
+	        <option value="000">Waverley</option>
+	        <option value="000">Epsom and Ewell</option>
+	        <option value="000">St Edmundsbury</option>
+	        <option value="000">Harrogate</option>
+	        <option value="000">South Northamptonshire</option>
+	        <option value="000">Northampton</option>
+	        <option value="000">Daventry</option>
+	        <option value="000">Rossendale</option>
+	        <option value="000">Hyndburn</option>
+	        <option value="000">Burnley</option>
+	        <option value="000">Stevenage</option>
+	        <option value="000">North Hertfordshire</option>
+	        <option value="000">Hertsmere</option>
+	        <option value="000">East Hertfordshire</option>
+	        <option value="000">Rushmoor</option>
+	        <option value="000">Hart</option>
+	        <option value="000">Maldon</option>
+	        <option value="000">Harlow</option>
+	        <option value="000">Braintree</option>
+	        <option value="000">Wealden</option>
+	        <option value="000">Rother</option>
+	        <option value="000">Hastings</option>
+	        <option value="000">Weymouth and Portland</option>
+	        <option value="000">East Dorset</option>
+	        <option value="000">Christchurch</option>
+	        <option value="000">North Devon</option>
+	        <option value="000">Carlisle</option>
+	        <option value="000">Huntingdonshire</option>
+	        <option value="000">Fenland</option>
+	        <option value="000">East Cambridgeshire</option>
+	        <option value="000">Chiltern</option>
+	        <option value="000">Portsmouth</option>
+	        <option value="000">Bracknell Forest</option>
+	        <option value="000">Peterborough</option>
+	        <option value="000">Poole</option>
+	        <option value="000">Bournemouth</option>
+	        <option value="000">Plymouth</option>
+	        <option value="000">Luton</option>
+	        <option value="000">Blaenau Gwent</option>
+	        <option value="000">Angus</option>
+	        <option value="000">South Lanarkshire</option>
+	        <option value="000">Welwyn Hatfield</option>
+	        <option value="000">Redditch</option>
+	        <option value="000">Worthing</option>
+	        <option value="000">Arun</option>
+	        <option value="000">Adur</option>
+	        <option value="000">North Warwickshire</option>
+	        <option value="000">South Somerset</option>
+	        <option value="000">Newark and Sherwood</option>
+	        <option value="000">Bassetlaw</option>
+	        <option value="000">Breckland</option>
+	        <option value="000">South Kesteven</option>
+	        <option value="000">South Holland</option>
+	        <option value="000">North Kesteven</option>
+	        <option value="000">Lincoln</option>
+	        <option value="000">Richmondshire</option>
+	        <option value="000">Havant</option>
+	        <option value="000">Gosport</option>
+	        <option value="000">Eastleigh</option>
+	        <option value="000">East Hampshire</option>
+	        <option value="000">Rochford</option>
+	        <option value="000">Mid Devon</option>
+	        <option value="000">Chesterfield</option>
+	        <option value="000">Bolsover</option>
+	        <option value="000">Isles of Scilly</option>
+	        <option value="000">Southend-on-Sea</option>
+	        <option value="000">Swindon</option>
+	        <option value="000">Carrickfergus</option>
+	        <option value="000">Omagh</option>
+	        <option value="000">Coleraine</option>
+	        <option value="000">Lisburn</option>
+	        <option value="000">West Lothian</option>
+	        <option value="000">Scottish Borders</option>
+	        <option value="000">East Lothian</option>
+	        <option value="000">Harrow</option>
+	        <option value="000">Enfield</option>
+	        <option value="000">Brent</option>
+	        <option value="000">Bexley</option>
+	        <option value="000">Barnsley</option>
+	        <option value="000">Tameside</option>
+	        <option value="000">Rochdale</option>
+	        <option value="000">Forest Heath</option>
+	        <option value="000">Mansfield</option>
+	        <option value="000">East Northamptonshire</option>
+	        <option value="000">Corby</option>
+	        <option value="000">East Lindsey</option>
+	        <option value="000">Boston</option>
+	        <option value="000">Tonbridge and Malling</option>
+	        <option value="000">Sevenoaks</option>
+	        <option value="000">Dover</option>
+	        <option value="000">Broxbourne</option>
+	        <option value="000">Epping Forest</option>
+	        <option value="000">Eastbourne</option>
+	        <option value="000">High Peak</option>
+	        <option value="000">West Berkshire</option>
+	        <option value="000">Telford and Wrekin</option>
+	        <option value="000">York</option>
+	        <option value="000">West Dunbartonshire</option>
+	        <option value="000">Tamworth</option>
+	        <option value="000">Wellingborough</option>
+	        <option value="000">Kettering</option>
+	        <option value="000">Brentwood</option>
+	        <option value="000">Fermanagh</option>
+	        <option value="000">Castle Point</option>
+	        <option value="000">Rutland</option>
+	        <option value="000">Inverclyde</option>
+	        <option value="000">Armagh</option>
+	        <option value="000">Strabane</option>
+	        <option value="000">Moyle</option>
+	        <option value="000">Ballymoney</option>
+	        <option value="000">Moray</option>
+	        <option value="000">Tunbridge Wells</option>
+	        <option value="000">Haringey</option>
+	        <option value="000">Bromley</option>
+	        <option value="000">East Renfrewshire</option>
+
+	      </select>
+
+	      <script>
+	      accessibleAutocomplete.enhanceSelectElement({
+	      selectElement: document.querySelector('#location-picker')
+	      })
+	      </script>
+
+	      </div><!-- end picker box -->
+
+
+	      <ul class="mixpanel-list">
+	        <li><a href="#">Scotland</a></li>
+	        <li><a href="#">Northern Ireland</a></li>
+	        <li><a href="#">North East England</a></li>
+	        <li><a href="#">North West England</a></li>
+	        <li><a href="#">Yorkshire and The Humber</a></li>
+	        <li><a href="#">East Midlands</a></li>
+	        <li><a href="#">West Midlands</a></li>
+	        <li><a href="#">Wales</a></li>
+	        <li><a href="#">London</a></li>
+	        <li><a href="#">East of England</a></li>
+	        <li><a href="#">South East England</a></li>
+	        <li><a href="#">South West England</a></li>
+	      </ul>
+
+	  </div><!-- column quarter -->
+
+
+
+
+
+	  <div class="column-half">
+
+	    <div style="padding:1em 0 0 0;margin-bottom:0.1em;margin-top:-1em;font-size:90%">
+
+
+	            <!-- this is the tabbed map/list panel -->
+
+
+
+<!-- - - - Start the Tabbed Content - - - -->
+<!-- - - - - - - - - - - - - - - - - - - -->
+
+<div class=" toggle" style="margin-top:0px;float:left;display:visible;">
+
+    
+
+  
+    <div class="js-tabs" style="border-left: 1px solid #999">
+  
+      <div class="tabs" >
+
+        <a href="#chart-panel1" id="chart-tab1" class="tab active">Show on a map</a>
+        <a href="#chart-panel2" id="chart-tab2" class="tab">Show as a list</a>
+        <br clear="all">
+      </div>
+
+
+
+      <div class="panels">
+        <ul id="chart-panel1" class="paneld active" role="tabpanel" aria-labelledby="chart-tab1" style="">
+            
+          <div id="market-name" style="">
+
+
+          <img src="/public/images/mixmap-uk.png" width="310px" style="position:relative;left:-40px;top:4px;">
+
+
+
+            
+
+
+            <form style="zoom:0.80">
+              <fieldset>
+
+                <legend class="visually-hidden">Show locations:</legend>
+
+                <div class="multiple-choice">
+                  <input id="map-key-1" name="location-types" type="checkbox" value="businesses">
+                  <label for="map-key-1">Significant businesses in the industry</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="map-key-2" name="location-types" type="checkbox" value="research hubs">
+                  <label for="map-key-2">Research and development hubs</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="map-key-3" name="location-types" type="checkbox" value="financed">
+                  <label for="map-key-3">Investment is financially incentivised</label>
+                </div>
+
+              </fieldset>
+            </form>
+
+          </div>
+
+
+
+        </ul>
+
+
+
+
+        <ul id="chart-panel2" class="panel" role="tabpanel" aria-labelledby="chart-tab2">
+            
+          <div id="market-name" style="margin-top:12px">
+
+          <h2>Present a priotised list of the things on the map, eg most active Towns/Cities in a specified industry</h2>
+
+          </div>
+
+          <br clear="all">
+
+        </ul>
+
+
+
+
+
+        
+
+    </div>
+  </div><!-- end JS-tabs -->
+
+
+
+
+
+</div>
+<!-- end the tabbed charts  -->
+<!-- - - - - - - - - - - -  -->
+
+  
+
+	         
+
+	        <br clear="all">
+
+	    </div><!-- end box -->
+
+	  </div><!-- end right hand column half -->
+	</div><!-- end column row -->
+
+</main>
+
+{% endblock %}
+
+

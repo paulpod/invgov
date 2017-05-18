@@ -1,0 +1,98 @@
+
+
+
+<!-- - - - Start the Tabbed Content - - - -->
+<!-- - - - - - - - - - - - - - - - - - - -->
+
+<div class=" toggle" id="chart-max" style="margin-top:0px;float:left;display:visible;">
+
+    <button class="hide" style="background:none;border:0;padding:0;margin:0;float:right;">
+      <svg class="icon close-icon" viewBox="0 0 14 14" style="padding-top:5px">
+        <use xlink:href="#close-x"></use>
+      </svg>
+    </button>
+
+  
+    <div class="js-tabs" style="border-left: 1px solid #999">
+  
+      <div class="tabs" >
+
+        <a href="#chart-panel1" id="chart-tab1" class="tab active">Show on a map</a>
+        <a href="#chart-panel2" id="chart-tab2" class="tab">Show as a list</a>
+        <br clear="all">
+      </div>
+
+
+
+      <div class="panels">
+        <ul id="chart-panel1" class="panel active" role="tabpanel" aria-labelledby="chart-tab1" style="">
+            
+          <div id="market-name" style="">
+
+          <img src="/public/images/mixmap-uk.png" width="310px" style="position:relative;left:-40px;top:4px;z-index: -1">
+
+
+
+            
+
+
+            <form style="zoom:0.80">
+              <fieldset>
+
+                <legend class="visually-hidden">Show locations:</legend>
+
+                <div class="multiple-choice">
+                  <input id="map-key-1" name="location-types" type="checkbox" value="businesses">
+                  <label for="map-key-1">Significant businesses in the industry</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="map-key-2" name="location-types" type="checkbox" value="research hubs">
+                  <label for="map-key-2">Research and development hubs</label>
+                </div>
+                <div class="multiple-choice">
+                  <input id="map-key-3" name="location-types" type="checkbox" value="financed">
+                  <label for="map-key-3">Investment is financially incentivised</label>
+                </div>
+
+              </fieldset>
+            </form>
+
+          </div>
+
+
+
+        </ul>
+
+
+
+
+        <ul id="chart-panel2" class="panel" role="tabpanel" aria-labelledby="chart-tab2">
+            
+          <div id="market-name" style="margin-top:12px">
+
+          <h2>Present a priotised list of the things on the map, eg most active Towns/Cities in a specified industry</h2>
+
+          </div>
+
+          <br clear="all">
+
+        </ul>
+
+
+
+
+
+        
+
+    </div>
+  </div><!-- end JS-tabs -->
+
+
+
+
+
+</div>
+<!-- end the tabbed charts  -->
+<!-- - - - - - - - - - - -  -->
+
+  

@@ -1,4 +1,4 @@
-{% extends "govuk_template.html" %}
+{% extends "invest_template.html" %}
 
 {% block head %}
   {% include "includes/head.html" %}
@@ -12,20 +12,22 @@
 
   <div class="header-proposition">
     <div class="content">
+
       <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+
       <nav id="proposition-menu">
         <a href="/" id="proposition-name">
-          {# Set serviceName in config.js. Use a block to override on a page. #}
-          {% block service_name %}
-            {% if serviceName %} {{ serviceName }} {% endif %}
-          {% endblock %}
+          
+          
         </a>
         
         <ul id="proposition-links">
-          <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
-          <li><a href="url-to-page-2">Navigation item #2</a></li>
-          <li><a href="url-to-page-2">Navigation extended item #3</a></li>
-          <li><a href="url-to-page-2">Navigation superlong titleitem #2</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="setup">UK setup guide</a></li>
+          <li><a href="industries">Industries</a></li>
+          <li><a href="locations">Location guide</a></li>
+          <li><a href="contact">Contact us</a></li>
+          
         </ul>
         
       </nav>
