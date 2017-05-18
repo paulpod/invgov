@@ -52,6 +52,15 @@ $path: "/public/images/";
 @import 'jumbotron';
 
 
+/* Top Top HM GOV header */
+
+.great-topnav {
+  background-color:#333;
+  color: white;
+  font-size:0.75em;
+  padding:3px 2px;
+  margin: 0;
+}
 
 
 /* Mangle the brand in the header */
@@ -62,12 +71,6 @@ $path: "/public/images/";
   width: 220px;
 }
 
-.great-topnav {
-  background-color:#333;
-  color: white;
-  font-size:0.75em;
-  padding:3px 2px;
-}
 
 
 
@@ -121,7 +124,6 @@ margin: 28px auto
 }
 
 
-
 .dit-icon-sm {
     height: 50px;
     width: 50px;
@@ -169,13 +171,48 @@ margin: 28px auto
     }
 }
 
-#home-setup .heading-medium {
-
-  font-weight: 100;
+/* tweaks to match older typography on homepage */
+p {
+  font-size: 0.95em;
 }
+#home-industries .heading-large, 
+#how-help .heading-large,
+#home-setup .heading-large, 
+#how-help .heading-large {
+font-size:2.3em;
+  font-weight: 300;
+}
+#home-industries .heading-small, 
+#home-setup .heading-small {
+font-size:1.1em;
+  font-weight: 500;
+  padding-top: 0;
+  margin-top:0;
+}
+hr.homerule {
+  margin: 2.6em 0 0.2em 0;
+  background:none;
+  border-bottom: 5px solid #B00D23;
+}
+img.home-thumbnail {
+  width:7.6em;
+  float:left;
+  margin-top:5px;
+  margin-right:15px;
+  margin-bottom:3em;
+}
+@media (max-width: 769px) {
+  img.home-thumbnail {
+  width:4.6em;
+  float:left;
+  margin-top:5px;
+  margin-right:15px;
+  margin-bottom:1.5em;
+  }
 
-
-
+#home-industries .column-half {
+  margin-bottom:2.6em;
+}}
 
 
 /* Stuff for the IOPS prototype */
