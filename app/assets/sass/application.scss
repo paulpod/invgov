@@ -135,14 +135,13 @@ $path: "/public/images/";
 #global-header .header-proposition {
   padding-top: 10px;
   position: relative;
-  left: 50px; }
+  right: -70px; }
   @media (min-width: 1069px) {
     #global-header .header-proposition {
-      left: 102px;
+      right: -140px;
       padding-top: 0; } }
   @media (min-width: 969px) {
     #global-header .header-proposition {
-      left: 0;
       padding-top: 0; } }
   @media (min-width: 869px) {
     #global-header .header-proposition {
@@ -352,6 +351,12 @@ $path: "/public/images/";
   border-right: none;
   padding-right: 2px;
 }
+
+
+
+
+/* styles for homepage mockup */
+@import 'jumbotron';
 
 
 
