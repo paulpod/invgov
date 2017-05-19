@@ -41,9 +41,11 @@ $path: "/public/images/";
   font-family: 'Roboto' !important;
 }
 
-
-
-
+@media screen and (max-width: 767px) {
+.hide-mobile {
+  display: none;
+  }
+}
 /* overide styles on the header nav */
 @import 'global-header-override';
 
@@ -53,6 +55,200 @@ $path: "/public/images/";
 
 
 /* Top Top HM GOV header */
+.navigation-strip {
+    padding: 8px 0 3px
+}
+
+.navigation-strip a {
+    font-size: 14px;
+    padding: 0 5px 0 2px
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-strip {
+        float: left;
+        display: block;
+        margin-right: 1.53846%;
+        width: 100%
+    }
+
+    .navigation-strip:last-child {
+        margin-right: 0
+    }
+}
+
+.navigation-logo-link {
+    margin-bottom: 3px
+}
+
+.navigation-logo {
+    padding: 17px 0 4px
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-logo {
+        width: 70%
+    }
+}
+
+.navigation-skip-to a {
+    left: -9999em;
+    position: absolute
+}
+
+.navigation-skip-to a:focus {
+    left: 0;
+    position: relative
+}
+
+.navigation-skip-to:after {
+    display: none
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-login li {
+        padding-right: 0
+    }
+
+    .navigation-login li .icon {
+        margin-right: 0
+    }
+
+    .navigation-login li:after {
+        content: none
+    }
+
+    .navigation-login a {
+        padding: 0
+    }
+}
+
+.list-inline li {
+    display: inline-block
+}
+
+@media screen and (max-width: 767px) {
+    .list-inline li.hide-mobile {
+        display: none
+    }
+}
+
+.list-separators {
+    font-size: 0
+}
+
+.list-separators li {
+    position: relative
+}
+
+.list-separators li:after {
+    content: '|';
+    font-size: 20px;
+    position: absolute;
+    right: -1px;
+    top: 0
+}
+
+.list-separators li:last-child:after, .list-separators li:nth-child(3):after {
+    content: ''
+}
+
+.icon-menu {
+    background-image: url("/public/images/icons/menu.svg")
+}
+
+.icon-sign-in {
+    background-image: url("/public/images/icons/signin.svg")
+}
+
+.icon-sign-out {
+    background-image: url("/public/images/icons/signout.svg")
+}
+
+.icon {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block
+}
+
+.icon--left {
+    float: left;
+    height: 21px;
+    left: 0;
+    margin-right: 10px;
+    position: relative;
+    width: 22px
+}
+
+
+.background--great-blue {
+    background-color: #1e1348
+}
+
+.background--flag-red {
+    background-color: #b00d23
+}
+
+.background--stone {
+    background-color: #dfd5c5
+}
+
+.background--dark-white {
+    background-color: #fafafa
+}
+
+.background--grey {
+    background-color: #333
+}
+
+.background--mid-grey {
+    background-color: #999
+}
+
+.background--light-grey {
+    background-color: #dce0df
+}
+
+.background--purple {
+    background-color: #4f0b7b
+}
+
+.background--mid-blue {
+    background-color: #00549f
+}
+
+.background--aqua {
+    background-color: #007ea3
+}
+
+.background--dark-navy {
+    background-color: #160d37
+}
+
+.background--dark-blue {
+    background-color: #132965
+}
+
+.background--light-blue {
+    background-color: #00549f
+}
+
+.background--light-aqua {
+    background-color: #8ae2fb
+}
+
+.background--great-red {
+    background-color: #e41f13
+}
+
+.background--white {
+    background-color: #fff
+}
+
+
+
+
+
 
 .great-topnav {
   background-color:#333;
