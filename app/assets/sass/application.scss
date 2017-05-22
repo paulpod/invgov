@@ -371,6 +371,7 @@ margin: 28px auto
 p {
   font-size: 0.95em;
 }
+#industry-page .heading-large,
 #home-industries .heading-large, 
 #how-help .heading-large,
 #home-setup .heading-large, 
@@ -378,6 +379,7 @@ p {
 font-size:2.3em;
   font-weight: 300;
 }
+#industry-page .heading-small
 #home-industries .heading-small, 
 #home-setup .heading-small {
 font-size:1.1em;
@@ -474,6 +476,44 @@ input#industry-picker.autocomplete__input {
   font-size: 0.9em;
   font-weight: 400;
 }
+
+
+
+
+
+
+/* In research - industry lists, as mobile tablet, desktop */
+ul.industry-list {
+  margin-top:1em;
+}
+ul.industry-list li {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+ul.industry-list li a {
+color: #1E1348;
+}
+a.nounder {
+  text-decoration: none;
+}
+.mobile-list-img {
+  width: 100%;
+  display: inline-block;
+  margin: 0.3em 0 1.2em 0;
+}
+ul.image-list li  {
+    overflow: hidden;
+    height: 6em;
+    margin-top:1.5em;
+}
+.mobile-list-label {
+  
+}
+#force-mobile {
+  width: auto;
+  display: inline-block;
+}
+
 
 
 

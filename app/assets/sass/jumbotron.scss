@@ -6,28 +6,52 @@
   //background: #1E1348 top right no-repeat;
   padding: 0;
   margin: 0;
-  height: 540px;
+  height: 500px;
   border-bottom: 5px solid #B00D23;
   background-size: cover;
 }
 
-.jumbotron {
+.jumbotron#home {
   background-image: url('/public/images/hero-img/iigb-hero.jpg') ;
 }
 @media (max-width: 767px) {
-.jumbotron {
+.jumbotron#home {
   background-image: url('/public/images/hero-img-mobile/iigb-hero.jpg');
   overflow: visible;
   height: 400px;
   position: relative;
-top:-20px;
+  top:-20px;
   }
 }
+.jumbotron#automotive {
+  background-image: url('/public/images/hero-img/automotive.jpg') ;
+  background-position: left -160px top;
+}
+@media (max-width: 767px) {
+.jumbotron#automotive {
+  background-image: url('/public/images/hero-img-mobile/automotive.jpg');
+  background-position: left 0px top 0;
+  overflow: visible;
+  height: 400px;
+  position: relative;
+  top:-20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 .jumbotron:before {
     content: '';
     position: absolute;
-    height: 50%;
+    height: 45%;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -93,27 +117,28 @@ top:-20px;
 .jumbotron-content {
   width: 960px;
   position: relative;
-  top: 260px;
+  //top: 260px;
+  bottom:-250px;
   z-index: 9;
   margin: 0 auto;
 }
 @media (max-width: 767px) {
   .jumbotron-content {
-    width: 92%;
-    top: 180px;
+    width: 93%;
+    bottom: -120px;
   }
 }
 
 @media (min-width: 767px) {
   #jumbotron-headlines {
-width: 66%;
+width: 65%;
   }
 }
 
 
 .jumbotron-content .heading-xlarge {
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 2.6em;
   line-height: 1;
   margin-bottom: 0;
   padding-bottom: 0;
