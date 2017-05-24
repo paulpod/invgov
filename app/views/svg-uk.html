@@ -28,7 +28,7 @@
   stroke-width: 1;
 }
 
-.map g:hover {
+.map g:focus {
   fill: #fc0 !important;
   cursor: help;
 }
@@ -57,6 +57,10 @@ ul.mixpanel-list li {
 	background-color: grey;
 }
 
+ul.mixpanel-list li a:focus {
+  background-color: yellow;
+}
+
 ul.mixpanel-list li:after { 
      content: "\A";
      white-space: pre; 
@@ -72,92 +76,90 @@ ul.mixpanel-list li:after {
 
 <div>
  <ul class="mixpanel-list">
-        <li id="SCTa"><a href="#">Scotland</a></li>
-        <li id="NIRa"><a href="#">Northern Ireland</a></li>
-        <li id="WLSa"><a href="#">North East England</a></li>
-        <li id="UKCa"><a href="#">North West England</a></li>
-        <li id="UKDa"><a href="#">Yorkshire and The Humber</a></li>
-        <li id="UKEa"><a href="#">East Midlands</a></li>
-        <li id="UKFa"><a href="#">West Midlands</a></li>
-        <li id="UKGa"><a href="#">Wales</a></li>
-        <li id="UKHa"><a href="#">London</a></li>
-        <li id="UKIa"><a href="#">East of England</a></li>
-        <li id="UKJa"><a href="#">South East England</a></li>
-        <li id="UKKa"><a href="#">South West England</a></li>
+        <li id="SCTa"><a href="#" tabindex="12">Scotland</a></li>
+        <li id="NIRa"><a href="#" tabindex="11">Northern Ireland</a></li>
+        <li id="WLSa"><a href="#" tabindex="10">North East England</a></li>
+        <li id="UKCa"><a href="#" tabindex="9">North West England</a></li>
+        <li id="UKDa"><a href="#" tabindex="8">Yorkshire and The Humber</a></li>
+        <li id="UKEa"><a href="#" tabindex="6">East Midlands</a></li>
+        <li id="UKFa"><a href="#" tabindex="7">West Midlands</a></li>
+        <li id="UKGa"><a href="#" tabindex="5">Wales</a></li>
+        <li id="UKHa"><a href="#" tabindex="1">London</a></li>
+        <li id="UKIa"><a href="#" tabindex="2">East of England</a></li>
+        <li id="UKJa"><a href="#" tabindex="4">South East England</a></li>
+        <li id="UKKa"><a href="#" tabindex="3">South West England</a></li>
       </ul>
 </div>
 
-.css({'fill': 'rgba(11, 104, 170,' + regions[i].population/highest_value +')'})
+
 
 <script>
 $(document).ready(function(){
-    $("#SCTa").hover(function(){
-        $(".map #SCT").css({'fill': 'yellow'});
-        }, function(){
+    $("#SCTa").(function(){
         $(".map #SCT").css({'fill': 'blue'});
     });
 
-    $("#NIRa").hover(function(){
+    $("#NIRa").focusin(function(){
         $(".map #NIR").css({'fill': 'yellow'});
         }, function(){
         $(".map #NIR").css({'fill': 'blue'});
     });
 
-    $("#WLSa").hover(function(){
+    $("#WLSa").focusin(function(){
         $(".map #WLS").css({'fill': 'yellow'});
         }, function(){
         $(".map #WLS").css({'fill': 'blue'});
     });
 
-    $("#UKCa").hover(function(){
+    $("#UKCa").focusin(function(){
         $(".map #UKC").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKC").css({'fill': 'blue'});
     });
 
-    $("#UKDa").hover(function(){
+    $("#UKDa").focusin(function(){
         $(".map #UKD").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKD").css({'fill': 'blue'});
     });
 
-    $("#UKEa").hover(function(){
+    $("#UKEa").focusin(function(){
         $(".map #UKE").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKE").css({'fill': 'blue'});
     });
 
-    $("#UKFa").hover(function(){
+    $("#UKFa").focusin(function(){
         $(".map #UKF").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKF").css({'fill': 'blue'});
     });
 
-    $("#UKGa").hover(function(){
+    $("#UKGa").focusin(function(){
         $(".map #UKG").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKG").css({'fill': 'blue'});
     });
 
-    $("#UKHa").hover(function(){
+    $("#UKHa").focusin(function(){
         $(".map #UKH").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKH").css({'fill': 'blue'});
     });
 
-    $("#UKIa").hover(function(){
+    $("#UKIa").focusin(function(){
         $(".map #UKI").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKI").css({'fill': 'blue'});
     });
 
-    $("#UKJa").hover(function(){
+    $("#UKJa").focusin(function(){
         $(".map #UKJ").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKJ").css({'fill': 'blue'});
     });
 
-    $("#UKKa").hover(function(){
+    $("#UKKa").focusin(function(){
         $(".map #UKK").css({'fill': 'yellow'});
         }, function(){
         $(".map #UKK").css({'fill': 'blue'});
@@ -317,7 +319,7 @@ $(function() {
         .data('region', regions[i]);
     }
 
-    $('.map g').mouseover(function (e) {
+    $('.map g').focusin(function (e) {
         var region_data=$(this).data('region');
         $('<div class="info_panel">'+
             region_data.region_name + '<br>' +
@@ -326,7 +328,7 @@ $(function() {
          )
         .appendTo('body');
     })
-    .mouseleave(function () {
+    .foucsout(function () {
         $('.info_panel').remove();
     })
     .mousemove(function(e) {
