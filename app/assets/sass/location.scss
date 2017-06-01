@@ -464,12 +464,13 @@ p.bigger {
   background-color: #500a7a;
   overflow: visible;
   width: 100vw;
-  position:absolute;
-  left: 0
+  position: relative;
+  left: 0vw;
+  padding: 0.5em 0;
 }
 
 .bleed-quote {
-  width: 48%;
+  width: 55%;
   padding: 0 1em;
   margin-left: auto;
   margin-right: auto;
@@ -488,9 +489,11 @@ p.quoted {
   color: white;
   font-family: 'Georgia', serif !important;
   font-style: italic;
+  font-size: 1.1em;
   margin-top: 0.6em;
   margin-bottom: 0.5em;
   margin-left: 0.5em;
+  margin-right: 0.5em;
     background-image: url('/public/images/quote-right.png');
   background-repeat: no-repeat;
   background-position: bottom right;
