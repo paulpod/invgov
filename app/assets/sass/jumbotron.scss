@@ -41,6 +41,27 @@
 
 
 
+.jumbotron#west-midlands {
+  background-image: url('/public/images/hero-img/hero-bullring.jpg') ;
+  background-position: left top;
+  height: 360px;
+  border-bottom: 5px solid #500a7a;
+}
+@media (max-width: 767px) {
+.jumbotron#west-midlands {
+  background-image: url('/public/images/hero-img-mobile/hero-bullring.jpg');
+  background-position: left 50% top 0;
+  background-size: 160%;
+  overflow: visible;
+  height: 226px;
+  position: relative;
+  top:-20px;
+  }
+}
+
+
+
+
 
 
 

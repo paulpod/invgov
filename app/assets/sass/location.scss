@@ -375,6 +375,8 @@ margin: 28px auto
 p {
   font-size: 0.95em;
 }
+
+
 #industry-page .heading-large,
 #home-industries .heading-large, 
 #how-help .heading-large,
@@ -418,7 +420,97 @@ img.home-thumbnail {
 
 
 
+/* - - - Location profile page - - - */
+h1.location-xlarge {
+font-size: 3.6em;
+font-weight: 100;
+margin-bottom: 0;
+padding-bottom: 0;
+line-height: 1;
+}
+@media (max-width: 767px) {
+  h1.location-xlarge {
+  font-size: 2.6em;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
+  }
+}
+h2.location-medium {
+font-size: 1.6em;
+font-weight: 300;
+margin-bottom: 0;
+padding-bottom: 0;
+line-height: 1.4;
+}
+@media (max-width: 767px) {
+  h2.location-medium {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.4;
+  }
+}
 
+p.bigger {
+  font-size: 1.13em;
+  margin-top:1em;
+  line-height: 1.5;
+}
+
+.bleed-row {
+  background-color: #500a7a;
+  overflow: visible;
+  width: 100vw;
+  position:absolute;
+  left: 0
+}
+
+.bleed-quote {
+  width: 48%;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+div.quote {
+  padding: 0 1.1em;
+  background-image: url('/public/images/quote-left.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 1.5em;
+}
+p.quoted {
+  text-align: center;
+  color: white;
+  font-family: 'Georgia', serif !important;
+  font-style: italic;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+    background-image: url('/public/images/quote-right.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 1.5em;
+}
+p.quotesource {
+  text-align: center;
+  color: white;
+  font-size: 0.75em;
+  line-height: 1;
+  margin-top: 0;
+}
+
+
+/* - - - Kern the headlines - - - */
+/* - - - (yes, i am a knob) - - - */
+
+#west-midlands h1 {
+  margin-left: -0.2em;
+}
 
 
 
@@ -489,99 +581,4 @@ input#industry-picker.autocomplete__input {
 
 
 
-
-
-/* In research - industry lists, as mobile tablet, desktop */
-ul.industry-list {
-  margin-top:1em;
-}
-ul.industry-list li {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-ul.industry-list li a {
-color: #1E1348;
-}
-a.nounder {
-  text-decoration: none;
-}
-.mobile-list-img {
-  width: 100%;
-  display: inline-block;
-  margin: 0.3em 0 1.2em 0;
-}
-ul.image-list li  {
-    overflow: hidden;
-    height: 6em;
-    margin-top:1.5em;
-}
-.mobile-list-label {
-  
-}
-#force-mobile {
-  width: auto;
-  display: inline-block;
-}
-
-
-
-
-
-
-
-/* - - - - - - TABS for mapmix panel - - - - - - */
-
-.js-tabs .tab {
-  display: inline-block;
-  vertical-align: top;
-  cursor: hand;
-  cursor: pointer;
-  text-decoration: none;
-  color: #333;
-  font-weight: 400;
-  color: #0066cc;
-  font-size: 1em;
-  padding: 0.4em 0.66em 0.4em 0.66em;
-  border-top: 1px solid #f0f0f0;
-  border-right: 1px solid #f0f0f0;
-  background-color:#f0f0f0;
-}
-.js-tabs .tab:focus {
-    box-shadow: 0 0 3px 3px rgba(0,127,255,.5);
-}
-.js-tabs .tab:hover {
-    //background-color: #fff;
-}
-.js-tabs .tab.active {
-    //border-bottom: .2em solid #333;
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
-    cursor: default;
-    color: black;
-    background-color:white;
-}
-
-.js-tabs .panels {
-    //background-color: #f99;
-}
-
-.js-tabs .panel {
-    display: none;
-}
-.js-tabs .panel.active {
-    display: block;
-}
-.js-tabs .tab.actives {
-    border-bottom: .2em solid #333;
-    cursor: default;
-    color: black;
-}
-.panel {
-  //border-left: 1px solid #999;
-  padding-left:0.66em;
-}
-
-#chart-tab1 {
-
-}
 
