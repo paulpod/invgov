@@ -470,11 +470,17 @@ p.bigger {
 }
 
 .bleed-quote {
+  position: relative;
+  z-index: 5;
   width: 55%;
+  max-width: 536px;
   padding: 0 1em;
   margin-left: auto;
   margin-right: auto;
-
+}
+@media (max-width: 767px) {
+  .bleed-quote {
+  width: 92%;}
 }
 
 div.quote {
@@ -483,6 +489,7 @@ div.quote {
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 1.5em;
+
 }
 p.quoted {
   text-align: center;
@@ -494,7 +501,7 @@ p.quoted {
   margin-bottom: 0.5em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-    background-image: url('/public/images/quote-right.png');
+  background-image: url('/public/images/quote-right.png');
   background-repeat: no-repeat;
   background-position: bottom right;
   background-size: 1.5em;
@@ -508,11 +515,40 @@ p.quotesource {
 }
 
 
+/* - - - Full width bleed images for regions - - - */
+
+div.bleed-row#bleed-westmidlands {
+  background-image: url('/public/images/hero-img/hero-cathedral.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  z-index: 1;
+}
+div.bleedpic {
+  padding-top:7.5em;
+}
+div.bleedpic:before {
+    content: '';
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 60%, #000 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 60%, #000 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 60%, #000 100%)
+}
+
+
+
+
 /* - - - Kern the headlines - - - */
 /* - - - (yes, i am a knob) - - - */
 
 #west-midlands h1 {
   margin-left: -0.2em;
+
 }
 
 
