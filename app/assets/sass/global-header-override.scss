@@ -4,10 +4,10 @@
 }
 
 #global-header {
-  background-color: #fff;
+  background-color: #f0f0f0;
 }
   #global-header .header-wrapper {
-    background-color: #fff;
+    background-color: #f0f0f0;
     max-width: 990px;
     margin: 0 auto;
     padding-top: 8px;
@@ -15,7 +15,7 @@
     margin-bottom: -30px }
     @media (min-width: 769px) {
       #global-header .header-wrapper {
-            background-color: #fff;
+            background-color: #f0f0f0;
         padding-left: 0;
         padding-right: 0;
         padding-top: 8px;
@@ -23,7 +23,7 @@
         margin-bottom: 1px } }
     @media (min-width: 641px) {
       #global-header .header-wrapper {
-            background-color: #fff;
+            background-color: #f0f0f0;
 
         padding-left: 0;
         padding-right: 0;
@@ -72,7 +72,12 @@
 
 #global-header #logo img {
   visibility: visible;
-  width: 220px;
+  width: 220px; 
+}
+@media (max-width: 769px) {
+  #global-header #logo img {
+    margin-top: 10px;
+  }
 }
 
 #global-header #logo:hover, #global-header #logo:focus {

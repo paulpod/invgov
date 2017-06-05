@@ -7,155 +7,405 @@
 {% block content %}
 
 
-<div class="jumbotron" id="west-midlands">
-	<div class="jumbotron-content">
-		<div id="jumbotron-headlines">
-      <h1 class="location-xlarge">
-        The&nbsp;West&nbsp;Midlands
-      </h1>
-      <h2 class="location-medium">
-	      Hundreds of years of engineering expertise
-      </h2>
-    </div>
-
-    <!--<button>
-			Watch video
-    </button>-->
-
-  </div>
-</div>
 
 
 <main id="content" role="main" style="padding-bottom: 0">
 
 
-<div id="industry-page">
+<div id="contact-form">
 	<div class="grid-row">
-		<div class="column-half">
-			<p class="bigger">The West Midlands recorded 92 foreign direct investment (FDI) projects in 2015 - the largest number recorded in a decade.</p>
+		<div class="column-full">
 
-			<p class="bigger">The figure represented an increase of 46 per cent on 2014 when the region attracted 63 projects, according to new research.</p>
-		</div>
+			<p class="bigger" style="margin-top:3em">Contact our investment services team for:
+        <ul class="list list-bullet">
+          <li>practical support and information about taking your investment forward</li>
+          <li>insights into the UK market</li>
+          <li>help building connetions</li>
+        </ul>
+      </p>
+
+    <form action="/docs/tutorials-and-examples" method="post" class="form">
+
+      <h2 class="form-title heading-large">
+        Your details
+      </h2>
+
+      <!-- Full name -->
+      <div class="form-group">
+        <label class="form-label-bold" for="full-name">Full name</label>
+        <!-- <p class="form-hint">As shown on your birth certificate or passport</p> -->
+        <input type="text" class="form-control" id="full-name">
+      </div>
 
 
-    <div class="column-half">
 
-      <img src="/public/images/west-midlands-svgfake.png" width="100%" style="padding-top: 1em"> 
-
-      <p><a href="#">Source: regions report from EY 2016</a></p>
-    </div>
-
-
-	</div>
-</div>
-</main>
-
-  <div class="bleed-row">
-    <div class="bleed-quote">
-
-
-        <div class="quote">
-          <p class="quoted">
-          This region has never been more attractive to investors. It has caught the interest of companies across the world, led by the region’s highly competitive manufacturing sector
-          </p>
-        </div>
-
-        <p class="quotesource">Neil Rami, Chief Executive of Marketing Birmingham</p>
+      <!-- Job title -->
+      <div class="form-group">
+        <label class="form-label-bold" for="job-name">Job title</label>
+        <!-- <p class="form-hint">So we can contact you with the appropriate information</p> -->
+        <input type="text" class="form-control" id="job-name">
+      </div>
 
       
-    </div>
-  </div>
 
-
-
-<main id="content" role="main">
-
-
-<div id="industry-page">
-
-
-  <br clear="all">
-
-
-
-	<div class="grid-row">
-		<div class="column-one-third">
-
-			<p>The 2015 UK Attractiveness Survey, published by financial services EY, said this represented the largest market share of UK projects recorded in the West Midlands at 8.6 per cent.</p>
-
-      <p>The average market share for the West Midlands over the last decade was 6.9 per cent.</p>
-
-      <p>Since 2013, the performance of the West Midlands has seen a large improvement with total project numbers up more than 95 per cent between 2013 and 2015, led by investment into Birmingham which is the fourth most successful UK city (outside London) for attracting FDI.</p>
-
-      <p>Of the top UK cities in terms of numbers of FDI projects secured in 2015, the Midlands area had three locations represented - Birmingham (24 projects), Coventry (11 projects) and Solihull (ten projects).</p>
-
-    </div><!-- end col -->
-
-    <div class="column-two-thirds">
-
-    <img src="/public/images/location-map.png" width="100%">
-
-    </div>
-	</div><!-- end row -->
-</main>
-
-  <div class="bleed-row bleedpic" id="bleed-westmidlands">
-    <div class="bleed-quote">
-
-
-        <div class="quote">
-          <p class="quoted">
-          This region has never been more attractive to investors. It has caught the interest of companies across the world, led by the region’s highly competitive manufacturing sector
-          </p>
-        </div>
-
-        <p class="quotesource">Neil Rami, Chief Executive of Marketing Birmingham</p>
+      <!-- Email address -->
+      <div class="form-group">
+        <label class="form-label-bold" for="email">Business email</label>
+        <!-- <p class="form-hint">So we can contact you using email</p> -->
+        <input type="text" class="form-control" id="email">
+      </div>
 
       
-    </div>
-  </div>
 
-<main id="content" role="main">
-
-
-<div id="industry-page">
-
-	<div class="grid-row">
-
-		<div class="column-half">
-
-
-			<h2 class="heading-large">Automotive industries</h2>
-
-
-			<h4 class="heading-small"><a href="#">Automotive research and development</a></h4>
-
-			<img src="/public/images/thumbnail-4-4/research-and-development.jpg" class="home-thumbnail">
-
-			<p>The UK offers unrivalled support for the global expansion of your business. It is the most internationally-focused financial marketplace in the world.</p>
-
-			<br clear="all">
+      <!-- Phone number -->
+      <div class="form-group">
+        <label class="form-label-bold" for="email">Phone number</label>
+        <!-- <p class="form-hint">So we can contact you on the phone</p> -->
+        <input type="text" class="form-control" id="email">
+      </div>
 
 
 
-			<h4 class="heading-small"><a href="#">Automotive supply chain</a></h4>
 
-			<img src="/public/images/thumbnail-4-4/supply-chain.jpg" class="home-thumbnail">
+      <h2 class="form-title heading-large">
+        Your company
+      </h2>
 
-
-			<p>As the demand for UK-made vehicles continues to boom, UK automotive production will exceed 2 million cars by 2020. Which means a huge opportunity for businesses involved in all parts of the supply chain.</p>
-
-			<br clear="all">
-
-
-
-			<h4 class="heading-small"><a href="#">Motorsport</a></h4>
-
-			<img src="/public/images/thumbnail-4-4/motorsport.jpg" class="home-thumbnail">
+      <!-- Company name -->
+      <div class="form-group">
+        <label class="form-label-bold" for="company-name">Company name</label>
+        <!-- <p class="form-hint">How your compnay is most widely known</p> -->
+        <input type="text" class="form-control" id="company-name">
+      </div>
 
 
-			<p>The UK leads the world in motor sport with a turnover of 9 billion GBP and more than 4,500 businesses operating in the sector.</p>
+      <!-- Country of origin -->
+      <div class="form-group">
 
+        <label for="autocomplete-progressiveEnhancement">Which country are you based in?</label>
+        <p class="form-hint">We will use this information to put you in touch with your closest British embassy or high commission</p>
+
+        <div class="autocomplete-wrapper">
+          <select id="location-picker">
+           <option value="">Type a country name</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AX">Åland Islands</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+            <option value="AO">Angola</option>
+            <option value="AI">Anguilla</option>
+            <option value="AQ">Antarctica</option>
+            <option value="AG">Antigua and Barbuda</option>
+            <option value="AR">Argentina</option>
+            <option value="AM">Armenia</option>
+            <option value="AW">Aruba</option>
+            <option value="AU">Australia</option>
+            <option value="AT">Austria</option>
+            <option value="AZ">Azerbaijan</option>
+            <option value="BS">Bahamas</option>
+            <option value="BH">Bahrain</option>
+            <option value="BD">Bangladesh</option>
+            <option value="BB">Barbados</option>
+            <option value="BY">Belarus</option>
+            <option value="BE">Belgium</option>
+            <option value="BZ">Belize</option>
+            <option value="BJ">Benin</option>
+            <option value="BM">Bermuda</option>
+            <option value="BT">Bhutan</option>
+            <option value="BO">Bolivia, Plurinational State of</option>
+            <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+            <option value="BA">Bosnia and Herzegovina</option>
+            <option value="BW">Botswana</option>
+            <option value="BV">Bouvet Island</option>
+            <option value="BR">Brazil</option>
+            <option value="IO">British Indian Ocean Territory</option>
+            <option value="BN">Brunei Darussalam</option>
+            <option value="BG">Bulgaria</option>
+            <option value="BF">Burkina Faso</option>
+            <option value="BI">Burundi</option>
+            <option value="KH">Cambodia</option>
+            <option value="CM">Cameroon</option>
+            <option value="CA">Canada</option>
+            <option value="CV">Cape Verde</option>
+            <option value="KY">Cayman Islands</option>
+            <option value="CF">Central African Republic</option>
+            <option value="TD">Chad</option>
+            <option value="CL">Chile</option>
+            <option value="CN">China</option>
+            <option value="CX">Christmas Island</option>
+            <option value="CC">Cocos (Keeling) Islands</option>
+            <option value="CO">Colombia</option>
+            <option value="KM">Comoros</option>
+            <option value="CG">Congo</option>
+            <option value="CD">Congo, the Democratic Republic of the</option>
+            <option value="CK">Cook Islands</option>
+            <option value="CR">Costa Rica</option>
+            <option value="CI">Côte d'Ivoire</option>
+            <option value="HR">Croatia</option>
+            <option value="CU">Cuba</option>
+            <option value="CW">Curaçao</option>
+            <option value="CY">Cyprus</option>
+            <option value="CZ">Czech Republic</option>
+            <option value="DK">Denmark</option>
+            <option value="DJ">Djibouti</option>
+            <option value="DM">Dominica</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="EC">Ecuador</option>
+            <option value="EG">Egypt</option>
+            <option value="SV">El Salvador</option>
+            <option value="GQ">Equatorial Guinea</option>
+            <option value="ER">Eritrea</option>
+            <option value="EE">Estonia</option>
+            <option value="ET">Ethiopia</option>
+            <option value="FK">Falkland Islands (Malvinas)</option>
+            <option value="FO">Faroe Islands</option>
+            <option value="FJ">Fiji</option>
+            <option value="FI">Finland</option>
+            <option value="FR">France</option>
+            <option value="GF">French Guiana</option>
+            <option value="PF">French Polynesia</option>
+            <option value="TF">French Southern Territories</option>
+            <option value="GA">Gabon</option>
+            <option value="GM">Gambia</option>
+            <option value="GE">Georgia</option>
+            <option value="DE">Germany</option>
+            <option value="GH">Ghana</option>
+            <option value="GI">Gibraltar</option>
+            <option value="GR">Greece</option>
+            <option value="GL">Greenland</option>
+            <option value="GD">Grenada</option>
+            <option value="GP">Guadeloupe</option>
+            <option value="GU">Guam</option>
+            <option value="GT">Guatemala</option>
+            <option value="GG">Guernsey</option>
+            <option value="GN">Guinea</option>
+            <option value="GW">Guinea-Bissau</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haiti</option>
+            <option value="HM">Heard Island and McDonald Islands</option>
+            <option value="VA">Holy See (Vatican City State)</option>
+            <option value="HN">Honduras</option>
+            <option value="HK">Hong Kong</option>
+            <option value="HU">Hungary</option>
+            <option value="IS">Iceland</option>
+            <option value="IN">India</option>
+            <option value="ID">Indonesia</option>
+            <option value="IR">Iran, Islamic Republic of</option>
+            <option value="IQ">Iraq</option>
+            <option value="IE">Ireland</option>
+            <option value="IM">Isle of Man</option>
+            <option value="IL">Israel</option>
+            <option value="IT">Italy</option>
+            <option value="JM">Jamaica</option>
+            <option value="JP">Japan</option>
+            <option value="JE">Jersey</option>
+            <option value="JO">Jordan</option>
+            <option value="KZ">Kazakhstan</option>
+            <option value="KE">Kenya</option>
+            <option value="KI">Kiribati</option>
+            <option value="KP">Korea, Democratic People's Republic of</option>
+            <option value="KR">Korea, Republic of</option>
+            <option value="KW">Kuwait</option>
+            <option value="KG">Kyrgyzstan</option>
+            <option value="LA">Lao People's Democratic Republic</option>
+            <option value="LV">Latvia</option>
+            <option value="LB">Lebanon</option>
+            <option value="LS">Lesotho</option>
+            <option value="LR">Liberia</option>
+            <option value="LY">Libya</option>
+            <option value="LI">Liechtenstein</option>
+            <option value="LT">Lithuania</option>
+            <option value="LU">Luxembourg</option>
+            <option value="MO">Macao</option>
+            <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+            <option value="MG">Madagascar</option>
+            <option value="MW">Malawi</option>
+            <option value="MY">Malaysia</option>
+            <option value="MV">Maldives</option>
+            <option value="ML">Mali</option>
+            <option value="MT">Malta</option>
+            <option value="MH">Marshall Islands</option>
+            <option value="MQ">Martinique</option>
+            <option value="MR">Mauritania</option>
+            <option value="MU">Mauritius</option>
+            <option value="YT">Mayotte</option>
+            <option value="MX">Mexico</option>
+            <option value="FM">Micronesia, Federated States of</option>
+            <option value="MD">Moldova, Republic of</option>
+            <option value="MC">Monaco</option>
+            <option value="MN">Mongolia</option>
+            <option value="ME">Montenegro</option>
+            <option value="MS">Montserrat</option>
+            <option value="MA">Morocco</option>
+            <option value="MZ">Mozambique</option>
+            <option value="MM">Myanmar</option>
+            <option value="NA">Namibia</option>
+            <option value="NR">Nauru</option>
+            <option value="NP">Nepal</option>
+            <option value="NL">Netherlands</option>
+            <option value="NC">New Caledonia</option>
+            <option value="NZ">New Zealand</option>
+            <option value="NI">Nicaragua</option>
+            <option value="NE">Niger</option>
+            <option value="NG">Nigeria</option>
+            <option value="NU">Niue</option>
+            <option value="NF">Norfolk Island</option>
+            <option value="MP">Northern Mariana Islands</option>
+            <option value="NO">Norway</option>
+            <option value="OM">Oman</option>
+            <option value="PK">Pakistan</option>
+            <option value="PW">Palau</option>
+            <option value="PS">Palestinian Territory, Occupied</option>
+            <option value="PA">Panama</option>
+            <option value="PG">Papua New Guinea</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Peru</option>
+            <option value="PH">Philippines</option>
+            <option value="PN">Pitcairn</option>
+            <option value="PL">Poland</option>
+            <option value="PT">Portugal</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="QA">Qatar</option>
+            <option value="RE">Réunion</option>
+            <option value="RO">Romania</option>
+            <option value="RU">Russian Federation</option>
+            <option value="RW">Rwanda</option>
+            <option value="BL">Saint Barthélemy</option>
+            <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+            <option value="KN">Saint Kitts and Nevis</option>
+            <option value="LC">Saint Lucia</option>
+            <option value="MF">Saint Martin (French part)</option>
+            <option value="PM">Saint Pierre and Miquelon</option>
+            <option value="VC">Saint Vincent and the Grenadines</option>
+            <option value="WS">Samoa</option>
+            <option value="SM">San Marino</option>
+            <option value="ST">Sao Tome and Principe</option>
+            <option value="SA">Saudi Arabia</option>
+            <option value="SN">Senegal</option>
+            <option value="RS">Serbia</option>
+            <option value="SC">Seychelles</option>
+            <option value="SL">Sierra Leone</option>
+            <option value="SG">Singapore</option>
+            <option value="SX">Sint Maarten (Dutch part)</option>
+            <option value="SK">Slovakia</option>
+            <option value="SI">Slovenia</option>
+            <option value="SB">Solomon Islands</option>
+            <option value="SO">Somalia</option>
+            <option value="ZA">South Africa</option>
+            <option value="GS">South Georgia and the South Sandwich Islands</option>
+            <option value="SS">South Sudan</option>
+            <option value="ES">Spain</option>
+            <option value="LK">Sri Lanka</option>
+            <option value="SD">Sudan</option>
+            <option value="SR">Suriname</option>
+            <option value="SJ">Svalbard and Jan Mayen</option>
+            <option value="SZ">Swaziland</option>
+            <option value="SE">Sweden</option>
+            <option value="CH">Switzerland</option>
+            <option value="SY">Syrian Arab Republic</option>
+            <option value="TW">Taiwan, Province of China</option>
+            <option value="TJ">Tajikistan</option>
+            <option value="TZ">Tanzania, United Republic of</option>
+            <option value="TH">Thailand</option>
+            <option value="TL">Timor-Leste</option>
+            <option value="TG">Togo</option>
+            <option value="TK">Tokelau</option>
+            <option value="TO">Tonga</option>
+            <option value="TT">Trinidad and Tobago</option>
+            <option value="TN">Tunisia</option>
+            <option value="TR">Turkey</option>
+            <option value="TM">Turkmenistan</option>
+            <option value="TC">Turks and Caicos Islands</option>
+            <option value="TV">Tuvalu</option>
+            <option value="UG">Uganda</option>
+            <option value="UA">Ukraine</option>
+            <option value="AE">United Arab Emirates</option>
+            <option value="GB">United Kingdom</option>
+            <option value="UK">United Kingdom</option>
+            <option value="US">United States</option>
+            <option value="UM">United States Minor Outlying Islands</option>
+            <option value="UY">Uruguay</option>
+            <option value="UZ">Uzbekistan</option>
+            <option value="VU">Vanuatu</option>
+            <option value="VE">Venezuela, Bolivarian Republic of</option>
+            <option value="VN">Viet Nam</option>
+            <option value="VG">Virgin Islands, British</option>
+            <option value="VI">Virgin Islands, U.S.</option>
+            <option value="WF">Wallis and Futuna</option>
+            <option value="EH">Western Sahara</option>
+            <option value="YE">Yemen</option>
+            <option value="ZM">Zambia</option>
+            <option value="ZW">Zimbabwe</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <fieldset>
+
+          <legend class="visually-hidden">Number of staff</legend>
+
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="radio-group" value="less10">
+            <label for="radio-1">Less than 10</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="radio-group" value="10to50">
+            <label for="radio-2">10 to 50</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="radio-group" value="51to250">
+            <label for="radio-3">51 to 250</label>
+          </div>
+           <div class="multiple-choice">
+            <input id="radio-4" type="radio" name="radio-group" value="over250">
+            <label for="radio-4">more than 250</label>
+          </div>
+
+        </fieldset>
+        </div>
+
+
+
+      <!-- Company website -->
+      <div class="form-group">
+        <label class="form-label-bold" for="job-name">Company website</label>
+        <!-- <p class="form-hint">So we can check you out online</p> -->
+        <input type="text" class="form-control" id="company-website">
+      </div>
+
+      <div class="multiple-choice">
+        <input id="website" name="website" type="checkbox" value="checkit">
+        <label for="website">We don't have a website</label>
+      </div>
+
+      <br clear="all">
+
+
+
+      <h2 class="form-title heading-large">
+        Tell us about your investment
+      </h2>
+
+      <p class="form-hint">Tell us about your company and your plans for the UK in terms of the size of investment, operational and recruitment plans. Please also tell us what help you would like from the UK government.</p>
+
+
+      <textarea name="investment[project]" class="form-control" id="investment" cols="30" rows="10" maxlength="2500" required="required" style="margin-bottom: 1.5em"></textarea>
+      <button class="home-more-button" type="submit" style="margin-bottom: 1.5em">Contact us</button>
+
+
+
+      <p class="form-hint">The team may put you in touch with a UK government office in your region to support you with advice relevant to your country. By sending us your details you accept our <a href="#">terms and conditions</a>.</p>
+
+
+
+
+
+
+		
 
 
 
@@ -167,6 +417,12 @@
 
 
 </main>
+
+<script>
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#location-picker')
+})
+</script>
 
 {% endblock %}
 

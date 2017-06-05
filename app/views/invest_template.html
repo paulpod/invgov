@@ -45,7 +45,7 @@
     </div>-->
 
 
-  <div class="navigation-strip background--dark-navy" style="height:18px;margin-bottom: 0.85em">
+  <div class="navigation-strip background--dark-navy" style="height:18px;">
     <!--<ul class="list-inline list-separators">
       <li class="float--left soft-half--right navigation-skip-to"><a class="link link--grey" href="#content" title="Skip to main content"><strong>Skip to main content</strong></a></li>
       <li class="float--left soft-half--right"><a class="logo-hmg" href="https://www.gov.uk/" title="Go to the GOV.UK homepage"><img src="/public/images/hm_government_logo_horizontal.svg" alt="HM Government logo" height="25px"></a></li>
@@ -61,7 +61,7 @@
 
     
     <header role="banner" id="global-header" class="{% block header_class %}{% endblock %}">
-      <div class="header-wrapper">
+      <div class="header-wrapper" style="background-color: ">
         <div class="header-global">
           <div class="header-logo">
             <a href="{{ homepage_url|default('https://great.gov.uk') }}" title="{{ logo_link_title|default('Go to the GREAT.GOV.UK homepage') }}" id="logo" class="content">
@@ -82,26 +82,60 @@
     {% block content %}{% endblock %}
 
     <footer class="group js-footer" id="footer" role="contentinfo">
+      <div class="footer-content">
 
-      <div class="footer-wrapper">
-        {% block footer_top %}{% endblock %}
-
-        <div class="footer-meta">
-          <div class="footer-meta-inner">
-            {% block footer_support_links %}{% endblock %}
-
-            <div class="open-government-licence">
-              <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
-              
-                {% block licence_message %}<p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>{% endblock %}
-              
-            </div>
+    
+          <div class="footer-logo-block">
+            <img src="/public/images/invest-in-great-stacked.png" class="footer-logo">
           </div>
+
+
+          <div class="footer-list">
+
+            <ul class="footer-list">
+              <li>Home</li>
+              <li>Industries</li>
+              <li>Investment locations</li>
+              <li>Set up guide</li>
+              <li>Contact us</li>
+            </ul>
+
+          </div>
+
+
+
+         <div class="footer-list">
+
+            <ul class="footer-list">
+              <li>About great.gov.uk</li>
+              <li>Privacy and cookies</li>
+              <li>Terms &amp; Conditions</li>
+              <li>Department for International Trade</li>
+            </ul>
+
+          </div>
+
+
+
+          <br clear="all">
+
+
+
+
+            
+
+          <div class="footer-hmgov" >
+            
+          </div>
+
 
           <div class="copyright">
-            <a href="http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/copyright-and-re-use/crown-copyright/">{{ crown_copyright_message|default('&copy; Crown copyright')|safe }}</a>
+            &copy; Crown copyright 2017. All rights reserved.
           </div>
-        </div>
+
+          <br clear="all">
+
+
       </div>
     </footer>
 
