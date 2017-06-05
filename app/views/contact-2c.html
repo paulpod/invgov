@@ -1,0 +1,75 @@
+{% extends "contact-layout.html" %}
+
+{% block page_title %}
+  INVEST in GREAT
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+
+<div id="contact-form">
+	<div class="grid-row">
+		<div class="column-full">
+
+			
+
+
+      <form action="index" method="post" class="form">
+
+
+
+
+
+
+      <h2 class="form-title heading-large">
+        Tell us about your investment
+      </h2>
+
+      <p class="form-hint">Tell us about your company and your plans for the UK in terms of the size of investment, operational and recruitment plans. Please also tell us what help you would like from the UK government.</p>
+
+
+      <textarea name="investment[project]" class="form-control" id="investment" cols="30" rows="10" maxlength="2500" style="margin-bottom: 1.5em"></textarea>
+      <!--<button class="home-more-button" type="submit" style="margin-bottom: 1.5em">Contact us</button>-->
+
+       <!-- Continue button -->
+        <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+        </div>
+
+
+
+
+      <p class="form-hint">The team may put you in touch with a UK government office in your region to support you with advice relevant to your country. By sending us your details you accept our <a href="#">terms and conditions</a>.</p>
+
+
+
+
+
+
+		
+
+
+
+    </div><!-- end col -->
+	</div><!-- end row -->
+
+	
+</div>
+
+
+</main>
+
+<script>
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#location-picker')
+})
+</script>
+
+{% endblock %}
+
+

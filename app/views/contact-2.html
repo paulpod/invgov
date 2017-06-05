@@ -1,0 +1,103 @@
+{% extends "contact-layout.html" %}
+
+{% block page_title %}
+  INVEST in GREAT
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+
+<div id="contact-form">
+	<div class="grid-row">
+		<div class="column-full">
+
+			<p class="bigger" style="margin-top:3em">Contact our investment services team for:
+        <ul class="list list-bullet">
+          <li>practical support and information about taking your investment forward</li>
+          <li>insights into the UK market</li>
+          <li>help building connetions</li>
+        </ul>
+      </p>
+
+      <form action="contact-2b" method="post" class="form">
+
+
+      <h2 class="form-title heading-large">
+        Your details
+      </h2>
+
+      <!-- Full name -->
+      <div class="form-group">
+        <label class="form-label-bold" for="full-name">Full name</label>
+        <!-- <p class="form-hint">As shown on your birth certificate or passport</p> -->
+        <input type="text" class="form-control" id="full-name">
+      </div>
+
+
+
+      <!-- Job title -->
+      <div class="form-group">
+        <label class="form-label-bold" for="job-name">Job title</label>
+        <!-- <p class="form-hint">So we can contact you with the appropriate information</p> -->
+        <input type="text" class="form-control" id="job-name">
+      </div>
+
+      
+
+      <!-- Email address -->
+      <div class="form-group">
+        <label class="form-label-bold" for="email">Business email</label>
+        <!-- <p class="form-hint">So we can contact you using email</p> -->
+        <input type="text" class="form-control" id="email">
+      </div>
+
+      
+
+      <!-- Phone number -->
+      <div class="form-group">
+        <label class="form-label-bold" for="email">Phone number</label>
+        <!-- <p class="form-hint">So we can contact you on the phone</p> -->
+        <input type="text" class="form-control" id="email">
+      </div>
+
+
+
+        <!-- Continue button -->
+        <div class="form-group">
+        <input type="submit" class="button" value="Continue">
+        </div>
+
+
+
+
+
+
+
+
+		
+
+
+
+    </div><!-- end col -->
+	</div><!-- end row -->
+
+	
+</div>
+
+
+</main>
+
+<script>
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#location-picker')
+})
+</script>
+
+{% endblock %}
+
+
