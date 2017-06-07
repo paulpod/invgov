@@ -360,6 +360,57 @@ p.form-pagination {
   margin:1em 0 0.2em 0;
 }
 
+input.form-control {
+  border-radius: 3px;
+}
+
+
+
+
+
+/* For the iOPS mapping on Region/Location pages */
+.mapbox {
+  display: inline-block;
+}
+.maptools {
+}
+.map-sector-list {
+  margin: 2em 0;
+}
+.map-sector-list li {
+background: url('/public/images/list-radio-off.png') no-repeat;
+padding: 0.4em 0 0.66em 2.8em;
+background-size: 40px 40px;
+margin-bottom: 0.6em;
+line-height: 1.1;
+overflow: visible;
+
+}
+.basemap {
+  position: absolute;
+  width:600px;
+}
+.map-overlay1 {
+  position: absolute;
+  width:600px;
+}
+/* this is for the transport layer, quite transparent  */
+.map-overlay2 {
+  position: absolute;
+  width:600px;
+  background-blend-mode: multiply;
+  opacity: 0.3;
+}
+.map-overlay3 {
+  position: absolute;
+  width:600px;
+display: none;}
+.industry-active {
+  background-color:red;
+  }
+.industry-inactive {
+}
+
 
 
 /* For homepage existing rebuild */

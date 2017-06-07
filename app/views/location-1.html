@@ -28,8 +28,6 @@
 
 <main id="content" role="main" style="padding-bottom: 0">
 
-
-<div id="industry-page">
 	<div class="grid-row">
 		<div class="column-half">
 			<p class="bigger">The West Midlands recorded 92 foreign direct investment (FDI) projects in 2015 - the largest number recorded in a decade.</p>
@@ -47,7 +45,7 @@
 
 
 	</div>
-</div>
+
 </main>
 
   <div class="bleed-row">
@@ -70,103 +68,454 @@
 
 <main id="content" role="main">
 
-
-<div id="industry-page">
-
-
   <br clear="all">
 
+  <div class="grid-row">
+		<div class="column-two-thirds">
+
+     <div class="mapbox">
+
+       <img src="/public/images/iops-maps/west-mid-main.png" width="100%" class="basemap">
+
+       <img src="/public/images/iops-maps/west-mid-labels.png" width="100%" class="map-overlay1" id="maplabels">
+
+       <img src="/public/images/iops-maps/west-mid-transport.png" width="100%" class="map-overlay2 positions-info-row1" id="transport">
+
+       <img src="/public/images/iops-maps/west-mid-aero-rnd.png" width="100%" class="map-overlay3 overlay-aero" id="map-aero">
+
+       <img src="/public/images/iops-maps/west-mid-creative-rnd.png" width="100%" class="map-overlay3 overlay-creative" id="map-creative">
+
+       <img src="/public/images/iops-maps/west-mid-energy-rnd.png" width="100%" class="map-overlay3 overlay-energy" id="map-energy">
+
+     </div><!-- end mapbox -->
+
+   </div><!-- end column -->
 
 
-	<div class="grid-row">
-		<div class="column-one-third">
 
-			<p>The 2015 UK Attractiveness Survey, published by financial services EY, said this represented the largest market share of UK projects recorded in the West Midlands at 8.6 per cent.</p>
+   <div class="column-one-third">
 
-      <p>The average market share for the West Midlands over the last decade was 6.9 per cent.</p>
+      <div class="maptools">
 
-      <p>Since 2013, the performance of the West Midlands has seen a large improvement with total project numbers up more than 95 per cent between 2013 and 2015, led by investment into Birmingham which is the fourth most successful UK city (outside London) for attracting FDI.</p>
+        <fieldset>
 
-      <p>Of the top UK cities in terms of numbers of FDI projects secured in 2015, the Midlands area had three locations represented - Birmingham (24 projects), Coventry (11 projects) and Solihull (ten projects).</p>
+          <legend class="visually-hidden">Apply map layers</legend>
 
-    </div><!-- end col -->
+          <div class="multiple-choice">
+            <input id="radio-1" type="checkbox" name="radio-group" value="maplabels" checked="true" class="checkbox">
+            <label for="radio-1">Labels</label>
+          </div>
 
-    <div class="column-two-thirds">
+          <div class="multiple-choice" style="border-bottom:2px solid #999;padding-bottom:1.75em;margin-bottom: 1.4em">
+            <input id="radio-2" type="checkbox" name="radio-group" value="transport" checked="true">
+            <label for="radio-2">Transport Links</label>
+          </div>
 
-    <img src="/public/images/location-map.png" width="100%">
+          <!-- - - - - - - -->
 
-    </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="checkbox" name="radio-group" value="businesses">
+            <label for="radio-3">Significant businesses</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-4" type="checkbox" name="radio-group" value="financial">
+            <label for="radio-4">Financial incentives</label>
+          </div>
+
+          <div class="multiple-choice">
+            <input id="radio-5" type="checkbox" name="radio-group" value="randd">
+            <label for="radio-5">R &amp; D Hubs</label>
+          </div>
+
+        </fieldset>
+
+
+
+        <ul class="map-sector-list">
+          
+
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-aero');">
+              Aerospace
+            </a>
+          </li>
+          
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-aero');">
+              Advanced manufacturing</a>
+          </li>
+          
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-auto');">
+              Automotive</a>
+          </li>
+
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-creative');">
+              Creative</a>
+          </li>
+
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-energy');">
+              Energy generation</a>
+          </li>
+
+
+          <li><a href="#">Financial services</a></li>
+          <li><a href="#">Food and drink<br>manufacturing</a></li>
+          <li><a href="#">Health and life sciences</a></li>
+          <li><a href="#">Retail</a></li>
+          <li><a href="#">Technology</a></li>
+        </ul>
+
+
+
+        <div id="industry-picker-box">
+
+          <label class="form-label" for="industry-picker">
+            Find a specific industry
+          </label>
+
+          <select id="industry-picker">
+            <option value="">What kind of business?</option>
+            <option value="000">Manufacturing technology &amp; equipment</option>
+            <option value="000">Sustainable manufacturing</option>
+            <option value="000">Mechanical, Electrical & Process engineering</option>
+            <option value="000">Advanced Materials/Composites</option>
+            <option value="000">Air traffic management</option>
+            <option value="000">Airframe & fixed wings</option>
+            <option value="000">Autonomous systems & rotary wings</option>
+            <option value="000">Engine systems</option>
+            <option value="000">Equipment</option>
+            <option value="000">Space systems & equipment</option>
+            <option value="000">MRO</option>
+            <option value="000">Food & drink processing</option>
+            <option value="000">Food & drink production & manufacturing</option>
+            <option value="000">Health, wellbeing and safety</option>
+            <option value="000">Animal and crop husbandry</option>
+            <option value="000">Intensive farming</option>
+            <option value="000">Sustainability</option>
+            <option value="000">Sustainable farming</option>
+            <option value="000">Non-commercial vehicles</option>
+            <option value="000">Electric vehicles</option>
+            <option value="000">Specialist vehicles inc. motorsport & construction</option>
+            <option value="000">Components</option>
+            <option value="000">Services</option>
+            <option value="000">Business & professional services</option>
+            <option value="000">Consultancy</option>
+            <option value="000">Accountancy</option>
+            <option value="000">BPO - Business Process Outsourcing</option>
+            <option value="000">Coatings</option>
+            <option value="000">Fine & speciality chemicals</option>
+            <option value="000">Paints</option>
+            <option value="000">Petrochemicals</option>
+            <option value="000">Plastics</option>
+            <option value="000">Soaps & detergents</option>
+            <option value="000">Commercial & industrial</option>
+            <option value="000">Construction products</option>
+            <option value="000">Contracting services</option>
+            <option value="000">Low carbon & green buildings</option>
+            <option value="000">Material</option>
+            <option value="000">Regeneration</option>
+            <option value="000">Residential</option>
+            <option value="000">Roads & Bridges</option>
+            <option value="000">Built environment</option>
+            <option value="000">Infrastructure including ports & airports</option>
+            <option value="000">Leisure equipment</option>
+            <option value="000">Sports equipment</option>
+            <option value="000">Jewellery</option>
+            <option value="000">Tableware</option>
+            <option value="000">Cosmetics</option>
+            <option value="000">Stationery</option>
+            <option value="000">Home decorations</option>
+            <option value="000">Gift products</option>
+            <option value="000">Travel accessories</option>
+            <option value="000">Garden & pet products</option>
+            <option value="000">Advertising</option>
+            <option value="000">Architecture</option>
+            <option value="000">Art</option>
+            <option value="000">Computer gaming</option>
+            <option value="000">Crafts</option>
+            <option value="000">Design</option>
+            <option value="000">Fashion</option>
+            <option value="000">Digital content</option>
+            <option value="000">Furniture design</option>
+            <option value="000">Museums/galleries</option>
+            <option value="000">Music</option>
+            <option value="000">Performing arts</option>
+            <option value="000">Publishing</option>
+            <option value="000">Screen (film, TV, radio, animation)</option>
+            <option value="000">Textiles & ceramics</option>
+            <option value="000">Private-sector training providers</option>
+            <option value="000">Biomass</option>
+            <option value="000">Fuel cells</option>
+            <option value="000">Geothermal</option>
+            <option value="000">Fossil fuels - Oil & Gas</option>
+            <option value="000">Carbon capture and abatement</option>
+            <option value="000">Hydro-electric</option>
+            <option value="000">Nuclear</option>
+            <option value="000">Solar</option>
+            <option value="000">Tide</option>
+            <option value="000">Transmission</option>
+            <option value="000">Distribution and storage</option>
+            <option value="000">Microgeneration</option>
+            <option value="000">Wave</option>
+            <option value="000">Wind</option>
+            <option value="000">Decontamination</option>
+            <option value="000">Waste & pollution management</option>
+            <option value="000">Water supply & sanitation</option>
+            <option value="000">Banking</option>
+            <option value="000">Insurance</option>
+            <option value="000">Pensions</option>
+            <option value="000">Fund management</option>
+            <option value="000">Private equity and venture capital</option>
+            <option value="000">Trading</option>
+            <option value="000">PPP</option>
+            <option value="000">Communications</option>
+            <option value="000">Electronic products</option>
+            <option value="000">Software</option>
+            <option value="000">IT Services</option>
+            <option value="000">Cloud computing</option>
+            <option value="000">Data mining</option>
+            <option value="000">Genetic engineering</option>
+            <option value="000">Fermentation technology</option>
+            <option value="000">Biotransformation</option>
+            <option value="000">Enzyme technology</option>
+            <option value="000">In-silico modelling</option>
+            <option value="000">Structural biology</option>
+            <option value="000">Bioinformatics</option>
+            <option value="000">Biosensors</option>
+            <option value="000">Environmental services</option>
+            <option value="000">Low carbon technology & finance</option>
+            <option value="000">Drugs & delivery technology</option>
+            <option value="000">Regenerative medicine</option>
+            <option value="000">Medical devices</option>
+            <option value="000">Research services</option>
+            <option value="000">Healthcare systems & services</option>
+            <option value="000">Clothing</option>
+            <option value="000">Footwear</option>
+            <option value="000">Retail outlets</option>
+            <option value="000">Supply chain / Logistics</option>
+            <option value="000">Access control systems</option>
+            <option value="000">Biometrics</option>
+            <option value="000">Surveillance & sensors</option>
+            <option value="000">Fire</option>
+            <option value="000">Information & data security</option>
+            <option value="000">Manned security systems</option>
+            <option value="000">Communications</option>
+            <option value="000">Forensics</option>
+            <option value="000">Counter terrorism</option>
+            <option value="000">Consultancy</option>
+            <option value="000">Training</option>
+            <option value="000">Safety</option>
+            <option value="000">Cyber security</option>
+            <option value="000">Information assurance</option>
+            <option value="000">Airports</option>
+            <option value="000">Ports</option>
+            <option value="000">Rail</option>
+            <option value="000">Road</option>
+            <option value="000">Marine</option>
+
+            <option value="000">Advanced Manufacturing/Engineering</option>
+            <option value="000">Aerospace</option>
+            <option value="000">AgriFood</option>
+            <option value="000">Automotive</option>
+            <option value="000">Business Services</option>
+            <option value="000">Chemicals</option>
+            <option value="000">Construction inc. built environment</option>
+            <option value="000">Consumer & Leisure</option>
+            <option value="000">Creative Industries</option>
+            <option value="000">Education</option>
+            <option value="000">Energy</option>
+            <option value="000">Environment & Water</option>
+            <option value="000">Financial Services</option>
+            <option value="000">ICT</option>
+            <option value="000">Industrial Biotechnology</option>
+            <option value="000">Low Carbon Industry</option>
+            <option value="000">Pharmaceuticals & Healthcare</option>
+            <option value="000">Retail and Logistics</option>
+            <option value="000">Security</option>
+            <option value="000">Transport</option>
+
+          </select>
+
+          
+
+        </div><!-- picker box -->
+
+      </div><!-- end maptools -->
+
+    </div><!-- end column -->
+
 	</div><!-- end row -->
+
 </main>
 
-  <div class="bleed-row bleedpic" id="bleed-westmidlands">
-    <div class="bleed-quote">
 
 
-        <div class="quote">
-          <p class="quoted">
-          This region has never been more attractive to investors. It has caught the interest of companies across the world, led by the region’s highly competitive manufacturing sector
-          </p>
-        </div>
+<div class="bleed-row bleedpic" id="bleed-westmidlands">
+  <div class="bleed-quote">
 
-        <p class="quotesource">Neil Rami, Chief Executive of Marketing Birmingham</p>
-
-      
+    <div class="quote">
+      <p class="quoted">
+      This region has never been more attractive to investors. It has caught the interest of companies across the world, led by the region’s highly competitive manufacturing sector
+      </p>
     </div>
+
+    <p class="quotesource">Neil Rami, Chief Executive of Marketing Birmingham</p>
+
+  </div>
+</div>
+
+<main id="content" role="main" style="padding-bottom: 1.5em">
+
+<div class="grid-row">
+  <div class="column-half">
+
+    <h2 class="heading-large" style="font-weight: 300;margin-bottom: 0.5em">West Midlands, an engineering success story</h2>
+
+    <p>The 2015 UK Attractiveness Survey, published by financial services EY, said this represented the largest market share of UK projects recorded in the West Midlands at 8.6 per cent.</p>
+
+    <p>The average market share for the West Midlands over the last decade was 6.9 per cent.</p>
+
+    <p>Since 2013, the performance of the West Midlands has seen a large improvement with total project numbers up more than 95 per cent between 2013 and 2015, led by investment into Birmingham which is the fourth most successful UK city (outside London) for attracting FDI.</p>
+
+    <p>Of the top UK cities in terms of numbers of FDI projects secured in 2015, the Midlands area had three locations represented - Birmingham (24 projects), Coventry (11 projects) and Solihull (ten projects).</p>
+
+    <p>Among those investments during 2015 were projects by Indian-owned Jaguar Land Rover and Geely, the Chinese parent of the London Taxi Company.</p>
+
   </div>
 
-<main id="content" role="main">
 
 
-<div id="industry-page">
-
-	<div class="grid-row">
-
-		<div class="column-half">
+  <div class="column-half">
 
 
-			<h2 class="heading-large">Automotive industries</h2>
+    <table style="margin: 2em 0">
+    <thead><th colspan="2" style="border-bottom: 1px solid #333">Datapoints for West Midlands</th></thead>
+      <tr>
+        <td width="50%">
+        Population
+        </td>
+
+        <td width="50%">
+        5,713,000 (2013)
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        Gross Value Added
+        </td>
+
+        <td>
+        £110 billion
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        GVA per capita
+        </td>
+
+        <td>
+        £17,161 
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        Regional centre
+        </td>
+
+        <td>
+        Birmingham
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+        Regional cities
+        </td>
+
+        <td>
+        Coventry, Warwick, Stoke-on-trent, Wolverhampton
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+        Primary industries
+        </td>
+
+        <td>
+        <a href="#">Advanced manufacturing</a>, <a href="#">Automobile</a>, <a href="#">Aerospace</a>, <a href="#">Food manufacturing</a>
+        </td>
+      </tr>
+
+      </table>
 
 
-			<h4 class="heading-small"><a href="#">Automotive research and development</a></h4>
-
-			<img src="/public/images/thumbnail-4-4/research-and-development.jpg" class="home-thumbnail">
-
-			<p>The UK offers unrivalled support for the global expansion of your business. It is the most internationally-focused financial marketplace in the world.</p>
-
-			<br clear="all">
 
 
+      <div id="links">
+        <p><strong>Useful links</strong></p>
 
-			<h4 class="heading-small"><a href="#">Automotive supply chain</a></h4>
+        <p>
+        <a href="#">Birmingham chamber of commerce</a>
+        </p>
 
-			<img src="/public/images/thumbnail-4-4/supply-chain.jpg" class="home-thumbnail">
+        <p>
+        <a href="#">Midlands engine, investment programme</a>
+        </p>
 
+        <p>
+        <a href="#">Black Country enterprise zone</a>
+        </p>
 
-			<p>As the demand for UK-made vehicles continues to boom, UK automotive production will exceed 2 million cars by 2020. Which means a huge opportunity for businesses involved in all parts of the supply chain.</p>
-
-			<br clear="all">
-
-
-
-			<h4 class="heading-small"><a href="#">Motorsport</a></h4>
-
-			<img src="/public/images/thumbnail-4-4/motorsport.jpg" class="home-thumbnail">
-
-
-			<p>The UK leads the world in motor sport with a turnover of 9 billion GBP and more than 4,500 businesses operating in the sector.</p>
+        <p>
+        <a href="#">Skylon Park, Hereford enterprise zone</a>
+        </p>
+      </div>
 
 
 
-
-    </div><!-- end col -->
-	</div><!-- end row -->
-
-	
+  </div>
 </div>
 
 
+
 </main>
+
+
+
+<script>
+  // The autocomplete input <select> gets transformed by this
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#industry-picker')
+  })
+
+
+  // From the Gain Concept-mix2 prototype, open positions list
+  function toggleDiv(divId) {
+      $("."+divId).toggle();
+      $('#arrow-'+divId).toggleClass('industry-active industry-inactive');
+  }
+
+  function setDisplayValue() {
+      var display = $('.toggle')[0].style.display;
+      $('.displayvalue').text(display);
+      e.preventDefault();
+  }
+
+
+
+
+</script>
+
+
+
 
 {% endblock %}
 
