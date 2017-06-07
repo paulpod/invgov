@@ -73,6 +73,63 @@
   <div class="grid-row">
 		<div class="column-two-thirds">
 
+      <div class="maptools">
+
+        <div id="map-layers">
+
+
+
+          <fieldset>
+
+
+            <legend style="line-height:1.83;font-weight:600;margin: 1.75em 0 0.9em 0">Select map layers</legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="checkbox" name="radio-group" value="maplabels" checked="true" class="checkbox">
+              <label for="radio-1">Labels</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-2" type="checkbox" name="radio-group" value="transport" checked="true">
+              <label for="radio-2">Transport Links</label>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <!-- - - - - - - -->
+
+        <div id="map-filters">
+
+          <fieldset>
+
+            <div class="multiple-choice">
+              <input id="radio-3" type="checkbox" name="radio-group" value="businesses">
+              <label for="radio-3">Significant businesses</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-4" type="checkbox" name="radio-group" value="financial">
+              <label for="radio-4">Financial incentives</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-5" type="checkbox" name="radio-group" value="randd">
+              <label for="radio-5">R &amp; D Hubs</label>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <br clear="all">
+
+      </div><!-- end map tools -->
+
+
+
+
      <div class="mapbox">
 
        <img src="/public/images/iops-maps/west-mid-main.png" width="100%" class="basemap">
@@ -95,44 +152,19 @@
 
    <div class="column-one-third">
 
-      <div class="maptools">
-
-        <fieldset>
-
-          <legend class="visually-hidden">Apply map layers</legend>
-
-          <div class="multiple-choice">
-            <input id="radio-1" type="checkbox" name="radio-group" value="maplabels" checked="true" class="checkbox">
-            <label for="radio-1">Labels</label>
-          </div>
-
-          <div class="multiple-choice" style="border-bottom:2px solid #999;padding-bottom:1.75em;margin-bottom: 1.4em">
-            <input id="radio-2" type="checkbox" name="radio-group" value="transport" checked="true">
-            <label for="radio-2">Transport Links</label>
-          </div>
-
-          <!-- - - - - - - -->
-
-          <div class="multiple-choice">
-            <input id="radio-3" type="checkbox" name="radio-group" value="businesses">
-            <label for="radio-3">Significant businesses</label>
-          </div>
-
-          <div class="multiple-choice">
-            <input id="radio-4" type="checkbox" name="radio-group" value="financial">
-            <label for="radio-4">Financial incentives</label>
-          </div>
-
-          <div class="multiple-choice">
-            <input id="radio-5" type="checkbox" name="radio-group" value="randd">
-            <label for="radio-5">R &amp; D Hubs</label>
-          </div>
-
-        </fieldset>
+      
 
 
+
+        <p class="map-sector-head" style="font-weight: 600">Filter by industry</p>
 
         <ul class="map-sector-list">
+
+          <li class="industry-inactive" name="toggler">
+            
+              Show all
+            
+          </li>
           
 
           <li class="industry-inactive" name="toggler">

@@ -370,12 +370,21 @@ input.form-control {
 
 /* For the iOPS mapping on Region/Location pages */
 .mapbox {
-  display: inline-block;
+  height: 640px
 }
 .maptools {
 }
+#map-layers {
+  float: left;
+  width: 47%;
+  margin-right: 30px;
+}
+#map-filters {
+float: left;
+width: 48%;
+}
 .map-sector-list {
-  margin: 2em 0;
+  margin: 1em 0;
 }
 .map-sector-list li {
 background: url('/public/images/list-radio-off.png') no-repeat;
