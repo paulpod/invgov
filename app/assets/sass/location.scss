@@ -419,7 +419,19 @@ display: none;}
   }
 .industry-inactive {
 }
+span.referenced {
+  background-color: #ffc;
+}
+.references-list {
+  font-size: 0.85 !important;
+}
 
+
+#fixed-image {
+    position:fixed;
+    top:250px;
+    background-color:red;
+}
 
 
 /* For homepage existing rebuild */
