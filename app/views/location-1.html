@@ -134,9 +134,9 @@
 
        <img src="/public/images/iops-maps/west-mid-main.png" width="100%" class="basemap">
 
-       <img src="/public/images/iops-maps/west-mid-labels.png" width="100%" class="map-overlay1" id="maplabels">
+       <img src="/public/images/iops-maps/west-mid-labels.png" width="100%" class="map-overlay1 overlay-labels" id="maplabels">
 
-       <img src="/public/images/iops-maps/west-mid-transport.png" width="100%" class="map-overlay2 positions-info-row1" id="transport">
+       <img src="/public/images/iops-maps/west-mid-transport.png" width="100%" class="map-overlay2 overlay-transport" id="transport">
 
        <img src="/public/images/iops-maps/west-mid-aero-rnd.png" width="100%" class="map-overlay3 overlay-aero" id="map-aero">
 
@@ -197,8 +197,15 @@
           <li><a href="#">Financial services</a></li>
           <li><a href="#">Food and drink<br>manufacturing</a></li>
           <li><a href="#">Health and life sciences</a></li>
-          <li><a href="#">Retail</a></li>
-          <li><a href="#">Technology</a></li>
+
+          <li>
+            <a href="javascript:toggleDiv('overlay-labels');">Retail</a>
+          </li>
+
+          <li>
+            <a href="javascript:toggleDiv('overlay-transport');">Technology</a>
+          </li>
+
         </ul>
 
 
