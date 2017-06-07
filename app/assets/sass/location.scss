@@ -399,11 +399,13 @@ overflow: visible;
   position: absolute;
   width:600px;
 }
+/* the label layer, always at front  */
 .map-overlay1 {
   position: absolute;
   width:600px;
+  z-index: 100;
 }
-/* this is for the transport layer, quite transparent  */
+/* the transport layer, quite transparent  */
 .map-overlay2 {
   position: absolute;
   width:600px;
