@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "location-layout.html" %}
 
 {% block page_title %}
   GOV.UK prototype kit
@@ -14,13 +14,15 @@
 
     <div class="column-one-third">
 
-	    <p style="margin-bottom: 0"><strong>Where?</strong></p>
+    	<div>
 
-	    <div id="location-picker-box" class="picker-box">
+	    <p style="font-size: 1.2em;margin: 1.2em 0 0 0"><strong>Where?</strong></p>
+
+	    <div id="location-picker-box" class="picker-box" style="font-size: 1.2em;">
 
 		    <label class="form-label" for="location-picker">
 		        
-		        <span class="picker-form-hint">
+		        <span class="picker-form-hint" style="display:inline-block;font-size: 1.1em;margin:0.4em 0">
 		        Find a specific location
 		          
 		        </span>
@@ -436,23 +438,35 @@
 	      })
 	      </script>
 
+
+	      
+
+
 	      </div><!-- end picker box -->
 
+	      <div style="float:right">
+		      <button class="map-button">Go</button>
+	      </div>
 
+
+	      <div  style="font-size: 1.2em;margin-top:0.5em">
 	      <ul class="mixpanel-list">
-	        <li><a href="#">Scotland</a></li>
-	        <li><a href="#">Northern Ireland</a></li>
-	        <li><a href="#">North East England</a></li>
-	        <li><a href="#">North West England</a></li>
-	        <li><a href="#">Yorkshire and The Humber</a></li>
-	        <li><a href="#">East Midlands</a></li>
-	        <li><a href="#">West Midlands</a></li>
-	        <li><a href="#">Wales</a></li>
-	        <li><a href="#">London</a></li>
-	        <li><a href="#">East of England</a></li>
-	        <li><a href="#">South East England</a></li>
-	        <li><a href="#">South West England</a></li>
+	        <li><a href="location-1">Scotland</a></li>
+	        <li><a href="location-1">Northern Ireland</a></li>
+	        <li><a href="location-1">North East England</a></li>
+	        <li><a href="location-1">North West England</a></li>
+	        <li><a href="location-1">Yorkshire and The Humber</a></li>
+	        <li><a href="location-1">East Midlands</a></li>
+	        <li><a href="location-1">West Midlands</a></li>
+	        <li><a href="location-1">Wales</a></li>
+	        <li><a href="location-1">London</a></li>
+	        <li><a href="location-1">East of England</a></li>
+	        <li><a href="location-1">South East England</a></li>
+	        <li><a href="location-1">South West England</a></li>
 	      </ul>
+	      </div>
+
+      </div>
 
 	  </div><!-- column quarter -->
 
@@ -463,7 +477,7 @@
 	  <div class="column-two-thirds">
 
 
-	  <a href="location-1"><img src="/public/images/dotmap-uk.png" width="400px" style="position:relative;left:-40px;top:4px;padding-bottom: 1em"></a>
+	  <a href="location-1"><img src="/public/images/dotmap-uk.png" width="560px" style="position:relative;left:-40px;top:4px;padding: 0.75em 0 0 0"></a>
 
 	         
 
