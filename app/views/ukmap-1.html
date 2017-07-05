@@ -1,0 +1,494 @@
+{% extends "location-layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+	<div class="grid-row">
+
+	  
+
+    <div class="column-one-third">
+
+    	<div>
+
+	    <p style="font-size: 1.2em;margin: 1.2em 0 0 0"><strong>Where?</strong></p>
+
+	    <div id="location-picker-box" class="picker-box" style="font-size: 1.2em;">
+
+		    <label class="form-label" for="location-picker">
+		        
+		        <span class="picker-form-hint" style="display:inline-block;font-size: 1.1em;margin:0.4em 0">
+		        Find a specific location
+		          
+		        </span>
+	        </label>
+
+	      <select id="location-picker">
+	      <option value="" selected="default"></option>
+	        <option value="000">Belfast</option>
+	        <option value="000">Castlereagh</option>
+	        <option value="000">Newtownabbey</option>
+	        <option value="000">Down</option>
+	        <option value="000">Banbridge</option>
+	        <option value="000">Newry and Mourne</option>
+	        <option value="000">Craigavon</option>
+	        <option value="000">Dungannon and South Tyrone</option>
+	        <option value="000">Cookstown</option>
+	        <option value="000">Magherafelt</option>
+	        <option value="000">Ballymena</option>
+	        <option value="000">Larne</option>
+	        <option value="000">Derry</option>
+	        <option value="000">Cardiff</option>
+	        <option value="000">Newport</option>
+	        <option value="000">Monmouthshire</option>
+	        <option value="000">Torfaen</option>
+	        <option value="000">Caerphilly</option>
+	        <option value="000">Merthyr Tydfil</option>
+	        <option value="000">Rhondda Cynon Taf</option>
+	        <option value="000">Vale of Glamorgan</option>
+	        <option value="000">Bridgend</option>
+	        <option value="000">Neath Port Talbot</option>
+	        <option value="000">Swansea</option>
+	        <option value="000">Carmarthenshire</option>
+	        <option value="000">Pembrokeshire</option>
+	        <option value="000">Ceredigion</option>
+	        <option value="000">Powys</option>
+	        <option value="000">Wrexham</option>
+	        <option value="000">Flintshire</option>
+	        <option value="000">Denbighshire</option>
+	        <option value="000">Conwy</option>
+	        <option value="000">Gwynedd</option>
+	        <option value="000">Ynys MÃƒÂ´n</option>
+	        <option value="000">Glasgow City</option>
+	        <option value="000">East Dunbartonshire</option>
+	        <option value="000">North Lanarkshire</option>
+	        <option value="000">Dundee City</option>
+	        <option value="000">Renfrewshire</option>
+	        <option value="000">City of Edinburgh</option>
+	        <option value="000">Aberdeenshire</option>
+	        <option value="000">Aberdeen City</option>
+	        <option value="000">Perth and Kinross</option>
+	        <option value="000">Orkney Islands</option>
+	        <option value="000">Highland</option>
+	        <option value="000">Fife</option>
+	        <option value="000">Falkirk</option>
+	        <option value="000">Dumfries and Galloway</option>
+	        <option value="000">Westminster</option>
+	        <option value="000">Wandsworth</option>
+	        <option value="000">Tower Hamlets</option>
+	        <option value="000">Richmond upon Thames</option>
+	        <option value="000">Newham</option>
+	        <option value="000">Merton</option>
+	        <option value="000">Lewisham</option>
+	        <option value="000">Kingston upon Thames</option>
+	        <option value="000">Kensington and Chelsea</option>
+	        <option value="000">Islington</option>
+	        <option value="000">Hounslow</option>
+	        <option value="000">Hillingdon</option>
+	        <option value="000">Havering</option>
+	        <option value="000">Hammersmith and Fulham</option>
+	        <option value="000">Hackney</option>
+	        <option value="000">Greenwich</option>
+	        <option value="000">Ealing</option>
+	        <option value="000">Croydon</option>
+	        <option value="000">Camden</option>
+	        <option value="000">Barking and Dagenham</option>
+	        <option value="000">City of London</option>
+	        <option value="000">Wakefield</option>
+	        <option value="000">Leeds</option>
+	        <option value="000">Wolverhampton</option>
+	        <option value="000">Walsall</option>
+	        <option value="000">Solihull</option>
+	        <option value="000">Sandwell</option>
+	        <option value="000">Dudley</option>
+	        <option value="000">Coventry</option>
+	        <option value="000">Birmingham</option>
+	        <option value="000">Sunderland</option>
+	        <option value="000">South Tyneside</option>
+	        <option value="000">North Tyneside</option>
+	        <option value="000">Newcastle upon Tyne</option>
+	        <option value="000">Gateshead</option>
+	        <option value="000">Sheffield</option>
+	        <option value="000">Rotherham</option>
+	        <option value="000">Doncaster</option>
+	        <option value="000">Wirral</option>
+	        <option value="000">Sefton</option>
+	        <option value="000">St. Helens</option>
+	        <option value="000">Liverpool</option>
+	        <option value="000">Knowsley</option>
+	        <option value="000">Wigan</option>
+	        <option value="000">Trafford</option>
+	        <option value="000">Stockport</option>
+	        <option value="000">Salford</option>
+	        <option value="000">Manchester</option>
+	        <option value="000">Bury</option>
+	        <option value="000">Bolton</option>
+	        <option value="000">Wyre Forest</option>
+	        <option value="000">Wychavon</option>
+	        <option value="000">Sutton</option>
+	        <option value="000">Worcester</option>
+	        <option value="000">Malvern Hills</option>
+	        <option value="000">Bromsgrove</option>
+	        <option value="000">Mid Sussex</option>
+	        <option value="000">Horsham</option>
+	        <option value="000">Crawley</option>
+	        <option value="000">Warwick</option>
+	        <option value="000">Stratford-on-Avon</option>
+	        <option value="000">Rugby</option>
+	        <option value="000">Nuneaton and Bedworth</option>
+	        <option value="000">Woking</option>
+	        <option value="000">Tandridge</option>
+	        <option value="000">Surrey Heath</option>
+	        <option value="000">Spelthorne</option>
+	        <option value="000">Runnymede</option>
+	        <option value="000">Reigate and Banstead</option>
+	        <option value="000">Mole Valley</option>
+	        <option value="000">Guildford</option>
+	        <option value="000">Elmbridge</option>
+	        <option value="000">Waveney</option>
+	        <option value="000">Suffolk Coastal</option>
+	        <option value="000">Mid Suffolk</option>
+	        <option value="000">Ipswich</option>
+	        <option value="000">Babergh</option>
+	        <option value="000">Staffordshire Moorlands</option>
+	        <option value="000">Stafford</option>
+	        <option value="000">South Staffordshire</option>
+	        <option value="000">Newcastle-under-Lyme</option>
+	        <option value="000">Lichfield</option>
+	        <option value="000">East Staffordshire</option>
+	        <option value="000">Cannock Chase</option>
+	        <option value="000">West Somerset</option>
+	        <option value="000">Taunton Deane</option>
+	        <option value="000">Sedgemoor</option>
+	        <option value="000">West Oxfordshire</option>
+	        <option value="000">Vale of White Horse</option>
+	        <option value="000">South Oxfordshire</option>
+	        <option value="000">Oxford</option>
+	        <option value="000">Cherwell</option>
+	        <option value="000">Rushcliffe</option>
+	        <option value="000">Gedling</option>
+	        <option value="000">Broxtowe</option>
+	        <option value="000">Ashfield</option>
+	        <option value="000">Selby</option>
+	        <option value="000">Scarborough</option>
+	        <option value="000">Ryedale</option>
+	        <option value="000">Hambleton</option>
+	        <option value="000">Craven</option>
+	        <option value="000">South Norfolk</option>
+	        <option value="000">Norwich</option>
+	        <option value="000">North Norfolk</option>
+	        <option value="000">King's Lynn and West Norfolk</option>
+	        <option value="000">Great Yarmouth</option>
+	        <option value="000">Broadland</option>
+	        <option value="000">West Lindsey</option>
+	        <option value="000">Oadby and Wigston</option>
+	        <option value="000">North West Leicestershire</option>
+	        <option value="000">Melton</option>
+	        <option value="000">Hinckley and Bosworth</option>
+	        <option value="000">Harborough</option>
+	        <option value="000">Charnwood</option>
+	        <option value="000">Blaby</option>
+	        <option value="000">Antrim</option>
+	        <option value="000">Wyre</option>
+	        <option value="000">West Lancashire</option>
+	        <option value="000">South Ribble</option>
+	        <option value="000">Ribble Valley</option>
+	        <option value="000">Preston</option>
+	        <option value="000">Pendle</option>
+	        <option value="000">Lancaster</option>
+	        <option value="000">Fylde</option>
+	        <option value="000">Chorley</option>
+	        <option value="000">Thanet</option>
+	        <option value="000">Swale</option>
+	        <option value="000">Shepway</option>
+	        <option value="000">Maidstone</option>
+	        <option value="000">Gravesham</option>
+	        <option value="000">Dartford</option>
+	        <option value="000">Canterbury</option>
+	        <option value="000">Ashford</option>
+	        <option value="000">Watford</option>
+	        <option value="000">Three Rivers</option>
+	        <option value="000">Dacorum</option>
+	        <option value="000">Winchester</option>
+	        <option value="000">Test Valley</option>
+	        <option value="000">New Forest</option>
+	        <option value="000">Fareham</option>
+	        <option value="000">Basingstoke and Deane</option>
+	        <option value="000">Tewkesbury</option>
+	        <option value="000">Stroud</option>
+	        <option value="000">Gloucester</option>
+	        <option value="000">Forest of Dean</option>
+	        <option value="000">Cotswold</option>
+	        <option value="000">Cheltenham</option>
+	        <option value="000">Uttlesford</option>
+	        <option value="000">Tendring</option>
+	        <option value="000">Colchester</option>
+	        <option value="000">Chelmsford</option>
+	        <option value="000">Basildon</option>
+	        <option value="000">Lewes</option>
+	        <option value="000">Purbeck</option>
+	        <option value="000">North Dorset</option>
+	        <option value="000">West Devon</option>
+	        <option value="000">Torridge</option>
+	        <option value="000">Teignbridge</option>
+	        <option value="000">South Hams</option>
+	        <option value="000">Exeter</option>
+	        <option value="000">East Devon</option>
+	        <option value="000">South Derbyshire</option>
+	        <option value="000">North East Derbyshire</option>
+	        <option value="000">Erewash</option>
+	        <option value="000">Derbyshire Dales</option>
+	        <option value="000">Amber Valley</option>
+	        <option value="000">South Lakeland</option>
+	        <option value="000">Eden</option>
+	        <option value="000">Copeland</option>
+	        <option value="000">Barrow-in-Furness</option>
+	        <option value="000">Allerdale</option>
+	        <option value="000">South Cambridgeshire</option>
+	        <option value="000">Cambridge</option>
+	        <option value="000">Wycombe</option>
+	        <option value="000">South Bucks</option>
+	        <option value="000">Aylesbury Vale</option>
+	        <option value="000">Central Bedfordshire</option>
+	        <option value="000">Bedford</option>
+	        <option value="000">Wiltshire</option>
+	        <option value="000">Cornwall</option>
+	        <option value="000">Shropshire</option>
+	        <option value="000">Cheshire West and Chester</option>
+	        <option value="000">Cheshire East</option>
+	        <option value="000">Northumberland</option>
+	        <option value="000">County Durham</option>
+	        <option value="000">Isle of Wight</option>
+	        <option value="000">Southampton</option>
+	        <option value="000">Brighton and Hove</option>
+	        <option value="000">Milton Keynes</option>
+	        <option value="000">Wokingham</option>
+	        <option value="000">Windsor and Maidenhead</option>
+	        <option value="000">Slough</option>
+	        <option value="000">Reading</option>
+	        <option value="000">Medway</option>
+	        <option value="000">Thurrock</option>
+	        <option value="000">Torbay</option>
+	        <option value="000">South Gloucestershire</option>
+	        <option value="000">North Somerset</option>
+	        <option value="000">Bristol</option>
+	        <option value="000">Bath and North East Somerset</option>
+	        <option value="000">Stoke-on-Trent</option>
+	        <option value="000">Herefordshire</option>
+	        <option value="000">Nottingham</option>
+	        <option value="000">Leicester</option>
+	        <option value="000">Derby</option>
+	        <option value="000">North Lincolnshire</option>
+	        <option value="000">North East Lincolnshire</option>
+	        <option value="000">East Riding of Yorkshire</option>
+	        <option value="000">Kingston upon Hull</option>
+	        <option value="000">Blackpool</option>
+	        <option value="000">Blackburn with Darwen</option>
+	        <option value="000">Warrington</option>
+	        <option value="000">Halton</option>
+	        <option value="000">Darlington</option>
+	        <option value="000">Stockton-on-Tees</option>
+	        <option value="000">Redcar and Cleveland</option>
+	        <option value="000">Middlesbrough</option>
+	        <option value="000">Hartlepool</option>
+	        <option value="000">Mendip</option>
+	        <option value="000">West Dorset</option>
+	        <option value="000">Ards</option>
+	        <option value="000">North Down</option>
+	        <option value="000">Stirling</option>
+	        <option value="000">South Ayrshire</option>
+	        <option value="000">Midlothian</option>
+	        <option value="000">Clackmannanshire</option>
+	        <option value="000">Waltham Forest</option>
+	        <option value="000">Southwark</option>
+	        <option value="000">Lambeth</option>
+	        <option value="000">Barnet</option>
+	        <option value="000">Kirklees</option>
+	        <option value="000">Calderdale</option>
+	        <option value="000">Bradford</option>
+	        <option value="000">Oldham</option>
+	        <option value="000">St Albans</option>
+	        <option value="000">Chichester</option>
+	        <option value="000">Waverley</option>
+	        <option value="000">Epsom and Ewell</option>
+	        <option value="000">St Edmundsbury</option>
+	        <option value="000">Harrogate</option>
+	        <option value="000">South Northamptonshire</option>
+	        <option value="000">Northampton</option>
+	        <option value="000">Daventry</option>
+	        <option value="000">Rossendale</option>
+	        <option value="000">Hyndburn</option>
+	        <option value="000">Burnley</option>
+	        <option value="000">Stevenage</option>
+	        <option value="000">North Hertfordshire</option>
+	        <option value="000">Hertsmere</option>
+	        <option value="000">East Hertfordshire</option>
+	        <option value="000">Rushmoor</option>
+	        <option value="000">Hart</option>
+	        <option value="000">Maldon</option>
+	        <option value="000">Harlow</option>
+	        <option value="000">Braintree</option>
+	        <option value="000">Wealden</option>
+	        <option value="000">Rother</option>
+	        <option value="000">Hastings</option>
+	        <option value="000">Weymouth and Portland</option>
+	        <option value="000">East Dorset</option>
+	        <option value="000">Christchurch</option>
+	        <option value="000">North Devon</option>
+	        <option value="000">Carlisle</option>
+	        <option value="000">Huntingdonshire</option>
+	        <option value="000">Fenland</option>
+	        <option value="000">East Cambridgeshire</option>
+	        <option value="000">Chiltern</option>
+	        <option value="000">Portsmouth</option>
+	        <option value="000">Bracknell Forest</option>
+	        <option value="000">Peterborough</option>
+	        <option value="000">Poole</option>
+	        <option value="000">Bournemouth</option>
+	        <option value="000">Plymouth</option>
+	        <option value="000">Luton</option>
+	        <option value="000">Blaenau Gwent</option>
+	        <option value="000">Angus</option>
+	        <option value="000">South Lanarkshire</option>
+	        <option value="000">Welwyn Hatfield</option>
+	        <option value="000">Redditch</option>
+	        <option value="000">Worthing</option>
+	        <option value="000">Arun</option>
+	        <option value="000">Adur</option>
+	        <option value="000">North Warwickshire</option>
+	        <option value="000">South Somerset</option>
+	        <option value="000">Newark and Sherwood</option>
+	        <option value="000">Bassetlaw</option>
+	        <option value="000">Breckland</option>
+	        <option value="000">South Kesteven</option>
+	        <option value="000">South Holland</option>
+	        <option value="000">North Kesteven</option>
+	        <option value="000">Lincoln</option>
+	        <option value="000">Richmondshire</option>
+	        <option value="000">Havant</option>
+	        <option value="000">Gosport</option>
+	        <option value="000">Eastleigh</option>
+	        <option value="000">East Hampshire</option>
+	        <option value="000">Rochford</option>
+	        <option value="000">Mid Devon</option>
+	        <option value="000">Chesterfield</option>
+	        <option value="000">Bolsover</option>
+	        <option value="000">Isles of Scilly</option>
+	        <option value="000">Southend-on-Sea</option>
+	        <option value="000">Swindon</option>
+	        <option value="000">Carrickfergus</option>
+	        <option value="000">Omagh</option>
+	        <option value="000">Coleraine</option>
+	        <option value="000">Lisburn</option>
+	        <option value="000">West Lothian</option>
+	        <option value="000">Scottish Borders</option>
+	        <option value="000">East Lothian</option>
+	        <option value="000">Harrow</option>
+	        <option value="000">Enfield</option>
+	        <option value="000">Brent</option>
+	        <option value="000">Bexley</option>
+	        <option value="000">Barnsley</option>
+	        <option value="000">Tameside</option>
+	        <option value="000">Rochdale</option>
+	        <option value="000">Forest Heath</option>
+	        <option value="000">Mansfield</option>
+	        <option value="000">East Northamptonshire</option>
+	        <option value="000">Corby</option>
+	        <option value="000">East Lindsey</option>
+	        <option value="000">Boston</option>
+	        <option value="000">Tonbridge and Malling</option>
+	        <option value="000">Sevenoaks</option>
+	        <option value="000">Dover</option>
+	        <option value="000">Broxbourne</option>
+	        <option value="000">Epping Forest</option>
+	        <option value="000">Eastbourne</option>
+	        <option value="000">High Peak</option>
+	        <option value="000">West Berkshire</option>
+	        <option value="000">Telford and Wrekin</option>
+	        <option value="000">York</option>
+	        <option value="000">West Dunbartonshire</option>
+	        <option value="000">Tamworth</option>
+	        <option value="000">Wellingborough</option>
+	        <option value="000">Kettering</option>
+	        <option value="000">Brentwood</option>
+	        <option value="000">Fermanagh</option>
+	        <option value="000">Castle Point</option>
+	        <option value="000">Rutland</option>
+	        <option value="000">Inverclyde</option>
+	        <option value="000">Armagh</option>
+	        <option value="000">Strabane</option>
+	        <option value="000">Moyle</option>
+	        <option value="000">Ballymoney</option>
+	        <option value="000">Moray</option>
+	        <option value="000">Tunbridge Wells</option>
+	        <option value="000">Haringey</option>
+	        <option value="000">Bromley</option>
+	        <option value="000">East Renfrewshire</option>
+
+	      </select>
+
+	      <script>
+	      accessibleAutocomplete.enhanceSelectElement({
+	      selectElement: document.querySelector('#location-picker')
+	      })
+	      </script>
+
+
+	      
+
+
+	      </div><!-- end picker box -->
+
+	      <div style="float:right">
+		      <a href="location-1"><button class="map-button">Go</button></a>
+	      </div>
+
+
+	      <div  style="font-size: 1.2em;margin-top:0.5em">
+	      <ul class="mixpanel-list">
+	        <li><a href="location-1">Scotland</a></li>
+	        <li><a href="location-1">Northern Ireland</a></li>
+	        <li><a href="location-1">North East England</a></li>
+	        <li><a href="location-1">North West England</a></li>
+	        <li><a href="location-1">Yorkshire and The Humber</a></li>
+	        <li><a href="location-1">East Midlands</a></li>
+	        <li><a href="location-1">West Midlands</a></li>
+	        <li><a href="location-1">Wales</a></li>
+	        <li><a href="location-1">London</a></li>
+	        <li><a href="location-1">East of England</a></li>
+	        <li><a href="location-1">South East England</a></li>
+	        <li><a href="location-1">South West England</a></li>
+	      </ul>
+	      </div>
+
+      </div>
+
+	  </div><!-- column quarter -->
+
+
+
+
+
+	  <div class="column-two-thirds">
+
+
+	  <a href="location-1"><img src="/public/images/dotmap-uk.png" width="560px" style="position:relative;left:-40px;top:4px;padding: 0.75em 0 0 0"></a>
+
+	         
+
+	        <br clear="all">
+
+
+	  </div><!-- end right hand column -->
+	</div><!-- end column row -->
+
+</main>
+
+{% endblock %}
+
+

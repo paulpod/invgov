@@ -389,6 +389,99 @@ input.form-control {
 
 
 
+/* for WHERE UK iOPS prototype */
+
+table.maintable {
+  margin-top:5em;
+}
+table.whereuk-tabledata td {
+  vertical-align: top;
+}
+table.whereuk-tabledata td:first-child {
+font-weight: 600;
+}
+table.whereuk-tabledata thead {
+  border-bottom:2px solid black;
+}
+table.whereuk-tabledata th {
+  vertical-align: bottom;
+}
+
+.sticky-list,
+.sticky {
+  position: fixed !important;
+  top: 40px;
+}
+
+.widehead {
+  width: 400px;
+}
+
+ul.bloblist li {
+  background-color: #874b64;
+  border-radius: 1em;
+  display: inline-block;
+  width:1.5em;
+  height: 1.5em;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+  position: relative;
+}
+
+.pos-westmidlands {
+top:235px;
+left:125px;
+}
+.pos-eastengland {
+top:220px;
+left:130px;
+}
+.pos-southwestengland {
+top:250px;
+left:50px;
+}
+.pos-wales {
+top:240px;
+left: -10px;
+}
+.pos-london {
+top:250px;
+left:40px;
+}
+
+
+.tableval {
+background-color: #e0de92;
+font-weight: 600;
+padding-left: 0.3em;
+overflow: visible;
+}
+
+.tableneg {
+background-color: #E98174;
+font-weight: 600;
+padding-left: 0.3em;
+overflow: visible;
+}
+
+.tablepos {
+background-color: #B8E673;
+font-weight: 600;
+padding-left: 0.3em;
+overflow: visible;
+}
+
+.divider {
+  width:720px;
+  height: 2px;
+  background-color: #eee;
+}
+
+
+
 
 /* for the quick rough iOPS homepage mockup/prototype */
 .homepage-unit {
@@ -675,6 +768,12 @@ line-height: 1.4;
 
 p.bigger {
   font-size: 1.13em;
+  margin-top:1em;
+  line-height: 1.5;
+}
+
+p.smaller {
+  font-size: 0.8em;
   margin-top:1em;
   line-height: 1.5;
 }

@@ -1,0 +1,112 @@
+{% extends "location-layout.html" %}
+
+{% block page_title %}
+  INVEST in GREAT
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-quarter">
+
+      <ul class="mixpanel-list">
+        <li><a href="#">Aerospace</a></li>
+        <li><a href="#">Advanced manufacturing</a></li>
+        <li><a href="#">Automotive</a></li>
+        <li><a href="#">Creative</a></li>
+        <li><a href="#">Energy generation</a></li>
+        <li><a href="#">Financial services</a></li>
+        <li><a href="#">Food and drink<br>manufacturing</a></li>
+        <li><a href="#">Health and life sciences</a></li>
+        <li><a href="#">Retail</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+
+			
+		</div>
+
+
+    <div class="column-half">
+
+      <h1 class="heading-medium">Where in the UK</h1>
+
+
+      <p class="bigger">Select an <a href="#">industry</a> or <a href="#">region</a></p>
+
+
+      <div id="mapbox" style="width:300px">
+      <img src="/public/images/heatmap-grey-uk-shet.png" width="100%" style="margin-top:-4.53em"> 
+      </div>
+
+
+      <p class="smaller"><a href="#">Show Labels</a></p>
+
+    </div>
+
+
+
+    <div class="column-quarter">
+
+      <ul class="mixpanel-list">
+        <li><a href="#">Scotland</a></li>
+        <li><a href="#">Northern Ireland</a></li>
+        <li><a href="#">North East England</a></li>
+        <li><a href="#">North West England</a></li>
+        <li><a href="#">Yorkshire and The Humber</a></li>
+        <li><a href="#">East Midlands</a></li>
+        <li><a href="#">West Midlands</a></li>
+        <li><a href="#">Wales</a></li>
+        <li><a href="#">London</a></li>
+        <li><a href="#">East of England</a></li>
+        <li><a href="#">South East England</a></li>
+        <li><a href="#">South West England</a></li>
+      </ul>
+
+
+
+    </div>
+
+	</div><!-- end grid row -->
+
+</main>
+
+
+
+
+<script>
+  // The autocomplete input <select> gets transformed by this
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#industry-picker')
+  })
+
+
+  // From the Gain Concept-mix2 prototype, open positions list
+  function toggleDiv(divId) {
+      $("."+divId).toggle();
+      $('#arrow-'+divId).toggleClass('industry-active industry-inactive');
+  }
+
+  function setDisplayValue() {
+      var display = $('.toggle')[0].style.display;
+      $('.displayvalue').text(display);
+      e.preventDefault();
+  }
+
+
+
+
+</script>
+
+
+
+
+{% endblock %}
+
+

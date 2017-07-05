@@ -1,0 +1,676 @@
+{% extends "location-layout.html" %}
+
+{% block page_title %}
+  INVEST in GREAT
+{% endblock %}
+
+{% block content %}
+
+
+<div class="jumbotron" id="west-midlands">
+	<div class="jumbotron-content">
+		<div id="jumbotron-headlines">
+      <h1 class="location-xlarge">
+        The&nbsp;West&nbsp;Midlands
+      </h1>
+      <h2 class="location-medium">
+	      Hundreds of years of engineering expertise
+      </h2>
+    </div>
+
+    <!--<button>
+			Watch video
+    </button>-->
+
+  </div>
+</div>
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-half">
+      <p class="bigger">Birmingham is rated among the third tier on the Globalization and World Cities Index.</p>
+
+      <p class="bigger">The region has a major international airport, mainline rail and motorway connections to north, south, east and west.</p>
+
+      <p class="bigger">The West Midlands boasts 6 of the UK's top 50 universities</p>
+
+      <p class="bigger">Home to  Worcestershire Sauce and Jaguar Land Rover. Birthplace of the industrial revolution and William Shakespeare</p>
+
+
+			
+		</div>
+
+
+    <div class="column-half">
+
+      <p style="padding-top: 1em">The West Midlands recorded 92 foreign direct investment (FDI) projects in 2015 - the largest number recorded in a decade.</p>
+
+      
+
+      <img src="/public/images/west-midlands-svgfake.png" width="100%" style="padding: 0.1em 0 0.33em 0"> 
+
+      <p>The figure represented an increase of 46 per cent on 2014 when the region attracted 63 projects, according to new research. <a href="#">Source: regions report from EY 2016</a></p>
+    </div>
+
+
+	</div>
+
+</main>
+
+  <div class="bleed-row">
+    <div class="bleed-quote">
+
+
+        <div class="quote">
+          <p class="quoted">
+          This region has never been more attractive to investors. It has caught the interest of companies across the world, led by the region’s highly competitive manufacturing sector
+          </p>
+        </div>
+
+        <p class="quotesource">Neil Rami, Chief Executive of Marketing Birmingham</p>
+
+      
+    </div>
+  </div>
+
+
+
+<main id="content" role="main">
+
+  <br clear="all">
+
+  <div class="grid-row">
+		<div class="column-two-thirds">
+
+      <div class="maptools">
+
+        <div id="map-layers">
+
+
+
+          <fieldset>
+
+
+            <legend style="line-height:1.83;font-weight:600;margin: 1.75em 0 0.9em 0">Select map layers</legend>
+
+            <div class="multiple-choice">
+              <input id="radio-1" type="checkbox" name="radio-group" value="maplabels" checked="true" class="checkbox">
+              <label for="radio-1">Labels</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-2" type="checkbox" name="radio-group" value="transport" checked="true">
+              <label for="radio-2">Transport Links</label>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <!-- - - - - - - -->
+
+        <div id="map-filters">
+
+          <fieldset>
+
+            <div class="multiple-choice">
+              <input id="radio-3" type="checkbox" name="radio-group" value="businesses">
+              <label for="radio-3">Significant businesses</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-4" type="checkbox" name="radio-group" value="financial">
+              <label for="radio-4">Financial incentives</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="radio-5" type="checkbox" name="radio-group" value="randd">
+              <label for="radio-5">R &amp; D Hubs</label>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+        <br clear="all">
+
+      </div><!-- end map tools -->
+
+
+
+
+     <div class="mapbox">
+
+       <img src="/public/images/iops-maps/west-mid-main.png" width="100%" class="basemap">
+
+       <img src="/public/images/iops-maps/west-mid-labels.png" width="100%" class="map-overlay1 overlay-labels" id="maplabels">
+
+       <img src="/public/images/iops-maps/west-mid-transport.png" width="100%" class="map-overlay2 overlay-transport" id="transport">
+
+       <img src="/public/images/iops-maps/west-mid-aero-rnd.png" width="100%" class="map-overlay3 overlay-aero" id="map-aero">
+
+       <img src="/public/images/iops-maps/west-mid-creative-rnd.png" width="100%" class="map-overlay3 overlay-creative" id="map-creative">
+
+       <img src="/public/images/iops-maps/west-mid-energy-rnd.png" width="100%" class="map-overlay3 overlay-energy" id="map-energy">
+
+     </div><!-- end mapbox -->
+
+   </div><!-- end column -->
+
+
+
+   <div class="column-one-third">
+
+      
+
+
+
+        <p class="map-sector-head" style="font-weight: 600">Filter by industry</p>
+
+        <ul class="map-sector-list">
+
+          <li class="industry-inactive" name="toggler">
+            
+              Show all
+            
+          </li>
+          
+
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-aero');">
+              Aerospace
+            </a>
+          </li>
+          
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-aero');">
+              Advanced manufacturing</a>
+          </li>
+          
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-auto');">
+              Automotive</a>
+          </li>
+
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-creative');">
+              Creative</a>
+          </li>
+
+          <li class="industry-inactive" name="toggler">
+            <a href="javascript:toggleDiv('overlay-energy');">
+              Energy generation</a>
+          </li>
+
+
+          <li><a href="#">Financial services</a></li>
+          <li><a href="#">Food and drink<br>manufacturing</a></li>
+          <li><a href="#">Health and life sciences</a></li>
+
+          <li>
+            <a href="javascript:toggleDiv('overlay-labels');">Retail</a>
+          </li>
+
+          <li>
+            <a href="javascript:toggleDiv('overlay-transport');">Technology</a>
+          </li>
+
+        </ul>
+
+
+
+        <div id="industry-picker-box">
+
+          <label class="form-label" for="industry-picker" style="margin: 1.33em 0 0.66em 0">
+            Find a specific industry
+          </label>
+
+          <select id="industry-picker">
+            <option value="">What kind of business?</option>
+            <option value="000">Manufacturing technology &amp; equipment</option>
+            <option value="000">Sustainable manufacturing</option>
+            <option value="000">Mechanical, Electrical & Process engineering</option>
+            <option value="000">Advanced Materials/Composites</option>
+            <option value="000">Air traffic management</option>
+            <option value="000">Airframe & fixed wings</option>
+            <option value="000">Autonomous systems & rotary wings</option>
+            <option value="000">Engine systems</option>
+            <option value="000">Equipment</option>
+            <option value="000">Space systems & equipment</option>
+            <option value="000">MRO</option>
+            <option value="000">Food & drink processing</option>
+            <option value="000">Food & drink production & manufacturing</option>
+            <option value="000">Health, wellbeing and safety</option>
+            <option value="000">Animal and crop husbandry</option>
+            <option value="000">Intensive farming</option>
+            <option value="000">Sustainability</option>
+            <option value="000">Sustainable farming</option>
+            <option value="000">Non-commercial vehicles</option>
+            <option value="000">Electric vehicles</option>
+            <option value="000">Specialist vehicles inc. motorsport & construction</option>
+            <option value="000">Components</option>
+            <option value="000">Services</option>
+            <option value="000">Business & professional services</option>
+            <option value="000">Consultancy</option>
+            <option value="000">Accountancy</option>
+            <option value="000">BPO - Business Process Outsourcing</option>
+            <option value="000">Coatings</option>
+            <option value="000">Fine & speciality chemicals</option>
+            <option value="000">Paints</option>
+            <option value="000">Petrochemicals</option>
+            <option value="000">Plastics</option>
+            <option value="000">Soaps & detergents</option>
+            <option value="000">Commercial & industrial</option>
+            <option value="000">Construction products</option>
+            <option value="000">Contracting services</option>
+            <option value="000">Low carbon & green buildings</option>
+            <option value="000">Material</option>
+            <option value="000">Regeneration</option>
+            <option value="000">Residential</option>
+            <option value="000">Roads & Bridges</option>
+            <option value="000">Built environment</option>
+            <option value="000">Infrastructure including ports & airports</option>
+            <option value="000">Leisure equipment</option>
+            <option value="000">Sports equipment</option>
+            <option value="000">Jewellery</option>
+            <option value="000">Tableware</option>
+            <option value="000">Cosmetics</option>
+            <option value="000">Stationery</option>
+            <option value="000">Home decorations</option>
+            <option value="000">Gift products</option>
+            <option value="000">Travel accessories</option>
+            <option value="000">Garden & pet products</option>
+            <option value="000">Advertising</option>
+            <option value="000">Architecture</option>
+            <option value="000">Art</option>
+            <option value="000">Computer gaming</option>
+            <option value="000">Crafts</option>
+            <option value="000">Design</option>
+            <option value="000">Fashion</option>
+            <option value="000">Digital content</option>
+            <option value="000">Furniture design</option>
+            <option value="000">Museums/galleries</option>
+            <option value="000">Music</option>
+            <option value="000">Performing arts</option>
+            <option value="000">Publishing</option>
+            <option value="000">Screen (film, TV, radio, animation)</option>
+            <option value="000">Textiles & ceramics</option>
+            <option value="000">Private-sector training providers</option>
+            <option value="000">Biomass</option>
+            <option value="000">Fuel cells</option>
+            <option value="000">Geothermal</option>
+            <option value="000">Fossil fuels - Oil & Gas</option>
+            <option value="000">Carbon capture and abatement</option>
+            <option value="000">Hydro-electric</option>
+            <option value="000">Nuclear</option>
+            <option value="000">Solar</option>
+            <option value="000">Tide</option>
+            <option value="000">Transmission</option>
+            <option value="000">Distribution and storage</option>
+            <option value="000">Microgeneration</option>
+            <option value="000">Wave</option>
+            <option value="000">Wind</option>
+            <option value="000">Decontamination</option>
+            <option value="000">Waste & pollution management</option>
+            <option value="000">Water supply & sanitation</option>
+            <option value="000">Banking</option>
+            <option value="000">Insurance</option>
+            <option value="000">Pensions</option>
+            <option value="000">Fund management</option>
+            <option value="000">Private equity and venture capital</option>
+            <option value="000">Trading</option>
+            <option value="000">PPP</option>
+            <option value="000">Communications</option>
+            <option value="000">Electronic products</option>
+            <option value="000">Software</option>
+            <option value="000">IT Services</option>
+            <option value="000">Cloud computing</option>
+            <option value="000">Data mining</option>
+            <option value="000">Genetic engineering</option>
+            <option value="000">Fermentation technology</option>
+            <option value="000">Biotransformation</option>
+            <option value="000">Enzyme technology</option>
+            <option value="000">In-silico modelling</option>
+            <option value="000">Structural biology</option>
+            <option value="000">Bioinformatics</option>
+            <option value="000">Biosensors</option>
+            <option value="000">Environmental services</option>
+            <option value="000">Low carbon technology & finance</option>
+            <option value="000">Drugs & delivery technology</option>
+            <option value="000">Regenerative medicine</option>
+            <option value="000">Medical devices</option>
+            <option value="000">Research services</option>
+            <option value="000">Healthcare systems & services</option>
+            <option value="000">Clothing</option>
+            <option value="000">Footwear</option>
+            <option value="000">Retail outlets</option>
+            <option value="000">Supply chain / Logistics</option>
+            <option value="000">Access control systems</option>
+            <option value="000">Biometrics</option>
+            <option value="000">Surveillance & sensors</option>
+            <option value="000">Fire</option>
+            <option value="000">Information & data security</option>
+            <option value="000">Manned security systems</option>
+            <option value="000">Communications</option>
+            <option value="000">Forensics</option>
+            <option value="000">Counter terrorism</option>
+            <option value="000">Consultancy</option>
+            <option value="000">Training</option>
+            <option value="000">Safety</option>
+            <option value="000">Cyber security</option>
+            <option value="000">Information assurance</option>
+            <option value="000">Airports</option>
+            <option value="000">Ports</option>
+            <option value="000">Rail</option>
+            <option value="000">Road</option>
+            <option value="000">Marine</option>
+
+            <option value="000">Advanced Manufacturing/Engineering</option>
+            <option value="000">Aerospace</option>
+            <option value="000">AgriFood</option>
+            <option value="000">Automotive</option>
+            <option value="000">Business Services</option>
+            <option value="000">Chemicals</option>
+            <option value="000">Construction inc. built environment</option>
+            <option value="000">Consumer & Leisure</option>
+            <option value="000">Creative Industries</option>
+            <option value="000">Education</option>
+            <option value="000">Energy</option>
+            <option value="000">Environment & Water</option>
+            <option value="000">Financial Services</option>
+            <option value="000">ICT</option>
+            <option value="000">Industrial Biotechnology</option>
+            <option value="000">Low Carbon Industry</option>
+            <option value="000">Pharmaceuticals & Healthcare</option>
+            <option value="000">Retail and Logistics</option>
+            <option value="000">Security</option>
+            <option value="000">Transport</option>
+
+          </select>
+
+          
+
+        </div><!-- picker box -->
+
+      </div><!-- end maptools -->
+
+    </div><!-- end column -->
+
+	</div><!-- end row -->
+
+</main>
+
+
+
+<div class="bleed-row bleedpic" id="bleed-westmidlands">
+  <div class="bleed-quote">
+
+    <div class="quote">
+      <p class="quoted">
+      I have been impressed with Birmingham's ambition and huge potential.
+      We have a proven track record in delivering quality housing at a scale to match Birmingham’s ambitions and with major projects coming to the city, including the forthcoming High Speed two project, these are exciting times for Country Garden and Birmingham.
+      </p>
+    </div>
+
+    <p class="quotesource">Yang Guoqiang, founder and chairman of Chinese property development company, Country Garden</p>
+
+  </div>
+</div>
+
+<main id="content" role="main" style="padding-bottom: 1.5em">
+
+<div class="grid-row">
+  <div class="column-half">
+
+    <h2 class="heading-large" style="font-weight: 300;margin-bottom: 0.5em">West Midlands, an engineering success story</h2>
+
+    <p>The 2015 UK Attractiveness Survey, published by financial services EY, said this represented the <span class="referenced">largest market share of UK projects</span> recorded in the West Midlands at 8.6 per cent.</p>
+
+    <p>The average market share for the West Midlands over the last decade was 6.9 per cent.</p>
+
+    <p>Since 2013, the performance of the West Midlands has seen a large improvement with <span class="referenced">total project numbers up more than 95 per cent</span> between 2013 and 2015, led by investment into Birmingham which is the fourth most successful UK city (outside London) for attracting FDI.</p>
+
+    <p>Of the top UK cities in terms of <span class="referenced">numbers of FDI projects secured in 2015</span>, the Midlands area had three locations represented - Birmingham (24 projects), Coventry (11 projects) and Solihull (ten projects).</p>
+
+    <p>Among those investments during 2015 were projects by Indian-owned Jaguar Land Rover and Geely, the Chinese parent of the London Taxi Company.</p>
+
+    <ol class="list references-list" style="font-size: 0.8em">
+      <li><strong>References:</strong>
+      <li>1. <a href="#">UK Attractiveness survey</a>, 2015, EY</li>
+      <li>2. <a href="#">FDI projects, West Midlands</a>, 2016, UK Invest</li>
+      <li>3. <a href="#">Projects review</a>, 2017, Department for International Trade</li>
+    </ol>
+
+
+
+  </div>
+
+
+
+  <div class="column-half">
+
+
+    <table style="margin: 2em 0">
+    <thead><th colspan="2" style="border-bottom: 1px solid #333">Datapoints for West Midlands</th></thead>
+      <tr>
+        <td width="50%">
+        Population
+        </td>
+
+        <td width="50%">
+        5,713,000 (2013)
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        Gross Value Added
+        </td>
+
+        <td>
+        £110 billion
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        GVA per capita
+        </td>
+
+        <td>
+        £17,161 
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+        Regional centre
+        </td>
+
+        <td>
+        Birmingham
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+        Regional cities
+        </td>
+
+        <td>
+        Coventry, Warwick, Stoke-on-trent, Wolverhampton
+        </td>
+      </tr>
+
+      <tr>
+        <td valign="top">
+        Primary industries
+        </td>
+
+        <td>
+        <a href="#">Advanced manufacturing</a>, <a href="#">Automobile</a>, <a href="#">Aerospace</a>, <a href="#">Food manufacturing</a>
+        </td>
+      </tr>
+
+      </table>
+
+
+
+
+      <div id="links">
+        <p><strong>Useful links</strong></p>
+
+        <p>
+        <a href="#">Birmingham chamber of commerce</a>
+        </p>
+
+        <p>
+        <a href="#">Midlands engine, investment programme</a>
+        </p>
+
+        <p>
+        <a href="#">Black Country enterprise zone</a>
+        </p>
+
+        <p>
+        <a href="#">Skylon Park, Hereford enterprise zone</a>
+        </p>
+      </div>
+
+
+
+  </div>
+</div>
+
+
+<div class="grid-row">
+  <div class="column-full">
+
+    <p class="bigger" style="font-size:1.33em;margin-top:2em">Contact our investment services team for:
+      <ul class="list list-bullet">
+        <li>practical support and information about taking your investment forward</li>
+        <li>insights into the UK market</li>
+        <li>help building connections</li>
+      </ul>
+    </p>
+
+    <form action="contact-2b" method="post" class="form" style="margin-top:2em">
+
+    <p class="form-pagination">Page 1 of 3</p>
+
+
+    <h2 class="form-title heading-midlarge">
+      Your details
+    </h2>
+
+    <!-- Full name -->
+    <div class="form-group">
+      <label class="form-label-bold" for="full-name">Full name</label>
+      <!-- <p class="form-hint">As shown on your birth certificate or passport</p> -->
+      <input type="text" class="form-control" id="full-name">
+    </div>
+
+
+
+      <!-- Job title -->
+      <div class="form-group">
+        <label class="form-label-bold" for="job-name">Job title</label>
+        <!-- <p class="form-hint">So we can contact you with the appropriate information</p> -->
+        <input type="text" class="form-control" id="job-name">
+      </div>
+
+
+
+
+      <div class="form-group">
+        <fieldset id="how-contact">
+
+          <legend class="visually-hidden">How do you want to be contacted?</legend>
+
+          <label class="form-label-bold" for="how-contact" style="margin-bottom:0.33em">How do you want to be contacted?</label>
+
+
+          <div class="multiple-choice" data-target="contact-by-phone">
+            <input id="contact-phone" name="contact-phone" type="checkbox" value="Contact me by phone">
+            <label for="contact-phone">Phone</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+            <label class="form-label" for="contact-by-phone">Phone number</label>
+            <input class="form-control" type="text" id="nationalities-other-country" name="contact-by-phone">
+            <p class="form-hint" style="margin:0.5em 0 0.33em 0">Enter your full phone number, including area code</p>
+          </div>
+
+          <div class="multiple-choice" data-target="contact-by-email">
+            <input id="nationalities-other" name="email" type="checkbox" value="Contact me by email">
+            <label for="email">Email</label>
+          </div>
+          <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+            <label class="form-label" for="email">Business email address</label>
+            <input class="form-control" type="text" id="emailaddress" name="emailaddress">
+          </div>
+
+        </fieldset>
+      </div>
+
+      
+
+      
+
+
+
+        <!-- Continue button -->
+        <div class="form-group">
+        <input type="submit" class="form-button"" value="Continue">
+        </div>
+
+
+
+
+
+
+
+
+    
+
+
+
+    </div><!-- end col -->
+  </div><!-- end row -->
+
+
+</main>
+
+
+
+<script>
+  // The autocomplete input <select> gets transformed by this
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#industry-picker')
+  })
+
+
+  // From the Gain Concept-mix2 prototype, open positions list
+  function toggleDiv(divId) {
+      $("."+divId).toggle();
+      $('#arrow-'+divId).toggleClass('industry-active industry-inactive');
+  }
+
+  function setDisplayValue() {
+      var display = $('.toggle')[0].style.display;
+      $('.displayvalue').text(display);
+      e.preventDefault();
+  }
+
+
+
+
+</script>
+
+
+
+
+{% endblock %}
+
+

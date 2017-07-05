@@ -1,0 +1,571 @@
+{% extends "location-layout.html" %}
+
+{% block page_title %}
+  INVEST in GREAT
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+
+<main id="content" role="main" style="padding-bottom: 0">
+
+	<div class="grid-row">
+		<div class="column-quarter">
+    &nbsp;
+
+      <div class="sticky-list">
+      <ul class="mixpanel-list ">
+        <li><a href="#">Aerospace</a></li>
+        <li><a href="#">Advanced manufacturing</a></li>
+        <li><a href="#">Automotive</a></li>
+        <li><a href="#">Creative</a></li>
+        <li><a href="#">Energy generation</a></li>
+        <li><a href="#">Financial services</a></li>
+        <li><a href="#">Food and drink<br>manufacturing</a></li>
+        <li><a href="#">Health and life sciences</a></li>
+        <li><a href="#">Retail</a></li>
+        <li><a href="#">Technology</a></li>
+      </ul>
+      </div>
+
+			
+		</div>
+
+
+    <div class="column-half">
+
+      <h1 class="heading-medium">Where in the UK</h1>
+
+
+      <p class="bigger">for <a href="#">Energy generation</a></p>
+
+
+      <div id="mapbox" style="width:300px;background-image: url(/public/images/heatmap-example-uk-shet.png);background-size: 300px;margin-top: -4.5em">
+      
+
+      <img src="/public/images/labels-example-uk-shet-2.png" width="100%" style="">
+
+      
+      </div>
+
+      <p class="smaller"><a href="#">Show Labels</a></p>
+
+      <p class="smaller">Source: <a href="#">Department for International Trade</a></p>
+
+
+
+    </div>
+
+
+
+
+    <div class="column-quarter">
+
+      <p>UK regions</p>
+           
+      <div>
+        <ul class="mixpanel-list" style="top:1px"> 
+          <li><a href="#">Scotland</a></li>
+          <li><a href="#">Northern Ireland</a></li>
+          <li><a href="#">North East England</a></li>
+          <li><a href="#">North West England</a></li>
+          <li><a href="#">Yorkshire and The Humber</a></li>
+          <li><a href="#">East Midlands</a></li>
+          <li><a href="#">West Midlands</a></li>
+          <li><a href="#">Wales</a></li>
+          <li><a href="#">London</a></li>
+          <li><a href="#">East of England</a></li>
+          <li><a href="#">South East England</a></li>
+          <li><a href="#">South West England</a></li>
+        </ul>
+        </div>
+
+    </div>
+
+	</div><!-- end grid row -->
+
+
+
+
+
+  <div class="grid-row">
+    <div class="column-quarter">
+
+
+      &nbsp;
+
+      
+    </div>
+
+
+    <div class="column-quarter">
+
+      <div class="divider">&nbsp;</div>
+
+      <div class="widehead"><p class="bigger">for <a href="#">Energy generation</a>,<br>
+      showing GREAT <a href="#">Universities</a></p>
+      </div>
+
+
+      <div id="mapbox" style="width:200px">
+
+        <ul class="bloblist">
+          <li class="pos pos-westmidlands">1</li>
+          <li class="pos pos-eastengland">2</li>
+          <li class="pos pos-southwestengland">3</li>
+          <li class="pos pos-wales">4</li>
+          <li class="pos pos-london">5</li>
+        </ul>
+
+        <img src="/public/images/dotmap-grey-uk-shetbox.png" width="100%" style="margin-top:-0.3em"> 
+
+        <p class="smaller"><a href="#">Show Labels</a></p>
+      </div>
+
+
+
+      
+
+    </div>
+
+
+
+
+    <div class="column-half">
+
+
+    <table class="whereuk-tabledata maintable">
+      <thead>
+        <th>&nbsp;</th>
+        <th>University</th>
+        <th>Region</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Oxford</td>
+          <td><a href="#">West Midlands</a></td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Cambridge</td>
+          <td><a href="#">East England</a></td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Bristol</td>
+          <td><a href="#">South West England</a></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>University of South Wales Saint Davids</td>
+          <td><a href="#">Wales</a></td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>Imperial College London</td>
+          <td><a href="#">London</a></td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+
+    
+
+
+
+
+
+      <div style="padding-top:0.3em">
+       <details style="" >
+
+        <summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true" style="">
+          <span class="summary">Show more data</span>
+        </summary>
+        
+        <div class="" id="details-content-0" aria-hidden="false" style="display:block;">
+
+          <table class="whereuk-tabledata">
+            <tbody>
+              <tr>
+                <td>6</td>
+                <td>Durham</td>
+                <td><a href="#">Scotland</a></td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td>Lancaster</td>
+                <td><a href="#">North West England</a></td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td>Warwick</td>
+                <td><a href="#">West Midlands</a></td>
+              </tr>
+
+              <tr>
+                <td>9</td>
+                <td>Brunel University London</td>
+                <td><a href="#">London</a></td>
+              </tr>
+
+              <tr>
+                <td>10</td>
+                <td>Exeter</td>
+                <td><a href="#">South West England</a></td>
+              </tr>
+              
+            </tbody>
+          </table>
+
+        </div>
+
+
+      </details>
+
+
+      </div>
+
+
+
+      <p class="smaller">Source: <a href="#">Department for International Trade</a></p>
+
+      <p class="smaller">Download data as <a href="#">CSV</a> or as <a href="#">XLS</a> </p>
+
+
+    </div>
+
+  </div><!-- end grid row -->
+
+
+
+
+
+  <div class="grid-row">
+    <div class="column-quarter">
+
+      
+      &nbsp;
+
+      
+    </div>
+
+
+    <div class="column-quarter">
+
+      <div class="divider">&nbsp;</div>
+
+      <div class="widehead"><p class="bigger">for <a href="#">Energy generation</a>,<br>
+      showing <a href="#">R &amp; D hubs</a></p>
+      </div>
+
+
+      <div id="mapbox" style="width:200px">
+
+        <!--<ul class="bloblist">
+          <li class="pos pos-westmidlands">1</li>
+          <li class="pos pos-eastengland">2</li>
+          <li class="pos pos-southwestengland">3</li>
+          <li class="pos pos-wales">4</li>
+          <li class="pos pos-london">5</li>
+        </ul>-->
+
+        <img src="/public/images/dotmap-grey-uk-shet.png" width="100%" style="margin-top:-0.3em">
+        <img src="/public/images/dotmap-grey-uk-abc.png" width="100%" style="position: relative;top:-290px"> 
+
+
+        <p class="smaller"><a href="#">Show Labels</a></p>
+      </div>
+
+
+
+      
+
+    </div>
+
+
+
+
+    <div class="column-half">
+
+
+    <table class="whereuk-tabledata maintable">
+      <thead>
+        <th>&nbsp;</th>
+        <th>Region</th>
+        <th>Activity</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>Scotland</td>
+          <td><div class="tableval" style="width:5em">25</div></td>
+        </tr>
+
+        <tr>
+          <td>B</td>
+          <td>Northern Ireland</td>
+          <td><div class="tableval" style="width:1.6em">8</div></td>
+        </tr>
+
+        <tr>
+          <td>C</td>
+          <td>North East England</td>
+          <td><div class="tableval" style="width:4.8em">24</div></td>
+        </tr>
+
+        <tr>
+          <td>D</td>
+          <td>North West England</td>
+          <td><div class="tableval" style="width:7em">35</div></td>
+        </tr>
+
+        <tr>
+          <td>E</td>
+          <td>Yorkshire and The Humber</td>
+          <td><div class="tableval" style="width:4.2em">21</div></td>
+        </tr>
+
+        <tr>
+          <td>F</td>
+          <td>East Midlands</td>
+          <td><div class="tableval" style="width:1.6em">8</div></td>
+        </tr>
+
+        <tr>
+          <td>G</td>
+          <td>West Midlands</td>
+          <td><div class="tableval" style="width:3.6em">18</div></td>
+        </tr>
+
+        <tr>
+          <td>H</td>
+          <td>Wales</td>
+          <td><div class="tableval" style="width:3.8em">19</div></td>
+        </tr>
+
+        <tr>
+          <td>J</td>
+          <td>London</td>
+          <td><div class="tableval" style="width:1.4em">7</div></td>
+        </tr>
+
+        <tr>
+          <td>K</td>
+          <td>East of England</td>
+          <td><div class="tableval" style="width:4.4em">22</div></td>
+        </tr>
+
+        <tr>
+          <td>M</td>
+          <td>South East England</td>
+          <td><div class="tableval" style="width:1em">5</div></td>
+        </tr>
+
+        <tr>
+          <td>N</td>
+          <td>South West England</td>
+          <td><div class="tableval" style="width:5.6em">28</div></td>
+      </tbody>
+    </table>
+
+    <p class="smaller">Source: <a href="#">Department for International Trade</a></p>
+
+    <p class="smaller">Download data as <a href="#">CSV</a> or as <a href="#">XLS</a> </p>
+
+
+    </div>
+
+  </div><!-- end grid row -->
+
+
+
+
+
+
+  <div class="grid-row">
+    <div class="column-quarter">
+
+      
+      &nbsp;
+
+      
+    </div>
+
+
+    <div class="column-quarter">
+
+      <div class="divider">&nbsp;</div>
+
+      <div class="widehead"><p class="bigger">for <a href="#">Energy generation</a>,<br>
+      showing <a href="#">Salary difference</a> vs UK average</p>
+      </div>
+
+
+      <div id="mapbox" style="width:200px">
+
+        <!--<ul class="bloblist">
+          <li class="pos pos-westmidlands">1</li>
+          <li class="pos pos-eastengland">2</li>
+          <li class="pos pos-southwestengland">3</li>
+          <li class="pos pos-wales">4</li>
+          <li class="pos pos-london">5</li>
+        </ul>-->
+
+        <img src="/public/images/dotmap-grey-uk-shet.png" width="100%" style="margin-top:-0.3em">
+        <img src="/public/images/dotmap-grey-uk-abc.png" width="100%" style="position: relative;top:-290px"> 
+
+
+        <p class="smaller"><a href="#">Show Labels</a></p>
+      </div>
+
+
+
+      
+
+    </div>
+
+
+
+
+    <div class="column-half">
+
+
+    <table class="whereuk-tabledata maintable">
+      <thead>
+        <th>&nbsp;</th>
+        <th>Region</th>
+        <th>Salary difference</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>Scotland</td>
+          <td><div class="tableneg" style="width:10.2rem">&#8209;10.2%</div></td>
+        </tr>
+
+        <tr>
+          <td>B</td>
+          <td>Northern Ireland</td>
+          <td><div class="tableneg" style="width:9.3rem">&#8209;9.3%</div></td>
+        </tr>
+
+        <tr>
+          <td>C</td>
+          <td>North East England</td>
+          <td><div class="tableneg" style="width:8.1rem">&#8209;8.1%</div></td>
+        </tr>
+
+        <tr>
+          <td>D</td>
+          <td>Wales</td>
+          <td><div class="tableneg" style="width:6.1rem">&#8209;6.1%</div></td>
+        </tr>
+
+        <tr>
+          <td>E</td>
+          <td>Yorkshire and The Humber</td>
+          <td><div class="tableneg" style="width:3.7rem">&#8209;3.7%</div></td>
+        </tr>
+
+        <tr>
+          <td>F</td>
+          <td>East of England</td>
+          <td><div class="tableneg" style="width:2.2rem">&#8209;2.2%</div></td>
+        </tr>
+
+        <tr>
+          <td>G</td>
+          <td>West Midlands</td>
+          <td><div class="tablepos" style="width:1.2rem">+1.2%</div></td>
+        </tr>
+
+        <tr>
+          <td>H</td>
+          <td>South West England</td>
+          <td><div class="tablepos" style="width:1.9rem">+1.9%</div></td>
+        </tr>
+
+        <tr>
+          <td>J</td>
+          <td>East Midlands</td>
+          <td><div class="tablepos" style="width:3.3rem">+3.3%</div></td>
+        </tr>
+
+        <tr>
+          <td>K</td>
+          <td>North West England</td>
+          <td><div class="tablepos" style="width:4.1rem">+4.1%</div></td>
+        </tr>
+
+        <tr>
+          <td>M</td>
+          <td>South East England</td>
+          <td><div class="tablepos" style="width:5rem">+5.0%</div></td>
+        </tr>
+
+        <tr>
+          <td>N</td>
+          <td>London</td>
+          <td><div class="tablepos" style="width:11.2rem">+11.2%</div></td>
+      </tbody>
+    </table>
+
+    <p class="smaller">Source: <a href="#">Department for International Trade</a></p>
+
+    <p class="smaller">Download data as <a href="#">CSV</a> or as <a href="#">XLS</a> </p>
+
+
+    </div>
+
+  </div><!-- end grid row -->
+
+</main>
+
+
+
+
+<script>
+  // The autocomplete input <select> gets transformed by this
+  accessibleAutocomplete.enhanceSelectElement({
+  selectElement: document.querySelector('#industry-picker')
+  })
+
+
+  // From the Gain Concept-mix2 prototype, open positions list
+  function toggleDiv(divId) {
+      $("."+divId).toggle();
+      $('#arrow-'+divId).toggleClass('industry-active industry-inactive');
+  }
+
+  function setDisplayValue() {
+      var display = $('.toggle')[0].style.display;
+      $('.displayvalue').text(display);
+      e.preventDefault();
+  }
+
+
+
+
+</script>
+
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,118 @@
+{% extends "layout-simple.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge" style>
+        Region page
+        <span class="heading-secondary"></span>
+      </h1>
+      
+
+    </div>
+  </div>
+
+  <div id="fixed-image" style="position:fixed;top:0">
+      <a href="/public/images/region-page-mini.png">
+      <img src="/public/images/region-page-mini.png" width="50%">
+      </a>
+      </div>
+
+  <div class="grid-row">
+    <div class="column-one-third">
+
+      &nbsp;
+
+
+    </div>
+
+    <div class="column-two-thirds">
+
+    <h2 class="heading-large">
+        Anatomy of a region page
+      </h2>
+
+      <p><a href="location-1">Prototype of a region-level 'location profile' page</a>.</p>
+
+    <p><strong>Single large image at the top (Jumbotron)</strong></p>
+    <p>Because of the dramatic difference between the desktop crop and the mobile, it's probably better to find a different image rather than choose one that works on both.</p>
+
+    <p>This jumbotron could in theory work with a few images as a carousel or launch a regional video showcase too.</p>
+
+    <p><strong>Intro</strong></p>
+
+    <p>No fluff, get straight to the point, 'Why this region is a great place to invest' back it up with facts.</p>
+
+    <p><strong>Infographic</strong></p>
+
+    <p>Present the intro facts with a graphic, and source link</p>
+
+    <p><strong>Full bleed stripe: Quote</strong></p>
+
+    <p>This serves as a bit of visual breakup before the map, and a less factual piece of content... if it can link to a relevant story somewhere all the better, but doesn't need to.</p>
+
+    <p><strong>Interactive map</strong></p>
+
+    <p>Map layers should include Labels and Transport, on by default (probably - test this?). Filters for the industries, one or more should be on by default I think.</p>
+
+    <p>The Industry list should have radio buttons (ie. only one at a time to display) as the overload of all the data points isn't really helpful - but it does look pretty, hence the 'show all' button.</p>
+
+    <p>From our research, we find that users don't always know how we've 'filed' their particular sector, so the autocomplete field can find and select an industry from the input. This is an idea I'd really like to test with users.</p>
+
+    <p>The minimap should link back to a index/intro page for iOPs ... but we are not looking at that design *just* yet.</p>
+
+    <p><strong>Full bleed stripe: Image</strong></p>
+
+    <p>This should be another break for the page, trying to give it some unique flavour compared to the other regions, trying to connect back to wider GREAT branding and keep that 'full width immersion' feel here.</p>
+
+    <p><strong>Regional copy</strong></p>
+
+    <p>This is the main area for pulling out more headline attractiveness for this region. Back it up with facts, highlight the fact that provide links to the facts as references below.</p>
+
+    <p><strong>Datapoints</strong></p>
+
+    <p>This is a simple table with some facts that help understand the region - population, regional GDP/GVA?, cities, industries.</p>
+
+    <p><strong>Links</strong></p>
+
+    <p>A *small* number of links to the best external resources around. Review this with extreme prejudice - out of date or fluffy sites should not be considered useful.</p>
+
+
+    <p><strong>New footer</strong></p>
+
+    <p>This reflects the latest iteration of the ongoing header/nav/footer the rest of the GREAT teams are looking at, so I thought I would include it here. Not added yet is having the translation links in the footer, but they should be.</p>
+
+
+    <p>...and last but not least - <strong>Call to action, Contact us</strong></p>
+
+    <p>We should <a href="contact-2">review our contact form</a>, with the possibility of first step (of three) being filled in here.</p>
+
+
+
+
+
+<script>
+$(window).scroll(function(){
+    $("#fixed-image").css("top",Math.max(0,250-$(this).scrollTop()));
+});
+
+</script>
+    
+
+
+    </div>
+  </div>
+</main>
+
+
+
+{% endblock %}
+
+
