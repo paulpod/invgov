@@ -1,0 +1,165 @@
+{% extends "layout-simple.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+<h2 class="heading-medium">Colours</h2>
+
+
+
+
+<img src="/public/images/heatmap-example-uk-shet.png" height="400px">
+
+
+
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+
+    <p>I picked a couple of fairly neutral colour palettes to use for our data. The heatmap one uses both brightness + colour to display a range of values, so will work without colour vision.</p>
+
+    <table>
+<tr>
+  <td>
+  Type</td>
+
+  <td>
+  Not UK</td>
+
+  <td>
+  Zero</td>
+
+  <td>
+  Low 1</td>
+
+  <td>
+  Medium 2</td>
+
+  <td>
+  High 3</td>
+
+  
+</tr>
+
+<tr>
+<td>
+  Full</td>
+
+<td style="background-color:#eeeeee ">
+  #eeeeee</td>
+
+  <td style="background-color:#d6d7ce ">
+  #d6d7ce</td>
+
+  <td style="background-color:#dad9b0 ">
+  #dad9b0</td>
+
+  <td style="background-color:#cda26b ">
+  #cda26b</td>
+
+  <td style="background-color:#e07563 ">
+  #e07563</td>
+
+</tr>
+<tr>
+<td>
+  Offset 85%</td>
+
+<td>
+  none</td>
+
+  <td style="background-color:#dcddd5 ">
+  #dcddd5</td>
+
+  <td style="background-color:#e0dfbc ">
+  #e0dfbc</td>
+
+  <td style="background-color:#d4b081 ">
+  #d4b081</td>
+
+  <td style="background-color:#e58a7a ">
+  #e58a7a
+  </td>
+
+</tr>
+
+</table>
+
+
+    <p style="margin-top:2em">On the heatmap dotmap, I put a copy of the UK dots behind and offset, half a dot up+right. This copy is 85% opacity of the main blobs. Or use the values above.</p>
+
+    </div>
+    <div class="column-one-third">
+      <img src="/public/images/offset-blobs.png" width="200px">
+    </div>
+</div>
+
+<p>On the individual maps, with number/alpha blobs, the colours are:</p>
+
+<table>
+<tr>
+  <td>
+  Not UK</td>
+
+  <td>
+  UK land</td>
+
+  <td>
+  Universities</td>
+
+  <td>
+  R &amp; D hubs</td>
+
+  <td>
+  Salary high</td>
+
+  <td>
+  Salary low</td>
+
+  <td>
+  Airports</td>
+</tr>
+
+<tr>
+<td style="background-color:#e58a7a ">
+  #eeeeee</td>
+
+  <td style="background-color:#a8a69e ">
+  warm grey<br>
+  #a8a69e</td>
+
+  <td style="background-color:#874b64;color:white; ">
+  neutral heather
+  #874b64</td>
+
+  <td style="background-color:#e0de92 ">
+  neutral stone
+  #e0de92</td>
+
+  <td style="background-color:#b8e673 ">
+  positive
+  #b8e673</td>
+
+  <td style="background-color:#e98174 ">
+  negative
+  #e98174</td>
+
+  <td style="background-color:#4f8d99;color:white;">
+  neutral teal
+  #4f8d99</td>
+
+</tr>
+</table>
+
+
+</main>
+
+{% endblock %}
+
+
+
