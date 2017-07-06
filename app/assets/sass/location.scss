@@ -415,6 +415,16 @@ table.whereuk-tabledata th {
   position: fixed !important;
   top: 40px;
 }
+@media (max-width: 769px) {
+  .sticky-list {
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  .uk-region-list {
+    display: none;
+  }
+}
 
 .widehead {
   width: 400px;
