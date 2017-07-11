@@ -1,0 +1,971 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit's url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK elements from /govuk-modules/, this will import the frontend toolkit and some base styles.
+// Take a look in /govuk-modules/_govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at in app/assets/sass/patterns/ to see which files are imported.
+@import 'patterns/check-your-answers';
+@import 'patterns/task-list';
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+    display: block
+  }
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+
+
+/* INVEST in GREAT specific styles */
+/* - - - - - - - - - - - - - - - - */
+
+strong {
+  font-weight: 600;
+}
+
+/*  Overide the GDS Transport *everywhere*  */
+* {
+  font-family: 'Roboto' !important;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+.hide-mobile {
+  display: none;
+  }
+}
+/* overide styles on the header nav */
+@import 'global-header-override';
+
+
+/* styles for homepage mockup */
+@import 'jumbotron';
+
+
+/* Top Top HM GOV header */
+.navigation-strip {
+    padding: 6px 0;
+}
+
+.navigation-strip a {
+    font-size: 14px;
+    padding: 0 5px 0 2px
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-strip {
+        float: left;
+        display: block;
+        margin-right: 1.53846%;
+        width: 100%
+    }
+
+    .navigation-strip:last-child {
+        margin-right: 0
+    }
+}
+
+.navigation-logo-link {
+    margin-bottom: 3px
+}
+
+.navigation-logo {
+    padding: 17px 0 4px
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-logo {
+        width: 70%
+    }
+}
+
+.navigation-skip-to a {
+    left: -9999em;
+    position: absolute
+}
+
+.navigation-skip-to a:focus {
+    left: 0;
+    position: relative
+}
+
+.navigation-skip-to:after {
+    display: none
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-login li {
+        padding-right: 0
+    }
+
+    .navigation-login li .icon {
+        margin-right: 0
+    }
+
+    .navigation-login li:after {
+        content: none
+    }
+
+    .navigation-login a {
+        padding: 0
+    }
+}
+
+.list-inline li {
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+    .list-inline li.hide-mobile {
+        display: none
+    }
+}
+
+.list-separators {
+    font-size: 0
+}
+
+.list-separators li {
+    position: relative
+}
+
+.list-separators li:after {
+    content: '|';
+    font-size: 20px;
+    position: absolute;
+    right: -1px;
+    top: 0
+}
+
+.list-separators li:last-child:after, .list-separators li:nth-child(3):after {
+    content: ''
+}
+
+.icon-menu {
+    background-image: url("/public/images/icons/menu.svg")
+}
+
+.icon-sign-in {
+    background-image: url("/public/images/icons/signin.svg")
+}
+
+.icon-sign-out {
+    background-image: url("/public/images/icons/signout.svg")
+}
+
+.icon {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block
+}
+
+.icon--left {
+    float: left;
+    height: 21px;
+    left: 0;
+    margin-right: 10px;
+    position: relative;
+    width: 22px
+}
+
+
+.background--great-blue {
+    background-color: #1e1348
+}
+
+.background--flag-red {
+    background-color: #b00d23
+}
+
+.background--stone {
+    background-color: #dfd5c5
+}
+
+.background--dark-white {
+    background-color: #fafafa
+}
+
+.background--grey {
+    background-color: #333
+}
+
+.background--mid-grey {
+    background-color: #999
+}
+
+.background--light-grey {
+    background-color: #dce0df
+}
+
+.background--purple {
+    background-color: #4f0b7b
+}
+
+.background--mid-blue {
+    background-color: #00549f
+}
+
+.background--aqua {
+    background-color: #007ea3
+}
+
+.background--dark-navy {
+    background-color: #160d37
+}
+
+.background--dark-blue {
+    background-color: #132965
+}
+
+.background--light-blue {
+    background-color: #00549f
+}
+
+.background--light-aqua {
+    background-color: #8ae2fb
+}
+
+.background--great-red {
+    background-color: #e41f13
+}
+
+.background--white {
+    background-color: #fff
+}
+
+
+
+
+
+.great-topnav {
+  background-color:#333;
+  color: white;
+  font-size:0.75em;
+  padding:3px 2px;
+  margin: 0;
+}
+
+/* Our logo in the head can get quite small so we */
+/* can use a big stacked version in the footer  - */
+.footer-logo {
+width:25%;
+min-width: 150px;
+}
+@media (max-width: 769px) {
+  .footer-logo {
+  width:45%;
+  max-width: 180px;
+  }
+}
+
+.footer-content {
+  max-width:960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+ul.footer-list, li.footer-list{
+display: block;
+}
+
+div.footer-logo-block {
+  float:left;
+}
+
+@media (min-width: 769px) {
+  div.footer-list {
+  float:right;
+  width:22%;
+  border-left: 1px #aaa solid;
+  padding-left: 2%;
+  padding-right: 1%;
+  }
+}
+
+#footer {
+  background-color: #f0f0f0;
+  border-top: 3px solid #B00D23;
+  padding-top: 1em;
+}
+
+div.footer-hmgov {
+  float:left;
+}
+
+div.copyright {
+  float:right;
+}
+
+
+
+/* Mangle the brand in the header */
+
+/*  Change the logo from crown to flag  */
+#global-header #logo img {
+  visibility: visible;
+  width: 220px;
+}
+
+@media (min-width: 769px) {
+  p.form-hint {
+    max-width: 50%;
+  }
+}
+
+/* form button to batch the home buttons */
+.form-button {
+border: 3px solid #00549F;
+background-color: transparent;
+border-radius: 4px;
+color: #00549F;
+text-align: left;
+font-weight:400;
+font-size:1.3em;
+line-height: 1;
+padding: 10px 20px 13px 20px;
+margin: 1em 0;
+}
+.form-button:hover {
+background-color:#00549F;
+color: white;
+}
+
+.map-button {
+border: 3px solid #00549F;
+background-color: transparent;
+border-radius: 4px;
+color: #00549F;
+text-align: left;
+font-weight:400;
+font-size:1.1em;
+line-height: 1;
+padding: 6px 9px 5px 9px;
+margin: 1.2em 0 0 0;
+position: relative;
+left: -10px;
+top:20px;
+}
+.map-button:hover {
+background-color:#00549F;
+color: white;
+}
+
+
+
+
+.heading-midlarge {
+      font-size: 30px;
+    line-height: 1.11111;
+    font-weight: 700;
+    margin: 0.3em 0 0.7em 0;
+}
+form.form {margin-bottom: 8em}
+
+p.form-pagination {
+  color:#666;
+  font-size: 0.9em;
+  margin:1em 0 0.2em 0;
+}
+
+input.form-control {
+  border-radius: 3px;
+}
+
+
+
+/* for WHERE UK iOPS prototype */
+
+table.datapoints td {
+  font-size: 18px;
+}
+
+table.maintable {
+  margin-top:5em;
+}
+table.whereuk-tabledata td {
+  vertical-align: top;
+}
+table.whereuk-tabledata td:first-child {
+font-weight: 600;
+}
+table.whereuk-tabledata thead {
+  border-bottom:2px solid black;
+}
+table.whereuk-tabledata th {
+  vertical-align: bottom;
+}
+
+.sticky-list,
+.sticky {
+  position: fixed !important;
+  top: 40px;
+}
+@media (max-width: 769px) {
+  .sticky-list {
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  .uk-region-list {
+    display: none;
+  }
+}
+
+.widehead {
+  width: 400px;
+}
+
+ul.bloblist li {
+  background-color: #874b64;
+  border-radius: 1em;
+  display: inline-block;
+  width:1.5em;
+  height: 1.5em;
+  font-weight: 600;
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+  position: relative;
+}
+
+.pos-westmidlands {
+top:235px;
+left:125px;
+}
+.pos-eastengland {
+top:220px;
+left:130px;
+}
+.pos-southwestengland {
+top:250px;
+left:50px;
+}
+.pos-wales {
+top:240px;
+left: -10px;
+}
+.pos-london {
+top:250px;
+left:40px;
+}
+
+
+.tableval {
+background-color: #e0de92;
+font-weight: 600;
+padding-left: 0.3em;
+overflow: visible;
+}
+
+.tableneg {
+background-color: #E98174;
+font-weight: 600;
+padding-left: 0.3em;
+overflow: visible;
+}
+
+.tablepos {
+background-color: #B8E673;
+font-weight: 600;
+padding-left: 0.3em;
+overflow: visible;
+}
+
+.divider {
+  width:720px;
+  height: 2px;
+  background-color: #eee;
+}
+
+
+
+
+/* for the quick rough iOPS homepage mockup/prototype */
+.homepage-unit {
+  background-color: #226;
+  background-image: url('/public/images/why-uk-banner.jpg');
+  overflow: visible;
+  opacity: 0.3;
+  width: 100vw;
+  position: relative;
+  left: 0vw;
+  padding: 0.5em 0;
+  margin: 2em 0 0 0 ;
+}
+
+.home-whyuk {
+  position: relative;
+  z-index: 5;
+  width: 960px;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-iops {
+  position: relative;
+  z-index: 5;
+  width: 55%;
+  max-width: 536px;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+/* For the iOPS mapping on Region/Location pages */
+.mapbox {
+  height: 640px
+}
+.maptools {
+}
+#map-layers {
+  float: left;
+  width: 47%;
+  margin-right: 30px;
+}
+#map-filters {
+float: left;
+width: 48%;
+}
+.map-sector-list {
+  margin: 1em 0;
+}
+.map-sector-list li {
+background: url('/public/images/list-radio-off.png') no-repeat;
+padding: 0.4em 0 0.66em 2.8em;
+background-size: 40px 40px;
+margin-bottom: 0.6em;
+line-height: 1.1;
+overflow: visible;
+
+}
+.basemap {
+  position: absolute;
+  width:600px;
+}
+/* the label layer, always at front  */
+.map-overlay1 {
+  position: absolute;
+  width:600px;
+  z-index: 100;
+}
+/* the transport layer, quite transparent  */
+.map-overlay2 {
+  position: absolute;
+  width:600px;
+  background-blend-mode: multiply;
+  opacity: 0.3;
+}
+.map-overlay3 {
+  position: absolute;
+  width:600px;
+display: none;}
+.industry-active {
+  background-color:red;
+  }
+.industry-inactive {
+}
+span.referenced {
+  background-color: #ffc;
+}
+.references-list {
+  font-size: 0.85 !important;
+}
+
+
+#fixed-image {
+    position:fixed;
+    top:250px;
+    background-color:red;
+}
+
+
+/* For homepage existing rebuild */
+
+.home-more-button {
+border: 3px solid #00549F;
+background-color: transparent;
+border-radius: 4px;
+color: #00549F;
+text-align: left;
+font-weight:400;
+font-size:1.3em;
+line-height: 1;
+padding: 10px 20px 13px 20px;
+}
+.home-more-button:hover {
+background-color:#00549F;
+color: white;
+}
+
+
+/* How we help content */
+
+.dit-list-reasons__item {
+float: left;
+margin-top: 20px;
+padding: 0 36px;
+width: 33%;
+}
+@media (max-width: 769px) {
+  .dit-list-reasons__item {
+    width: 90%;
+    padding-left: 10px;
+  }
+}
+
+.dit-list-reasons {
+list-style: none;
+margin: 16px 0;
+padding: 0;
+width: 100%;
+overflow: hidden;
+text-align: center;
+}
+
+.dit-icon {
+height: 70px;
+width: 70px;
+margin: 28px auto
+}
+
+
+.dit-icon-sm {
+    height: 50px;
+    width: 50px;
+    margin: 4px -4px 0 15px
+}
+
+.dit-icon-xs {
+    height: 24px;
+    width: 24px
+}
+
+.dit-icon-connections {
+    background: linear-gradient(transparent, transparent), url(/public/images/icons/dit-icon-connections.svg) no-repeat;
+    background-size: contain
+}
+
+.dit-icon-immigration {
+    background: linear-gradient(transparent, transparent), url(/public/images/icons/dit-icon-immigration.svg) no-repeat;
+    background-size: contain
+}
+
+.dit-icon-incentives {
+    background: linear-gradient(transparent, transparent), url(/public/images/icons/dit-icon-incentives.svg) no-repeat;
+    background-size: contain
+}
+
+.dit-icon-talent {
+    background: linear-gradient(transparent, transparent), url(/public/images/icons/dit-icon-talent.svg) no-repeat;
+    background-size: contain
+}
+
+.dit-icon-insight {
+    background: linear-gradient(transparent, transparent), url(/public/images/icons/dit-icon-insight.svg) no-repeat;
+    background-size: contain
+}
+
+.dit-icon-language {
+    background: linear-gradient(transparent, transparent), url(/public/images/icons/dit-language-icon.svg) no-repeat;
+    background-size: contain
+}
+
+@media (max-width: 767px) {
+    .dit-icon-language {
+        margin: -13px -15px 0 0
+    }
+}
+
+/* tweaks to match older typography on homepage */
+p {
+  font-size: 0.95em;
+}
+
+
+#industry-page .heading-large,
+#home-industries .heading-large, 
+#how-help .heading-large,
+#home-setup .heading-large, 
+#how-help .heading-large {
+font-size:2.3em;
+  font-weight: 300;
+}
+#industry-page .heading-small
+#home-industries .heading-small, 
+#home-setup .heading-small {
+font-size:1.1em;
+  font-weight: 500;
+  padding-top: 0;
+  margin-top:0;
+}
+hr.homerule {
+  margin: 2.6em 0 0.2em 0;
+  background:none;
+  border-bottom: 5px solid #B00D23;
+}
+img.home-thumbnail {
+  width:7.6em;
+  float:left;
+  margin-top:5px;
+  margin-right:15px;
+  margin-bottom:3em;
+}
+@media (max-width: 769px) {
+  img.home-thumbnail {
+  width:4.6em;
+  float:left;
+  margin-top:5px;
+  margin-right:15px;
+  margin-bottom:1.5em;
+  }
+
+#home-industries .column-half {
+  margin-bottom:2.6em;
+}}
+
+
+
+/* - - - Location profile page - - - */
+h1.location-xlarge {
+font-size: 3.6em;
+font-weight: 100;
+margin-bottom: 0;
+padding-bottom: 0;
+line-height: 1;
+}
+@media (max-width: 767px) {
+  h1.location-xlarge {
+  font-size: 2.6em;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
+  }
+}
+h2.location-medium {
+font-size: 1.6em;
+font-weight: 300;
+margin-bottom: 0;
+padding-bottom: 0;
+line-height: 1.4;
+}
+@media (max-width: 767px) {
+  h2.location-medium {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1.4;
+  }
+}
+
+
+
+
+p.lead {
+  font-size: 24px;
+  margin-top:1em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+p.bigger {
+  font-size: 18px;
+  margin-top:1em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+p {font-size: 15px;
+  font-weight: 400;
+}
+
+p.smaller {
+  font-size: 13px;
+  margin-top:1em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.bleed-row {
+  background-color: #500a7a;
+  overflow: visible;
+  width: 100vw;
+  position: relative;
+  left: 0vw;
+  padding: 0.5em 0;
+}
+
+.bleed-quote {
+  position: relative;
+  z-index: 5;
+  width: 55%;
+  max-width: 536px;
+  padding: 0 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .bleed-quote {
+  width: 92%;}
+}
+
+div.quote {
+  padding: 0 1.1em;
+  background-image: url('/public/images/quote-left.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 1.5em;
+
+}
+p.quoted {
+  color: white;
+  font-size: 18px;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-image: url('/public/images/quote-right.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 1.5em;
+  text-shadow: 0px 0px 3px #000;
+}
+p.quotesource {
+  color: white;
+  font-size: 13px;
+  line-height: 1;
+  margin-top: 0;
+}
+
+
+/* - - - Full width bleed images for regions - - - */
+
+div.bleed-row#bleed-westmidlands {
+  background-image: url('/public/images/hero-img/hero-cathedral.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  z-index: 1;
+}
+div.bleedpic {
+  padding-top:7.5em;
+}
+div.bleedpic:before {
+    content: '';
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 60%, #000 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 60%, #000 100%);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 60%, #000 100%)
+}
+
+
+
+
+/* - - - Kern the headlines - - - */
+/* - - - (yes, i am a knob) - - - */
+
+#west-midlands h1 {
+  margin-left: -0.2em;
+
+}
+
+
+
+/* Stuff for the IOPS prototype */
+.mixpanel-list {
+  position: relative;
+  top:4.5em;
+font-size:0.9em;
+  line-height:1;
+}
+.mixpanel-list li {
+  padding-bottom:0.86em;
+}
+
+.invest-topnav {
+  border-bottom: solid 1px #ccc;
+  padding:17px 0 10px 0
+}
+
+
+
+ul.hoznav li {
+  display: inline-block;
+  margin-left:1.6em;
+  font-size: 0.9em;
+}
+ul.hoznav li.active {
+  border-bottom: solid 2px #900;
+}
+ul.hoznav li.contact {
+  border-radius: 5px;
+  background-color:#00549F;
+  color:white;
+  padding:0.2em 0.75em;
+}
+
+
+
+
+
+#industry-picker-box {
+  margin-bottom: 1em;
+  float:left;
+  z-index: 100;
+  position:absolute;
+}
+
+#location-picker-box {
+  margin-bottom: 1em;
+  float:left;
+  z-index: 101;
+  position:absolute;
+}
+
+#industry-picker, #location-picker {
+  width: 230px;
+}
+
+input#industry-picker.autocomplete__input {
+}
+
+.picker-form-hint {
+  color:#666;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+
+
+
+

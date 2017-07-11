@@ -1,0 +1,62 @@
+{% extends "invest_template.html" %}
+
+{% block head %}
+  {% include "includes/region-head.html" %}
+{% endblock %}
+
+{% block cookie_message %}
+  <p>{{cookieText | safe }}</p>
+{% endblock %}
+
+{% block proposition_header %}
+
+
+
+<div class="header-proposition">
+  <div class="content">
+
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+
+    <nav id="proposition-menu">
+      <a href="/" id="proposition-name">
+        
+        
+      </a>
+      
+      <ul id="proposition-links">
+        <li><a href="home" class="active">Home</a></li>
+        <li><a href="setup">UK setup guide</a></li>
+        <li><a href="industries-2">Industries</a></li>
+        <li><a href="why-uk-1">Why the UK</a></li>
+        <li><a href="where-uk-1">Where in the UK</a></li>
+        <li><a href="contact-1">Contact us</a></li>
+        
+      </ul>
+      
+    </nav>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% block footer_support_links %}
+  {% if useAutoStoreData %}
+    <ul>
+      <li>
+        <a href="/prototype-admin/clear-data">Clear data</a>
+      </li>
+    </ul>
+  {% endif %}
+{% endblock %}
+
+{% block body_end %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    {% block page_scripts %}{% endblock %}
+  {% endblock %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}
