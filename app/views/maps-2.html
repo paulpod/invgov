@@ -1,0 +1,72 @@
+{% extends "layout-simple.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-large" >
+        Additional work on maps
+
+      </h1>
+
+      <p>Looking at using the gridded-dots for the data but returning to a traditional UK outline for the landmass. One tool we haven't tried is using the water as a high contrast border, allowing low contrast land for labels + data overlay.</p>
+
+      <img src="/public/images/uk-map-colours.png" width="640px" >
+
+    </div>
+
+    <div class="column-one-third">
+
+      <img src="/public/images/uk-map-colours-apple-etc.png" width="250px" style="margin-top: 8em">
+
+    </div>
+
+  </div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+
+    <img src="/public/images/ukmap-blue-yellow-red.png" width="780px">
+
+    <br>
+
+    <img src="/public/images/ukmap-grey-yellow-red.png" width="780px">
+
+    <br>
+
+    <img src="/public/images/ukmap-grey-green-red.png" width="780px">
+
+    <br>
+
+    <p>Did a little test putting our dataset onto a native Google Map... first one is a point map, any inference from the data is one-dimensional (ie. A single business may have 1 or 1000 employees, is presented as a single dot either way)</p>
+
+    <img src="/public/images/googlemap-fusion.png" width="550px">
+
+    <p>Pros to using a Google map - customisable, scalable, zoomable, cross platform, familiar to users.<br>
+    Cons - not sure how customisable from Fusion, font clash? (is arial), can we overlay regions? we don't own it.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
