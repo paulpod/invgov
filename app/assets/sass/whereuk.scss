@@ -412,8 +412,8 @@ table.whereuk-tabledata th {
 
 .sticky-list,
 .sticky {
-  position: fixed !important;
-  top: 40px;
+  position: relative !important;
+  top: -45px;
 }
 @media (max-width: 769px) {
   .sticky-list {
@@ -925,6 +925,14 @@ ul.hoznav li.contact {
 }
 
 
+table td a {
+  color: #222;
+  text-decoration: none;
+}
+table td a:visited {
+  color: #222;
+  text-decoration: none;
+}
 
 
 
