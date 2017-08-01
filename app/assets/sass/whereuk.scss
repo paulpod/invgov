@@ -37,6 +37,9 @@ $path: "/public/images/";
 /* INVEST in GREAT specific styles */
 /* - - - - - - - - - - - - - - - - */
 
+
+
+
 strong {
   font-weight: 600;
 }
@@ -48,14 +51,13 @@ strong {
 
 
 
-
 @media screen and (max-width: 767px) {
 .hide-mobile {
   display: none;
   }
 }
 /* overide styles on the header nav */
-@import 'global-header-override';
+@import 'global-header-override-whereuk';
 
 
 /* styles for homepage mockup */
@@ -257,6 +259,7 @@ strong {
 
 
 
+
 .great-topnav {
   background-color:#333;
   color: white;
@@ -368,6 +371,9 @@ top:20px;
 background-color:#00549F;
 color: white;
 }
+
+
+
 
 
 
