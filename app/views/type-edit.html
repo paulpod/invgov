@@ -1,0 +1,465 @@
+{% extends "layout-simple.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<!--<div class="grid-row" style="width: 1200px !important;margin: 0 auto;">
+    <div class="column-two-thirds">
+
+    <p>Mostly based on the <a href="https://dit-styleguide.herokuapp.com/colours-typography/">domestic GREAT styleguide</a>, but with contrast based improvements.</p>
+
+    <H2 class="heading-medium">Links - states and colours</H2>
+
+    <p style="font-size:24px;line-height: 1.5;color:#333;">
+    This is a sentence in a paragraph, this is a <a style="text-decoration: underline;color:black">link in the sentence to another</a> page. Text is #333 dark grey, link is #black and underlined.</p>
+
+    <p style="font-size:24px;line-height: 1.5;color:#333;">
+    Why? Lots of blue links in sentences in paragraphs of text is more difficult to read as a flow, but the link function remains clear. Hover on a link uses the <a style="text-decoration: underline;color:black;background-color: #FFBF47">highlight gold #FFBF47</a>, and the active <a style="text-decoration: underline;color:#00549f;background-color: #FFBF47">on-click</a> colour is the link blue #00549f. A link the user has <a style="text-decoration: underline;color:#4c2c92">previously visited</a> is coloured #4c2c92.</p>
+    </p>
+
+    <p style="font-size:24px;line-height: 1.5;color:#333;padding:1em 0"><a style="color:#00549f;text-decoration: underline;">Standalone action link</a>
+    <br>
+    <span style="color: #ccc">Stands out more, has space around it, does an obvious thing and doesn't interrupt the reading of big bits of text.</p>
+
+
+
+    <p style="font-size: 24px;line-height: 1;margin-bottom:0.5em">This is a link list:</p>
+
+      <ul id="anchor-links" style="font-size:24px;line-height: 1">
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">Investors attracted to the UK</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#b" style="text-decoration: none">Costs of investing</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#c" style="text-decoration: none">Workforce and skills</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#d" style="text-decoration: none">Research and development</a></li>
+       
+      </ul>
+
+      <p style="font-size:24px;line-height: 1.5;color:#333;">
+    Lists of links are blue #00549f and list titles already stand out, especially with bullets, so the additonal text decoration of an underline has been omitted here. Hover as before <a style="text-decoration: underline;color:#00549f;background-color: #FFBF47">highlight gold #FFBF47</a>, and the active <a style="text-decoration: underline;color:#136EBF;background-color: #FFBF47">on-click</a> colour is a lighter blue #136EBF. A link the user has <a style="text-decoration: underline;color:#4c2c92">previously visited</a> is coloured #4c2c92.</p>
+
+    <p style="font-size:24px;line-height: 1.5;color:#333;">Links in navigation:<br>
+    Topnav - Text is #333 dark grey, 
+
+
+
+    </div>
+  </div>-->
+
+
+
+  <div class="grid-row" style="width: 1200px !important;margin: 0 auto;">
+    <div class="column-full">
+
+      <div style="background-color: #000;padding:9em 1em 1em 1em;margin-bottom: 2em">
+        <h1 style="font-size: 64px;line-height: 1;color:white;font-weight: 500;text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);margin-bottom:0.2em" >
+        H1 Region name and Humberside
+        </h1>
+
+        <h2 style="font-size: 32px;line-height: 1.1;color:white;font-weight: 500;text-shadow: 0px 3px 3px rgba(0, 0, 0, 1);">H2 Exciting and innovative taglines of the future</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="grid-row" style="width: 1200px !important;margin: 0 auto;">
+    <div class="column-two-thirds">
+
+
+    <div style="margin-bottom:2em">
+      <div style="float:left;margin-right:4em">
+        <ul id="anchor-links" style="font-size:18px;line-height: 1">
+          <li style="margin-bottom:18px"><a href="#a" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid">1. Investors attracted to the South East</a></li>
+          <li style="margin-bottom:18px"><a href="#b" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">2. Costs of investing</a></li>
+          <li style="margin-bottom:18px"><a href="#c" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">3. Workforce and skills</a></li>
+          <li style="margin-bottom:18px"><a href="#d" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">4. Research and development</a></li>
+        </ul>
+      </div>
+
+      <div style="float:left">
+        <ul id="anchor-links" style="font-size:18px;line-height: 1">
+          <li style="margin-bottom:18px"><a href="#e" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">5. Transport infrastructure</a></li>
+          <li style="margin-bottom:18px"><a href="#f" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">6. Strong cities in invest in</a></li>
+          <li style="margin-bottom:18px"><a href="#g" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">7. Major infrastructure projects</a></li>
+          <li style="margin-bottom:18px"><a href="#h" style="color:#333;text-decoration: none;border-bottom: #ddd 1px solid"">8. Incentives to invest</a></li>
+        </ul>
+      </div>
+
+      <br clear="all">
+
+    </div>
+
+    </div>
+
+
+
+    <div class="grid-row" style="width: 1200px !important;margin: 0 auto;">
+    <div class="column-full">
+
+
+      <h2 style="font-size: 36px;line-height: 1.1;color:#222;font-weight: 500;margin-bottom:1em">Key facts</h2>
+
+
+        <div style="width:29%;border-left:2px #ccc solid;margin-bottom:1em;padding:0 1.3em;float:left">
+        <p style="font-size:21px;line-height: 1.5">The fastest rate of employment growth in the UK, with Reading set to outstrip London for gross value added growth and the rest of the country for employment growth.</p>
+        </div>
+
+        <div style="width:29%;border-left:2px #ccc solid;margin-bottom:1em;padding:0 1.3em;float:left">
+        <p style="font-size:21px;line-height: 1.5">Most of the region connects with London by train in under an hour, with up to 60% lower property costs.</p>
+        </div>
+
+        <div style="width:29%;border-left:2px #ccc solid;margin-bottom:1em;padding:0 1.3em;float:right">
+        <p style="font-size:21px;line-height: 1.5;margin-bottom: 2em">Home to the world’s top ranked university, the University of Oxford.</p>
+        </div>
+
+        <br clear="all">
+
+
+
+      </div>
+      </div>
+
+<div class="grid-row" style="width: 1200px !important;margin: 0 auto;">
+    <div class="column-two-thirds">
+
+
+      <div style="padding:14px;background-color: #f5f2ec;margin-bottom: 2em">
+
+        <p style="font-size:24px;line-height: 1;font-weight: 500;margin-bottom: 10px">Showing clusters for Aerospace</p>
+
+        <p style="font-size:24px;line-height: 1;font-weight: 400"><a href="#switch">Change industry</a></p>
+
+        <img src="/public/images/se-region-map.png" align="top" style="float:left">
+
+        <img src="/public/images/se-uk-map.png" style="float: right;">
+
+        <br clear="all">
+
+      </div>
+
+
+      <h2 style="font-size: 36px;line-height: 1.1;color:#222;font-weight: 500;">Investors attracted to the South East</h2>
+
+<p style="font-size: 24px;line-height: 1;margin-bottom:0.5em">The South East leads the UK for growth and productivity: </p>
+
+<ul id="content-list" style="font-size:24px;line-height: 1.5">
+
+<li style="background-image: url('/public/images/list-black-square.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 10px;padding-left: 30px;margin-bottom:36px">it had the fastest employment growth of any UK region in 2016 (2.1%)<br>
+<span style="font-size:18px">Source: EY, UK region and city economic forecast Winter 2016</li>
+
+<li style="background-image: url('/public/images/list-black-square.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 10px;padding-left: 30px;margin-bottom:36px">it is forecast to be the UK’s top region for gross value added (GVA) growth between 2017 and 2019 (1.91%)<br>
+<span style="font-size:18px">Source: EY, UK region and city economic forecast Winter 2016</span></li>
+
+<li style="background-image: url('/public/images/list-black-square.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 10px;padding-left: 30px;margin-bottom:36px">world-famous technology companies have chosen the South East as a base, including Microsoft, CISCO, Huawei, Telefonica and Vodafone</li>
+
+<li style="background-image: url('/public/images/list-black-square.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 10px;padding-left: 30px;margin-bottom:36px">10 of the top 50 global organisations in the world are based here; 113 of the world’s top brands are based in the Thames Valley alone</li>
+
+<li style="background-image: url('/public/images/list-black-square.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 10px;padding-left: 30px;margin-bottom:36px">life sciences and healthcare, creative services, motorsport, marine, aerospace and space technology all thrive here</li>
+
+</ul>
+
+
+     
+      
+      <h2 style="font-size: 36px;line-height: 1.1;color:#222;font-weight: 500;">Costs of investing</h2>
+      <p style="font-size:24px;line-height: 1.5;font-weight: 400">Regional property costs are up to 60% lower than in central London. Businesses report strong rates of return on their investment due to the high productivity and growth rates across the region.
+      </p>
+
+      <h2 style="font-size: 36px;line-height: 1.1;color:#222;font-weight: 500;">Workforce and skills</h2>
+      <p style="font-size:24px;line-height: 1.5;font-weight: 400">The South East has 2 of the top 3 UK cities for GVA per worker in the UK (GBP 71.6k in Slough and Reading). Oxford, in the South East, has the second highest proportion of adults in the UK with university-level education (64%).<br>
+      <span style="font-size:18px">Source: Cities Outlook 2017</span></p>
+
+      <table>
+        <thead>
+          <th colspan="2">Region name</th>
+
+          <th>Statistical value</th>
+        </thead>
+
+        <tbody>
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>A</strong></td><td style="font-size:21px">North West</td><td style="font-size:21px">100,303</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>B</strong></td><td style="font-size:21px">South West</td><td style="font-size:21px">34,562</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>C</strong></td><td style="font-size:21px">Scotland</td><td style="font-size:21px">11,870</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>D</strong></td><td style="font-size:21px">Wales</td><td style="font-size:21px">8,438</td></tr>
+
+        </tbody>
+      </table>
+
+      <p style="font-size: 21px;line-height: 1.4">Small text used for additional or supplementary information, which can include references, footnotes and <a href="#cc">links to sources</a>.</p>
+
+
+     
+      </div>
+
+      <div class="column-third">
+
+
+      <!--<p style="font-size: 24px;line-height: 1;margin-bottom:0.5em">Find out about:</p>
+
+      <ul id="anchor-links" style="font-size:24px;line-height: 1">
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">Investors attracted to the South East</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#b" style="text-decoration: none">Costs of investing</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#c" style="text-decoration: none">Workforce and skills</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#d" style="text-decoration: none">Research and development</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#e" style="text-decoration: none">Transport infrastructure</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#f" style="text-decoration: none">Strong cities in invest in</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#g" style="text-decoration: none">Major infrastructure projects</a></li>
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#h" style="text-decoration: none">Incentives to invest</a></li>
+      </ul>-->
+
+    </div>
+
+    </div>
+
+
+
+<div class="grid-row" style="width: 1200px !important;margin: 0 auto;">
+    <div class="column-half">
+
+
+    <p>From the Where in UK page </p>
+
+
+    <h2 style="font-size: 36px;line-height: 1.15;color:#222;font-weight: 500;margin-bottom: 1em">
+    Business clusters for Food and drink manufacturing in the UK</h2>
+
+    <p style="font-size:24px;line-height: 1.5;font-weight: 400">The Energy sectors are active all over the UK. Oil and gas are highly active in <a href="#scot" style="color:black">Scotland</a> and <a href="#ni" style="color:black">Northern Ireland</a>.</p>
+
+    <p style="font-size:24px;line-height: 1.5;font-weight: 400">Renewable energy is making an impact in <a href="#east" style="color:black">East of England</a> and <a href="#wales" style="color:black">Wales</a>.</p>
+
+
+    <p style="font-size: 24px;line-height: 1;margin-bottom:0.5em;margin-top:1.5em">Find out about:</p>
+
+      <ul id="anchor-links" style="font-size:24px;line-height: 1">
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">Skilled talent</a></li>
+
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">Salary differences</a></li>
+
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">R &amp; D centres</a></li>
+
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">Universities</a></li>
+
+        <li style="background-image: url('/public/images/list-blob-blue.png');background-repeat:no-repeat;background-size:16px 16px;background-position:0 6px;padding-left: 30px;margin-bottom:24px"><a href="#a" style="text-decoration: none">Airports</a></li>
+
+      </ul>
+
+
+
+
+
+      <table>
+        <thead>
+          <th colspan="2">Region name</th>
+
+          <th colspan="2">Statistical difference</th>
+        </thead>
+
+        <tbody>
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>A</strong></td><td style="font-size:21px">Scotland</td><td style="font-size:21px;text-align: right"><img src="/public/images/salary-bar-pink.png" width="102px" height="21px"></td><td style="font-size:21px">10.2%</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>B</strong></td><td style="font-size:21px">Northern Ireland</td><td style="font-size:21px;text-align: right"><img src="/public/images/salary-bar-pink.png" width="93px" height="21px"></td><td style="font-size:21px">9.3%</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>C</strong></td><td style="font-size:21px">North East England</td><td style="font-size:21px;text-align: right"><img src="/public/images/salary-bar-pink.png" width="81px" height="21px"></td><td style="font-size:21px">8.1%</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>D</strong></td><td style="font-size:21px">Wales</td><td style="font-size:21px;text-align: right"><img src="/public/images/salary-bar-pink.png" width="24px" height="21px"></td><td style="font-size:21px">2.4%</td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>C</strong></td><td style="font-size:21px">Yorkshire&nbsp;and&nbsp;The&nbsp;Humber</td><td style="font-size:21px;text-align: right">+1.2%</td><td style="font-size:21px"><img src="/public/images/salary-bar-green.png" width="12px" height="21px"></td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>D</strong></td><td style="font-size:21px">East of England</td><td style="font-size:21px;text-align: right">+3.3%</td><td style="font-size:21px"><img src="/public/images/salary-bar-green.png" width="33px" height="21px"></td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>C</strong></td><td style="font-size:21px">West Midlands</td><td style="font-size:21px;text-align: right">+5.0%</td><td style="font-size:21px"><img src="/public/images/salary-bar-green.png" width="50px" height="21px"></td></tr>
+
+          <tr><td style="background-image: url('/public/images/gold-blob.png');background-repeat:no-repeat;background-position:0 12px;padding-left: 10px"><strong>D</strong></td><td style="font-size:21px">North West England</td><td style="font-size:21px;text-align: right">+11.2%</td><td style="font-size:21px"><img src="/public/images/salary-bar-green.png" width="112px" height="21px"></td></tr>
+
+        </tbody>
+      </table>
+
+      <br>
+
+      <p style="font-size: 21px;line-height: 1.4">Calculated from variation form the mean UK wages. Source: Office for National Statistics, Department for International trade. Download data as <a href="#csv">CSV</a> or as <a href="#xls">XLS</a>
+
+
+
+      <h2 style="font-size: 36px;line-height: 1.15;color:#222;font-weight: 500;margin-bottom: 1em">
+      Airport in the UK and major destinations, by continent</h2>
+
+
+      <p style="font-size:24px;line-height: 1.5;font-weight: 400">There are major R &amp; D hubs in key locations that work in academia, industry and governement to advance developments in Aerospace.</p>
+
+
+
+      <table>
+        <thead>
+          <th colspan="2">Airport</th>
+
+          <th colspan="2">Destinations</th>
+        </thead>
+
+        <tbody>
+          <tr valign="top">
+            <td style="background-image: url('/public/images/blue-blob.png');background-repeat:no-repeat;background-position:0 10px;padding-left: 10px"><strong style="color:white">A</strong></td>
+
+            <td>London Heathrow<br>
+            <a href="#air-region-a">in London</a></td>
+
+            <td>UK<br>
+            Europe<br>
+            Americas<br>
+            Africa<br>
+            Asia<br>
+            Australasia</td>
+
+            <td>12<br>
+            74<br>
+            31<br>
+            15<br>
+            42<br>
+            4</td>
+
+          </tr>
+
+          <tr valign="top">
+            <td style="background-image: url('/public/images/blue-blob.png');background-repeat:no-repeat;background-position:0 10px;padding-left: 10px"><strong style="color:white">B</strong></td>
+
+            <td>London Gatwick<br>
+            <a href="#air-region-a">in South East</a></td>
+
+            <td>UK<br>
+            Europe<br>
+            Americas<br>
+            Africa<br>
+            Asia<br>
+            <span style="color:grey">Australasia</span></td>
+
+            <td>7<br>
+            31<br>
+            10<br>
+            8<br>
+            6<br>
+            -</td>
+
+          </tr>
+
+          <tr valign="top">
+            <td style="background-image: url('/public/images/blue-blob.png');background-repeat:no-repeat;background-position:0 10px;padding-left: 10px"><strong style="color:white">C</strong></td>
+
+            <td>Manchester<br>
+            <a href="#air-region-a">in North West</a></td>
+
+            <td>UK<br>
+            Europe<br>
+            Americas<br>
+            Africa<br>
+            Asia<br>
+            <span style="color:grey">Australasia</span></td>
+
+            <td>7<br>
+            31<br>
+            10<br>
+            8<br>
+            6<br>
+            -</td>
+
+          </tr>
+
+          <tr valign="top">
+            <td style="background-image: url('/public/images/blue-blob.png');background-repeat:no-repeat;background-position:0 10px;padding-left: 10px"><strong style="color:white">D</strong></td>
+
+            <td>London Stanstead<br>
+            <a href="#air-region-a">in East of England</a></td>
+
+            <td>UK<br>
+            Europe<br>
+            Americas<br>
+            Africa<br>
+            <span style="color:grey">Asia</span><br>
+            <span style="color:grey">Australasia</span></td>
+
+            <td>7<br>
+            31<br>
+            10<br>
+            8<br>
+            -<br>
+            -</td>
+
+          </tr>
+
+          <tr valign="top">
+            <td style="background-image: url('/public/images/blue-blob.png');background-repeat:no-repeat;background-position:0 10px;padding-left: 10px"><strong style="color:white">E</strong></td>
+
+            <td>London Luton<br>
+            <a href="#air-region-a">in East of England</a></td>
+
+            <td>UK<br>
+            Europe<br>
+            Americas<br>
+            Africa<br>
+            <span style="color:grey">Asia</span><br>
+            <span style="color:grey">Australasia</span></td>
+
+            <td>7<br>
+            31<br>
+            10<br>
+            8<br>
+            -<br>
+            -</td>
+
+          </tr>
+        </tbody>
+
+      </table>
+
+
+
+      
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+      <h2 style="font-size: 32px;line-height: 2;color:#222;font-weight: 500;">Desktop text styles</h2>
+
+      <table style="margin-bottom:6em">
+        <thead>
+          <th colspan="2">Type style</th>
+
+          <th>Text-size/Weight/Line-Height</th>
+        </thead>
+
+        <tbody>
+          <tr><td>H1</td><td style="font-size:21px">Big title</td><td style="font-size:21px">64px / 500 Medium / 64px (1)</td></tr>
+
+          <tr><td>H2</td><td style="font-size:21px">Tagline, Section Heading</td><td style="font-size:21px">32px / 500 Medium / 36px (1.1)</td></tr>
+
+          <tr><td>P</td><td style="font-size:21px">Lead para</td><td style="font-size:21px">32px / 400 Regular / 42px (1.33)</td></tr>
+
+          <tr><td>P</td><td style="font-size:21px">Regular</td><td style="font-size:21px">24px / 400 Regular / 36px (1.5)</td></tr>
+
+          <tr><td>P</td><td style="font-size:21px">Smaller</td><td style="font-size:21px">21px / 400 Regular / 30px (1.1)</td></tr>
+
+          <tr><td>LI</td><td style="font-size:21px">List Item</td><td style="font-size:21px">24px / 400 Regular / 48px (2)</td></tr>
+
+          <tr><td>TD</td><td style="font-size:21px">Table Item</td><td style="font-size:21px">21px / 400 Regular / ~</td></tr>
+
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+
+
+</div>
+{% endblock %}
